@@ -56,7 +56,12 @@ window.I18N = {
     "faq.a6": "Faísca is a logic puzzle game that exercises reasoning, pattern recognition and planning, and it includes an IQ-style test for fun. It's a game, not a medical or clinical tool.",
     "img.fameup": "FameUp: Influencer Life, a match-3 influencer game for Android",
     "img.faisca": "Faísca, a brain-training puzzle game with an IQ test, for Android",
-    "lang.label": "Language"
+    "lang.label": "Language",
+    "reel.faisca.tag": "Drag, match and light it all up. A gym for your brain.",
+    "reel.fameup.tag": "Match 3 and go viral. From zero followers to superstar.",
+    "reel.outro": "Both free on Google Play",
+    "reel.pause": "Pause showreel",
+    "reel.play": "Play showreel"
   },
 
   pt: {
@@ -110,7 +115,12 @@ window.I18N = {
     "faq.a6": "Faísca é um jogo de lógica que exercita raciocínio, reconhecimento de padrões e planejamento, e tem um teste no estilo QI para se divertir. É um jogo, não uma ferramenta médica ou clínica.",
     "img.fameup": "FameUp: Influencer Life, jogo de combinar 3 sobre influenciador digital para Android",
     "img.faisca": "Faísca, jogo de quebra-cabeça para treinar o raciocínio, com teste de QI, para Android",
-    "lang.label": "Idioma"
+    "lang.label": "Idioma",
+    "reel.faisca.tag": "Arraste, combine e acenda tudo. Academia para o cérebro.",
+    "reel.fameup.tag": "Combine 3 e viralize. Do zero ao estrelato.",
+    "reel.outro": "Os dois grátis no Google Play",
+    "reel.pause": "Pausar showreel",
+    "reel.play": "Reproduzir showreel"
   },
 
   es: {
@@ -164,7 +174,12 @@ window.I18N = {
     "faq.a6": "Faísca es un juego de lógica que ejercita el razonamiento, el reconocimiento de patrones y la planificación, e incluye un test tipo CI para divertirse. Es un juego, no una herramienta médica ni clínica.",
     "img.fameup": "FameUp: Influencer Life, juego de combinar 3 sobre influencers para Android",
     "img.faisca": "Faísca, juego de puzles de entrenamiento mental con test de CI para Android",
-    "lang.label": "Idioma"
+    "lang.label": "Idioma",
+    "reel.faisca.tag": "Arrastra, combina e ilumínalo todo. Un gimnasio para tu cerebro.",
+    "reel.fameup.tag": "Combina 3 y hazte viral. De cero a superestrella.",
+    "reel.outro": "Los dos gratis en Google Play",
+    "reel.pause": "Pausar showreel",
+    "reel.play": "Reproducir showreel"
   },
 
   fr: {
@@ -218,7 +233,12 @@ window.I18N = {
     "faq.a6": "Faísca est un jeu de logique qui fait travailler le raisonnement, la reconnaissance de motifs et l'anticipation, avec un test façon QI pour s'amuser. C'est un jeu, pas un outil médical ou clinique.",
     "img.fameup": "FameUp: Influencer Life, jeu de match-3 sur la vie d'influenceur pour Android",
     "img.faisca": "Faísca, jeu de réflexion d'entraînement cérébral avec test de QI pour Android",
-    "lang.label": "Langue"
+    "lang.label": "Langue",
+    "reel.faisca.tag": "Glissez, associez, illuminez tout. Une salle de sport pour le cerveau.",
+    "reel.fameup.tag": "Alignez-en 3 et devenez viral. De zéro à superstar.",
+    "reel.outro": "Les deux gratuits sur Google Play",
+    "reel.pause": "Mettre en pause",
+    "reel.play": "Lire"
   },
 
   de: {
@@ -272,7 +292,12 @@ window.I18N = {
     "faq.a6": "Faísca ist ein Logikspiel, das logisches Denken, Mustererkennung und Planung fordert, und enthält zum Spaß einen IQ-ähnlichen Test. Es ist ein Spiel, kein medizinisches oder klinisches Instrument.",
     "img.fameup": "FameUp: Influencer Life, Match-3-Spiel über das Influencer-Leben für Android",
     "img.faisca": "Faísca, Gehirntraining-Puzzlespiel mit IQ-Test für Android",
-    "lang.label": "Sprache"
+    "lang.label": "Sprache",
+    "reel.faisca.tag": "Ziehen, kombinieren, alles zum Leuchten bringen. Fitness fürs Gehirn.",
+    "reel.fameup.tag": "Drei in einer Reihe und viral gehen. Vom Niemand zum Superstar.",
+    "reel.outro": "Beide kostenlos bei Google Play",
+    "reel.pause": "Showreel pausieren",
+    "reel.play": "Showreel abspielen"
   },
 
   ru: {
@@ -326,7 +351,12 @@ window.I18N = {
     "faq.a6": "Faísca — логическая игра, которая тренирует мышление, распознавание закономерностей и планирование, а для интереса в ней есть тест в стиле IQ. Это игра, а не медицинский или клинический инструмент.",
     "img.fameup": "FameUp: Influencer Life — игра «три в ряд» о жизни инфлюенсера для Android",
     "img.faisca": "Faísca — головоломка-тренажёр для мозга с IQ-тестом для Android",
-    "lang.label": "Язык"
+    "lang.label": "Язык",
+    "reel.faisca.tag": "Перетаскивайте, сочетайте, зажигайте. Тренажёр для мозга.",
+    "reel.fameup.tag": "Три в ряд — и вы в трендах. От нуля до суперзвезды.",
+    "reel.outro": "Обе игры бесплатно в Google Play",
+    "reel.pause": "Пауза",
+    "reel.play": "Воспроизвести"
   },
 
   ja: {
@@ -380,7 +410,12 @@ window.I18N = {
     "faq.a6": "Faísca は論理パズルゲームで、思考力、パターン認識、計画力を使います。お楽しみ要素として IQ 風テストも入っています。あくまでゲームであり、医療・臨床用のツールではありません。",
     "img.fameup": "FameUp: Influencer Life、インフルエンサー生活を描く Android 向けマッチ3ゲーム",
     "img.faisca": "Faísca、IQ テスト付きの Android 向け脳トレパズルゲーム",
-    "lang.label": "言語"
+    "lang.label": "言語",
+    "reel.faisca.tag": "ドラッグして、つなげて、ぜんぶ光らせよう。脳のためのジム。",
+    "reel.fameup.tag": "3つそろえてバズろう。ゼロからスーパースターへ。",
+    "reel.outro": "どちらも Google Play で無料",
+    "reel.pause": "一時停止",
+    "reel.play": "再生"
   },
 
   zh: {
@@ -434,6 +469,11 @@ window.I18N = {
     "faq.a6": "Faísca 是一款逻辑解谜游戏，锻炼推理、规律识别和规划能力，还附带一个趣味 IQ 风格测试。它是一款游戏，不是医疗或临床工具。",
     "img.fameup": "FameUp: Influencer Life，一款关于网红生活的 Android 三消游戏",
     "img.faisca": "Faísca，一款带 IQ 测试的 Android 大脑训练益智游戏",
-    "lang.label": "语言"
+    "lang.label": "语言",
+    "reel.faisca.tag": "拖动、匹配、全部点亮。你大脑的健身房。",
+    "reel.fameup.tag": "三消一下，瞬间走红。从零到超级明星。",
+    "reel.outro": "两款游戏均可在 Google Play 免费下载",
+    "reel.pause": "暂停",
+    "reel.play": "播放"
   }
 };

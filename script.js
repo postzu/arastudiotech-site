@@ -82,8 +82,93 @@
     document.getElementById("news-bar").classList.add("hidden");
   });
 
-  /* ---------- Vídeo do topo ---------- */
+  /* ---------- Showreel (cenas animadas) ---------- */
   var hero = document.getElementById("hero");
+  (function reel() {
+    var scenes = hero.querySelectorAll(".scene");
+    if (!scenes.length) return;
+    var dotsWrap = document.getElementById("reel-dots");
+    var bar = document.getElementById("reel-bar");
+    var toggle = document.getElementById("reel-toggle");
+    var reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var index = 0, timer = null, userPaused = reduced, visible = true;
+
+    var dots = Array.prototype.map.call(scenes, function (s, i) {
+      var b = document.createElement("button");
+      b.type = "button";
+      b.setAttribute("aria-label", (i + 1) + " / " + scenes.length);
+      b.addEventListener("click", function () { go(i); });
+      dotsWrap.appendChild(b);
+      return b;
+    });
+
+    function duration(i) { return parseInt(scenes[i].dataset.duration, 10) || 4000; }
+
+    function runBar(ms) {
+      bar.style.transition = "none";
+      bar.style.width = "0";
+      void bar.offsetWidth;
+      if (ms) {
+        bar.style.transition = "width " + ms + "ms linear";
+        bar.style.width = "100%";
+      }
+    }
+
+    function show(i) {
+      scenes[index].classList.remove("is-active");
+      dots[index].removeAttribute("aria-current");
+      index = (i + scenes.length) % scenes.length;
+      scenes[index].classList.add("is-active");
+      dots[index].setAttribute("aria-current", "true");
+    }
+
+    function schedule() {
+      clearTimeout(timer);
+      if (userPaused || !visible) { runBar(0); return; }
+      var ms = duration(index);
+      runBar(ms);
+      timer = setTimeout(function () { show(index + 1); schedule(); }, ms);
+    }
+
+    function go(i) { show(i); schedule(); }
+
+    function setPaused(p) {
+      userPaused = p;
+      hero.classList.toggle("is-paused", p);
+      toggle.setAttribute("aria-label", p ? toggle.dataset.labelPlay : toggle.dataset.labelPause);
+      schedule();
+    }
+
+    toggle.addEventListener("click", function () { setPaused(!userPaused); });
+
+    // Pausa quando sai da tela ou a aba fica em segundo plano
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(function (entries) {
+        visible = entries[0].isIntersecting && !document.hidden;
+        schedule();
+      }, { threshold: 0.25 }).observe(hero);
+    }
+    document.addEventListener("visibilitychange", function () {
+      visible = !document.hidden;
+      schedule();
+    });
+
+    // Arrastar para o lado no celular
+    var x0 = null;
+    hero.addEventListener("touchstart", function (e) { x0 = e.touches[0].clientX; }, { passive: true });
+    hero.addEventListener("touchend", function (e) {
+      if (x0 === null) return;
+      var dx = e.changedTouches[0].clientX - x0;
+      if (Math.abs(dx) > 40) go(index + (dx < 0 ? 1 : -1));
+      x0 = null;
+    });
+
+    dots[0].setAttribute("aria-current", "true");
+    hero.classList.toggle("is-paused", userPaused);
+    schedule();
+  })();
+
+  /* ---------- Vídeo real (opcional) ---------- */
   var yt = (hero.dataset.youtube || "").trim();
   var mp4 = (hero.dataset.mp4 || "").trim();
   if (!yt && !mp4) hero.classList.add("no-video");

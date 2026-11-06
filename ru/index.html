@@ -304,17 +304,101 @@
       </div>
 
       <!-- ============ HERO / SHOWREEL ============
-           Para colocar o vídeo depois, edite CONFIG.video em build.js
-           (youtube = ID do vídeo, ou mp4 = caminho do arquivo) e rode: node build.js -->
-      <section class="hero" id="hero" data-youtube="" data-mp4="" aria-label="Showreel">
-        <div class="hero-rings" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
-        <div class="hero-inner">
+           Showreel animado com as telas dos jogos (assets/reel/).
+           Para trocar por um vídeo de verdade no futuro, preencha CONFIG.video em build.js
+           e rode: node build.js (aparece um botão "play" sobre o showreel). -->
+      <section class="hero reel" id="hero" data-youtube="" data-mp4=""
+               aria-roledescription="carousel" aria-label="Showreel">
+
+        <!-- 1. Abertura -->
+        <div class="scene scene-intro is-active" data-duration="3200">
+          <div class="hero-rings" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
           <img class="hero-logo" src="../assets/logo-full.jpg" alt="AraStudioTech logo" width="1362" height="571" fetchpriority="high">
-          <button class="play-btn" id="play-btn" aria-label="Play showreel">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
-          </button>
-          <p class="hero-soon">Трейлер скоро</p>
         </div>
+
+        <!-- 2. Faísca: apresentação -->
+        <div class="scene scene-faisca scene-title" data-duration="3200">
+          <img class="title-icon" src="../assets/reel/faisca-icon.webp" alt="" width="280" height="280">
+          <div class="title-text">
+            <p class="title-name">Faísca</p>
+            <p class="title-tag">Перетаскивайте, сочетайте, зажигайте. Тренажёр для мозга.</p>
+          </div>
+        </div>
+
+        <!-- 3–4. Faísca: telas -->
+        <div class="scene scene-faisca" data-duration="4200">
+          <div class="reel-phones">
+            <img class="side" src="../assets/reel/faisca-2.webp" alt="" width="506" height="900">
+            <img class="main" src="../assets/reel/faisca-1.webp" alt="Faísca — головоломка-тренажёр для мозга с IQ-тестом для Android" width="506" height="900">
+            <img class="side" src="../assets/reel/faisca-3.webp" alt="" width="506" height="900">
+          </div>
+        </div>
+        <div class="scene scene-faisca" data-duration="4200">
+          <div class="reel-phones">
+            <img class="side" src="../assets/reel/faisca-4.webp" alt="" width="506" height="900" loading="lazy">
+            <img class="main" src="../assets/reel/faisca-6.webp" alt="" width="506" height="900" loading="lazy">
+            <img class="side" src="../assets/reel/faisca-5.webp" alt="" width="506" height="900" loading="lazy">
+          </div>
+        </div>
+
+        <!-- 5. FameUp: apresentação -->
+        <div class="scene scene-fameup scene-title" data-duration="3200">
+          <img class="title-icon round" src="../assets/reel/fameup-icon.webp" alt="" width="280" height="280" loading="lazy">
+          <div class="title-text">
+            <p class="title-name">FameUp <small>Influencer Life</small></p>
+            <p class="title-tag">Три в ряд — и вы в трендах. От нуля до суперзвезды.</p>
+          </div>
+        </div>
+
+        <!-- 6–8. FameUp: telas -->
+        <div class="scene scene-fameup" data-duration="4200">
+          <div class="reel-phones">
+            <img class="side" src="../assets/reel/fameup-3.webp" alt="" width="506" height="900" loading="lazy">
+            <img class="main" src="../assets/reel/fameup-1.webp" alt="FameUp: Influencer Life — игра «три в ряд» о жизни инфлюенсера для Android" width="506" height="900" loading="lazy">
+            <img class="side" src="../assets/reel/fameup-2.webp" alt="" width="506" height="900" loading="lazy">
+          </div>
+        </div>
+        <div class="scene scene-fameup" data-duration="4200">
+          <div class="reel-phones">
+            <img class="side" src="../assets/reel/fameup-6.webp" alt="" width="506" height="900" loading="lazy">
+            <img class="main" src="../assets/reel/fameup-5.webp" alt="" width="506" height="900" loading="lazy">
+            <img class="side" src="../assets/reel/fameup-4.webp" alt="" width="506" height="900" loading="lazy">
+          </div>
+        </div>
+        <div class="scene scene-fameup" data-duration="4200">
+          <div class="reel-phones">
+            <img class="side" src="../assets/reel/fameup-7.webp" alt="" width="506" height="900" loading="lazy">
+            <img class="main" src="../assets/reel/fameup-8.webp" alt="" width="506" height="900" loading="lazy">
+          </div>
+        </div>
+
+        <!-- 9. Encerramento -->
+        <div class="scene scene-outro" data-duration="3800">
+          <div class="outro-icons">
+            <img src="../assets/reel/faisca-icon.webp" alt="Faísca" width="280" height="280" loading="lazy">
+            <img class="round" src="../assets/reel/fameup-icon.webp" alt="FameUp" width="280" height="280" loading="lazy">
+          </div>
+          <p class="outro-text">Обе игры бесплатно в Google Play</p>
+          <a class="btn btn-play" href="#games">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 2.8v18.4c0 .5.5.8.9.6L21 12.6c.5-.3.5-.9 0-1.2L4.9 2.2c-.4-.2-.9.1-.9.6Z" fill="currentColor"/></svg>
+            <span><small>Доступно в</small>Google Play</span>
+          </a>
+        </div>
+
+        <!-- Controles -->
+        <div class="reel-ui">
+          <button class="reel-toggle" id="reel-toggle" type="button" aria-label="Пауза" data-label-play="Воспроизвести" data-label-pause="Пауза">
+            <svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z" fill="currentColor"/></svg>
+            <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+          </button>
+          <div class="reel-dots" id="reel-dots"></div>
+        </div>
+        <div class="reel-progress" aria-hidden="true"><i id="reel-bar"></i></div>
+
+        <!-- Vídeo real (opcional, via CONFIG.video) -->
+        <button class="play-btn" id="play-btn" aria-label="Play video">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+        </button>
       </section>
 
       <div class="intro">

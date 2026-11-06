@@ -147,26 +147,104 @@ h1, h2, h3, h4 { font-family: "Exo 2", sans-serif; line-height: 1.2; margin: 0; 
 .hero-rings i:nth-child(4) { width: 106%; aspect-ratio: 1; animation-delay: 1.8s; opacity: .06; }
 @keyframes pulse { 50% { transform: scale(1.04); } }
 
-.hero-inner { position: relative; display: flex; flex-direction: column; align-items: center; gap: 18px; width: 100%; padding: 16px; }
 .hero-logo {
-  width: min(64%, 620px); height: auto; mix-blend-mode: screen;
+  position: relative; width: min(64%, 620px); height: auto; mix-blend-mode: screen;
   /* esconde o detalhe de canto que vem no arquivo da logo */
   -webkit-mask-image: radial-gradient(ellipse 24% 32% at 0 0, transparent 70%, #000 100%);
   mask-image: radial-gradient(ellipse 24% 32% at 0 0, transparent 70%, #000 100%);
 }
-.play-btn {
-  width: 76px; height: 76px; border-radius: 50%; border: 0; cursor: pointer;
-  background: var(--grad); color: #fff; display: grid; place-items: center;
-  box-shadow: 0 0 0 8px rgba(91,124,255,.15), 0 0 40px rgba(217,70,239,.45);
-  transition: transform .2s;
+
+/* ---- Showreel: cenas ---- */
+.scene {
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  opacity: 0; visibility: hidden; transition: opacity .8s ease, visibility 0s linear .8s;
 }
-.play-btn svg { width: 34px; height: 34px; margin-left: 4px; }
+.scene.is-active { opacity: 1; visibility: visible; transition: opacity .8s ease; }
+.scene-intro, .scene-outro { background: radial-gradient(ellipse at 50% 120%, #1a1240 0, #000 60%); }
+.scene-faisca { background: radial-gradient(ellipse at 50% -10%, #7a6538 0, transparent 55%), linear-gradient(165deg, #1f1d52, #26204c 55%, #3a2340); }
+.scene-fameup { background: radial-gradient(ellipse at 50% -10%, #ff62aa 0, transparent 55%), linear-gradient(165deg, #8a2fa6, #4a1d80 55%, #23124d); }
+
+.scene-intro .hero-logo { transform: scale(.92); opacity: 0; transition: transform 1.2s cubic-bezier(.2,.8,.2,1), opacity 1s; }
+.scene-intro.is-active .hero-logo { transform: none; opacity: 1; }
+
+/* Telas dos jogos */
+.reel-phones { display: flex; align-items: center; justify-content: center; height: 86%; }
+.reel-phones img {
+  height: 100%; width: auto; border-radius: clamp(10px, 2vw, 22px);
+  box-shadow: 0 24px 60px rgba(0,0,0,.55);
+  opacity: 0; transform: translateY(40px) scale(.94);
+  transition: transform 1s cubic-bezier(.2,.8,.2,1), opacity .9s ease;
+}
+.reel-phones .main { position: relative; z-index: 2; transition-delay: .1s; }
+.reel-phones .side { height: 82%; z-index: 1; filter: brightness(.78); }
+.reel-phones .side:first-child { margin-right: -3%; transition-delay: .3s; }
+.reel-phones .side:last-child { margin-left: -3%; transition-delay: .45s; }
+.is-active .reel-phones img { opacity: 1; transform: none; }
+.is-active .reel-phones .side:first-child { transform: rotate(-6deg); }
+.is-active .reel-phones .side:last-child { transform: rotate(6deg); }
+.is-active .reel-phones { animation: drift 4.4s ease-out both; }
+@keyframes drift { from { transform: scale(.985); } to { transform: scale(1.025); } }
+
+/* Cenas de apresentação */
+.scene-title { gap: clamp(16px, 4%, 48px); padding: 0 6%; }
+.title-icon {
+  width: clamp(96px, 20%, 230px); height: auto; border-radius: 22%;
+  box-shadow: 0 20px 50px rgba(0,0,0,.5);
+  transform: scale(.6) rotate(-10deg); opacity: 0;
+  transition: transform .9s cubic-bezier(.3,1.5,.5,1), opacity .5s;
+}
+.title-icon.round { border-radius: 50%; }
+.title-text { opacity: 0; transform: translateX(30px); transition: transform .9s cubic-bezier(.2,.8,.2,1) .2s, opacity .8s .2s; }
+.scene-title.is-active .title-icon { transform: none; opacity: 1; }
+.scene-title.is-active .title-text { transform: none; opacity: 1; }
+.title-name { margin: 0; font: 800 clamp(36px, 7vw, 86px)/1 "Exo 2", sans-serif; letter-spacing: -.01em; }
+.title-name small { display: block; font-size: .32em; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; opacity: .85; margin-top: 6px; }
+.scene-faisca .title-name { color: #ffd34d; text-shadow: 0 4px 0 #b4650f, 0 0 40px rgba(255,200,60,.45); }
+.scene-fameup .title-name { color: #fff; text-shadow: 0 4px 24px rgba(0,0,0,.35); }
+.scene-fameup .title-name small { color: #ffd34d; }
+.title-tag { margin: 14px 0 0; max-width: 520px; color: #fff; font: 600 clamp(15px, 2.1vw, 24px)/1.35 "Inter", sans-serif; opacity: .92; }
+
+/* Encerramento */
+.scene-outro { flex-direction: column; gap: clamp(12px, 2.4vw, 22px); text-align: center; padding: 0 6%; }
+.outro-icons { display: flex; gap: clamp(12px, 2vw, 22px); }
+.outro-icons img { width: clamp(64px, 11vw, 120px); height: auto; border-radius: 22%; box-shadow: 0 14px 40px rgba(0,0,0,.5); transform: translateY(20px); opacity: 0; transition: transform .8s cubic-bezier(.3,1.4,.5,1), opacity .6s; }
+.outro-icons img.round { border-radius: 50%; }
+.outro-icons img + img { transition-delay: .15s; }
+.outro-text { margin: 0; font: 800 clamp(22px, 3.6vw, 40px)/1.15 "Exo 2", sans-serif; opacity: 0; transition: opacity .8s .3s; }
+.scene-outro .btn { opacity: 0; transition: opacity .8s .5s, transform .15s, box-shadow .2s; }
+.scene-outro.is-active .outro-icons img { transform: none; opacity: 1; }
+.scene-outro.is-active .outro-text, .scene-outro.is-active .btn { opacity: 1; }
+
+/* Controles */
+.reel-ui { position: absolute; left: 14px; bottom: 14px; z-index: 4; display: flex; align-items: center; gap: 12px; }
+.reel-toggle {
+  width: 34px; height: 34px; border-radius: 50%; border: 1px solid rgba(255,255,255,.25); cursor: pointer;
+  display: grid; place-items: center; background: rgba(0,0,0,.45); color: #fff; backdrop-filter: blur(6px);
+}
+.reel-toggle svg { width: 16px; height: 16px; }
+.reel-toggle .i-play { display: none; }
+.reel.is-paused .reel-toggle .i-play { display: block; }
+.reel.is-paused .reel-toggle .i-pause { display: none; }
+.reel-dots { display: flex; gap: 6px; }
+.reel-dots button {
+  width: 8px; height: 8px; padding: 0; border: 0; border-radius: 99px; cursor: pointer;
+  background: rgba(255,255,255,.35); transition: width .3s, background .3s;
+}
+.reel-dots button[aria-current="true"] { width: 22px; background: #fff; }
+.reel-progress { position: absolute; left: 0; right: 0; bottom: 0; height: 3px; z-index: 4; background: rgba(255,255,255,.08); }
+.reel-progress i { display: block; height: 100%; width: 0; background: var(--grad); }
+
+/* Vídeo real opcional */
+.play-btn {
+  position: absolute; right: 14px; bottom: 12px; z-index: 4;
+  width: 46px; height: 46px; border-radius: 50%; border: 0; cursor: pointer;
+  background: var(--grad); color: #fff; display: grid; place-items: center;
+  box-shadow: 0 0 24px rgba(217,70,239,.45); transition: transform .2s;
+}
+.play-btn svg { width: 22px; height: 22px; margin-left: 3px; }
 .play-btn:hover { transform: scale(1.07); }
-.hero.no-video .play-btn { opacity: .55; cursor: default; }
-.hero.no-video .play-btn:hover { transform: none; }
-.hero-soon { margin: 0; color: var(--muted); font: 600 13px "Exo 2", sans-serif; letter-spacing: .2em; text-transform: uppercase; }
-.hero:not(.no-video) .hero-soon { display: none; }
-.hero iframe, .hero video { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; z-index: 2; background: #000; }
+.hero.no-video .play-btn { display: none; }
+.hero iframe, .hero video { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; z-index: 5; background: #000; }
 
 /* Intro (H1) */
 .intro { text-align: center; margin: 40px auto 0; max-width: 780px; }
@@ -321,9 +399,12 @@ h1, h2, h3, h4 { font-family: "Exo 2", sans-serif; line-height: 1.2; margin: 0; 
   .games-grid, .news-grid, .partners-grid { grid-template-columns: 1fr; }
   .brand-name { font-size: 18px; }
   .brand-mark { width: 38px; }
-  .hero { aspect-ratio: 4 / 3; }
+  .hero { aspect-ratio: 1 / 1; }
   .hero-logo { width: 86%; }
-  .play-btn { width: 60px; height: 60px; }
+  .reel-phones { height: 80%; }
+  .scene-title { flex-direction: column; text-align: center; }
+  .title-icon { width: 34%; }
+  .title-tag { margin-top: 10px; }
   .tagline { gap: 10px; letter-spacing: .15em; font-size: 12px; }
   .tagline .line { display: none; }
   .news-bar-text { font-size: 15px; }
