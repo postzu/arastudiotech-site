@@ -416,10 +416,11 @@ h1, h2, h3, h4 { font-family: "Exo 2", sans-serif; line-height: 1.2; margin: 0; 
 }
 
 /* ============ Páginas de política (privacy / content-policy) ============ */
-.legal-langs { margin-left: auto; display: flex; gap: 6px; }
-.legal-langs a { padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; font: 600 13px/1 "Inter", sans-serif; color: var(--muted); }
-.legal-langs a:hover { color: var(--text); }
-.legal-langs a[aria-current] { color: var(--bg); background: var(--cyan); border-color: var(--cyan); }
+.legal-page .header-actions { margin-left: auto; }
+
+
+
+
 .legal { max-width: 820px; padding-top: 40px; }
 .legal-back { display: inline-block; color: var(--cyan); font-size: 15px; margin-bottom: 20px; }
 .legal-back:hover { color: #fff; }

@@ -24,16 +24,21 @@ build.js            gerador + CONFIG (links da Play Store, vídeo, redes)
 styles.css          visual (cores da marca em :root)
 script.js           menu, idioma, vídeo
 assets/             logo, ícones, capas dos jogos, imagem de compartilhamento
+src/legal/<idioma>.js  Política de Privacidade e de Conteúdo, um arquivo por idioma (8)
+src/legal.html      layout das páginas de política
+faisca/jogar/       link de compartilhamento do Faísca → Google Play (arquivo fixo, não é gerado)
 
 # gerados pelo build:
 index.html          inglês (padrão)
 pt/ es/ fr/ de/ ru/ ja/ zh/
+privacy/ content-policy/   políticas em inglês
+<idioma>/<slug>/           políticas nos outros idiomas (ex.: pt/privacidade/, ja/privacy/)
 sitemap.xml  robots.txt  site.webmanifest  404.html
 ```
 
 ## Políticas
-- Texto em `src/legal.js`. Ao mudar, atualize a data em `updated` e rode `node build.js`.
-- Existem em inglês (versão de referência) e português. O rodapé dos outros idiomas aponta para a versão em inglês.
+- Texto em `src/legal/<idioma>.js` (8 idiomas). Ao mudar uma política, mude nos 8 arquivos, atualize a data em `updated` e rode `node build.js`.
+- O inglês é a versão de referência. Qualquer página de política troca sozinha para o idioma escolhido no menu 🌐 ou, se não houver escolha, para o idioma do navegador.
 - Se um jogo ganhar compras no app, login, analytics ou outro SDK que colete dados, atualize a Política de Privacidade.
 
 ## Idiomas
