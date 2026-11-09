@@ -42,6 +42,15 @@ const I18N = window.I18N;
 const LANGS = Object.keys(I18N);
 const tpl = fs.readFileSync(path.join(ROOT, "src/template.html"), "utf8");
 
+/* Políticas (privacidade e conteúdo): só en e pt. Os outros idiomas apontam para o inglês. */
+eval(fs.readFileSync(path.join(ROOT, "src/legal.js"), "utf8"));
+const LEGAL = window.LEGAL;
+const LEGAL_KINDS = ["privacy", "content"];
+const LEGAL_LANGS = ["en", "pt"];
+const legalLang = (l) => (LEGAL_LANGS.includes(l) ? l : DEFAULT);
+const legalSlug = (kind, l) => LEGAL[kind].slug[legalLang(l)];
+const legalTpl = fs.readFileSync(path.join(ROOT, "src/legal.html"), "utf8");
+
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const urlFor = (l) => CONFIG.site + "/" + (l === DEFAULT ? "" : l + "/");
 
@@ -137,6 +146,7 @@ function render(l) {
     oglocalealt: LANGS.filter((x) => x !== l).map((x) => `  <meta property="og:locale:alternate" content="${OG_LOCALE[x]}">`).join("\n"),
     jsonld: jsonld(l, t),
     year: String(new Date().getFullYear()),
+    privacyurl: root + legalSlug("privacy", l), contenturl: root + legalSlug("content", l),
     "play.fameup": esc(CONFIG.play.fameup), "play.faisca": esc(CONFIG.play.faisca),
     "video.youtube": esc(CONFIG.video.youtube), "video.mp4": esc(CONFIG.video.mp4 ? root + CONFIG.video.mp4 : "")
   };
@@ -159,14 +169,65 @@ for (const l of LANGS) {
   console.log("ok", l === DEFAULT ? "index.html" : l + "/index.html");
 }
 
+/* -------- políticas: privacy/, content-policy/, pt/privacidade/, pt/politica-de-conteudo/ -------- */
+function renderLegal(kind, l) {
+  const t = I18N[l], doc = LEGAL[kind][l], ui = LEGAL.ui[l];
+  const slug = LEGAL[kind].slug[l];
+  const root = "../".repeat(slug.split("/").filter(Boolean).length);
+  const rel = (s) => root + s;
+  const hreflang = LEGAL_LANGS.map((x) => `  <link rel="alternate" hreflang="${I18N[x]._html}" href="${CONFIG.site}/${LEGAL[kind].slug[x]}">`)
+    .concat(`  <link rel="alternate" hreflang="x-default" href="${CONFIG.site}/${LEGAL[kind].slug[DEFAULT]}">`).join("\n");
+  const langs = LEGAL_LANGS.map((x) =>
+    `        <a href="${rel(LEGAL[kind].slug[x])}" hreflang="${I18N[x]._html}" lang="${I18N[x]._html}"${x === l ? ' aria-current="page"' : ""}>${x.toUpperCase()}</a>`
+  ).join("\n");
+  const sw = LEGAL_KINDS.map((k) =>
+    `      <a href="${rel(LEGAL[k].slug[l])}"${k === kind ? ' aria-current="page"' : ""}>${esc(LEGAL[k][l].title)}</a>`
+  ).join("\n");
+  const raw = {
+    hreflang, langs, switch: sw,
+    body: doc.body.trim().replace(/\{\{email\}\}/g, esc(CONFIG.email)).split("\n").map((s) => "      " + s).join("\n")
+  };
+  const text = {
+    html: t._html, title: doc.title, description: doc.description, updated: doc.updated,
+    updatedlabel: ui.updated, back: ui.back, langnote: ui.langnote,
+    canonical: CONFIG.site + "/" + slug, site: CONFIG.site, root,
+    home: rel(l === DEFAULT ? "" : l + "/") || "./",
+    privacyurl: rel(LEGAL.privacy.slug[l]), contenturl: rel(LEGAL.content.slug[l]),
+    year: String(new Date().getFullYear())
+  };
+  const missing = [];
+  const out = legalTpl.replace(/\{\{([\w.]+)\}\}/g, (m, key) => {
+    if (key in raw) return raw[key];
+    const v = key in text ? text[key] : t[key];
+    if (v == null) { missing.push(key); return m; }
+    return esc(v);
+  });
+  if (missing.length) throw new Error(`[${kind}/${l}] chaves faltando: ${[...new Set(missing)].join(", ")}`);
+  return out;
+}
+
+for (const kind of LEGAL_KINDS) {
+  for (const l of LEGAL_LANGS) {
+    const dir = path.join(ROOT, LEGAL[kind].slug[l]);
+    fs.mkdirSync(dir, { recursive: true });
+    fs.writeFileSync(path.join(dir, "index.html"), renderLegal(kind, l));
+    console.log("ok", LEGAL[kind].slug[l] + "index.html");
+  }
+}
+
 /* -------- sitemap.xml -------- */
 const today = new Date().toISOString().slice(0, 10);
 const alts = LANGS.map((x) => `    <xhtml:link rel="alternate" hreflang="${I18N[x]._html}" href="${urlFor(x)}"/>`)
   .concat(`    <xhtml:link rel="alternate" hreflang="x-default" href="${urlFor(DEFAULT)}"/>`).join("\n");
+const legalEntries = LEGAL_KINDS.flatMap((kind) => {
+  const la = LEGAL_LANGS.map((x) => `    <xhtml:link rel="alternate" hreflang="${I18N[x]._html}" href="${CONFIG.site}/${LEGAL[kind].slug[x]}"/>`)
+    .concat(`    <xhtml:link rel="alternate" hreflang="x-default" href="${CONFIG.site}/${LEGAL[kind].slug[DEFAULT]}"/>`).join("\n");
+  return LEGAL_LANGS.map((l) => `  <url>\n    <loc>${CONFIG.site}/${LEGAL[kind].slug[l]}</loc>\n    <lastmod>${today}</lastmod>\n${la}\n  </url>`);
+});
 fs.writeFileSync(path.join(ROOT, "sitemap.xml"),
 `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-${LANGS.map((l) => `  <url>\n    <loc>${urlFor(l)}</loc>\n    <lastmod>${today}</lastmod>\n${alts}\n  </url>`).join("\n")}
+${LANGS.map((l) => `  <url>\n    <loc>${urlFor(l)}</loc>\n    <lastmod>${today}</lastmod>\n${alts}\n  </url>`).concat(legalEntries).join("\n")}
 </urlset>
 `);
 

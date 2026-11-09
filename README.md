@@ -31,6 +31,11 @@ pt/ es/ fr/ de/ ru/ ja/ zh/
 sitemap.xml  robots.txt  site.webmanifest  404.html
 ```
 
+## Políticas
+- Texto em `src/legal.js`. Ao mudar, atualize a data em `updated` e rode `node build.js`.
+- Existem em inglês (versão de referência) e português. O rodapé dos outros idiomas aponta para a versão em inglês.
+- Se um jogo ganhar compras no app, login, analytics ou outro SDK que colete dados, atualize a Política de Privacidade.
+
 ## Idiomas
 - Inglês fica em `/`. Os outros ficam em `/pt/`, `/es/`, `/fr/`, `/de/`, `/ru/`, `/ja/` e `/zh/`.
 - Na primeira visita, quem chega na página em inglês com o navegador em outro idioma suportado é levado para a versão dele. Depois disso, vale a escolha feita no menu 🌐.

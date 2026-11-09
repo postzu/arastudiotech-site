@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Faísca — jogue grátis</title>
+<link rel="canonical" href="https://arastudiotech.com/faisca/jogar/">
+<!-- Prévia do link no WhatsApp/Telegram/redes (lida sem JavaScript). -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AraStudioTech">
+<meta property="og:title" content="Faísca ⚡ Consegue me passar?">
+<meta property="og:description" content="Arraste peças e acenda tudo! Quebra-cabeça de cor e forma, grátis e offline.">
+<meta property="og:image" content="https://arastudiotech.com/assets/faisca-og.png">
+<meta property="og:url" content="https://arastudiotech.com/faisca/jogar/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b1020">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg">
+<style>
+  :root { --bg: #0b1020; --ink: #eceef6; --dim: #a7acc0; --accent: #ffc93c; }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; text-align: center;
+    background: radial-gradient(120% 60% at 50% 100%, #2a1f4a, var(--bg)); color: var(--ink);
+    font: 17px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { padding: 24px 16px; max-width: 460px; }
+  img { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); }
+  h1 { margin: 14px 0 4px; font-size: 32px; color: var(--accent); }
+  p { margin: 6px 0; color: var(--dim); }
+  .challenge { margin: 14px 0; padding: 12px 14px; border-radius: 16px; background: rgba(255, 201, 60, 0.14); color: var(--ink); font-weight: 700; }
+  .challenge[hidden] { display: none; }
+  .play { display: inline-block; margin-top: 18px; padding: 14px 26px; border-radius: 18px; text-decoration: none;
+    font-weight: 800; font-size: 19px; color: #10351a; background: linear-gradient(180deg, #7cea6a, #33b04a); box-shadow: 0 5px 0 #1d7a33; }
+  small { display: block; margin-top: 16px; color: var(--dim); font-size: 13px; }
+</style>
+</head>
+<body>
+<main>
+  <img src="../../assets/reel/faisca-icon.webp" alt="Faísca">
+  <h1 id="h">Faísca</h1>
+  <p id="sub">Arraste peças e acenda tudo! Quebra-cabeça de cor e forma, grátis e offline.</p>
+  <div class="challenge" id="ch" hidden></div>
+  <a class="play" id="go" href="https://play.google.com/store/apps/details?id=com.faiscagames.faisca">▶ Google Play</a>
+  <small id="note">Disponível para Android.</small>
+  <small><a href="https://arastudiotech.com/" style="color:inherit">AraStudioTech</a></small>
+</main>
+<script>
+/*
+ * Link de compartilhamento: https://arastudiotech.com/faisca/jogar/?c=<origem>[&d=<QI do desafio>]
+ *   c = de onde veio o compartilhamento: livre | dia | qi | vila (vira utm_medium)
+ *   d = (opcional) QI do amigo, para o desafio "consegue me passar?"
+ * Android: vai direto para a Play Store, com o "referrer" (aparece no Play Console → origem das instalações).
+ * Outros aparelhos: mostra a página com o botão.
+ */
+(function () {
+  var APP = 'com.faiscagames.faisca';
+  var q = new URLSearchParams(location.search);
+  var src = (q.get('c') || 'link').replace(/[^a-z0-9_-]/gi, '').slice(0, 20) || 'link';
+  var d = Number(q.get('d'));
+  var dare = Number.isFinite(d) && d >= 55 && d <= 160 ? Math.round(d) : null;
+  var ref = 'utm_source=share&utm_medium=' + src + '&utm_campaign=viral' + (dare ? '&utm_content=desafio-' + dare : '');
+  var url = 'https://play.google.com/store/apps/details?id=' + APP + '&referrer=' + encodeURIComponent(ref);
+
+  var T = {
+    pt: ['Arraste peças e acenda tudo! Quebra-cabeça de cor e forma, grátis e offline.', 'Seu amigo fez {d} no Teste de QI. Consegue passar?', 'Disponível para Android.'],
+    en: ['Drag pieces and light everything up! A free, offline color & shape puzzle.', 'Your friend scored {d} on the IQ Test. Can you beat it?', 'Available for Android.'],
+    es: ['¡Arrastra piezas y enciéndelo todo! Puzle de color y forma, gratis y sin conexión.', 'Tu amigo sacó {d} en el Test de CI. ¿Puedes superarlo?', 'Disponible para Android.'],
+    fr: ['Glissez les pièces et allumez tout ! Puzzle de couleurs et formes, gratuit et hors ligne.', 'Votre ami a obtenu {d} au Test de QI. Ferez-vous mieux ?', 'Disponible sur Android.'],
+    de: ['Teile ziehen und alles erleuchten! Kostenloses Farb- und Formrätsel, auch offline.', 'Dein Freund hat {d} im IQ-Test. Schaffst du mehr?', 'Für Android verfügbar.'],
+    it: ['Trascina i pezzi e accendi tutto! Puzzle di colori e forme, gratis e offline.', 'Il tuo amico ha fatto {d} al Test del QI. Riesci a batterlo?', 'Disponibile per Android.'],
+    id: ['Geser kepingan dan nyalakan semuanya! Teka-teki warna & bentuk, gratis dan offline.', 'Temanmu mendapat {d} di Tes IQ. Bisa mengalahkannya?', 'Tersedia untuk Android.'],
+    tr: ['Parçaları sürükle, her yeri aydınlat! Ücretsiz ve çevrimdışı renk & şekil bulmacası.', 'Arkadaşın IQ Testinde {d} aldı. Geçebilir misin?', 'Android için mevcut.']
+  };
+  var lang = ((navigator.languages && navigator.languages[0]) || navigator.language || 'pt').toLowerCase().slice(0, 2);
+  if (lang === 'in') lang = 'id';
+  var L = T[lang] || T.en;
+  document.documentElement.lang = T[lang] ? lang : 'en';
+  document.getElementById('sub').textContent = L[0];
+  document.getElementById('note').textContent = L[2];
+  if (dare) {
+    var ch = document.getElementById('ch');
+    ch.textContent = L[1].replace('{d}', dare);
+    ch.hidden = false;
+  }
+  var go = document.getElementById('go');
+  go.href = url;
+
+  // Android: direto para a loja (sem cliques a mais).
+  if (/android/i.test(navigator.userAgent)) location.replace(url);
+})();
+</script>
+</body>
+</html>

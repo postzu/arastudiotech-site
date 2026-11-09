@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://arastudiotech.com/</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://arastudiotech.com/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://arastudiotech.com/pt/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://arastudiotech.com/es/"/>
@@ -15,7 +15,7 @@
   </url>
   <url>
     <loc>https://arastudiotech.com/pt/</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://arastudiotech.com/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://arastudiotech.com/pt/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://arastudiotech.com/es/"/>
@@ -28,7 +28,7 @@
   </url>
   <url>
     <loc>https://arastudiotech.com/es/</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://arastudiotech.com/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://arastudiotech.com/pt/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://arastudiotech.com/es/"/>
@@ -41,7 +41,7 @@
   </url>
   <url>
     <loc>https://arastudiotech.com/fr/</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://arastudiotech.com/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://arastudiotech.com/pt/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://arastudiotech.com/es/"/>
@@ -54,7 +54,7 @@
   </url>
   <url>
     <loc>https://arastudiotech.com/de/</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://arastudiotech.com/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://arastudiotech.com/pt/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://arastudiotech.com/es/"/>
@@ -67,7 +67,7 @@
   </url>
   <url>
     <loc>https://arastudiotech.com/ru/</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://arastudiotech.com/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://arastudiotech.com/pt/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://arastudiotech.com/es/"/>
@@ -80,7 +80,7 @@
   </url>
   <url>
     <loc>https://arastudiotech.com/ja/</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://arastudiotech.com/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://arastudiotech.com/pt/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://arastudiotech.com/es/"/>
@@ -93,7 +93,7 @@
   </url>
   <url>
     <loc>https://arastudiotech.com/zh/</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://arastudiotech.com/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://arastudiotech.com/pt/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://arastudiotech.com/es/"/>
@@ -103,5 +103,33 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://arastudiotech.com/ja/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://arastudiotech.com/zh/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://arastudiotech.com/"/>
+  </url>
+  <url>
+    <loc>https://arastudiotech.com/privacy/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arastudiotech.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://arastudiotech.com/pt/privacidade/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arastudiotech.com/privacy/"/>
+  </url>
+  <url>
+    <loc>https://arastudiotech.com/pt/privacidade/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arastudiotech.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://arastudiotech.com/pt/privacidade/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arastudiotech.com/privacy/"/>
+  </url>
+  <url>
+    <loc>https://arastudiotech.com/content-policy/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arastudiotech.com/content-policy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://arastudiotech.com/pt/politica-de-conteudo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arastudiotech.com/content-policy/"/>
+  </url>
+  <url>
+    <loc>https://arastudiotech.com/pt/politica-de-conteudo/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arastudiotech.com/content-policy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://arastudiotech.com/pt/politica-de-conteudo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arastudiotech.com/content-policy/"/>
   </url>
 </urlset>

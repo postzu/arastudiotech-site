@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="{{html}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{title}} | AraStudioTech</title>
+  <meta name="description" content="{{description}}">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="AraStudioTech">
+  <meta name="theme-color" content="#05060a">
+  <link rel="canonical" href="{{canonical}}">
+{{hreflang}}
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="AraStudioTech">
+  <meta property="og:url" content="{{canonical}}">
+  <meta property="og:title" content="{{title}} | AraStudioTech">
+  <meta property="og:description" content="{{description}}">
+  <meta property="og:image" content="{{site}}/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/svg+xml" href="{{root}}assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="192x192" href="{{root}}assets/icon-192.png">
+  <link rel="apple-touch-icon" href="{{root}}assets/apple-touch-icon.png">
+  <link rel="manifest" href="{{root}}site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,600;0,700;0,800;1,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{root}}styles.css">
+</head>
+<body class="legal-page">
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="{{home}}" class="brand" aria-label="AraStudioTech">
+        <svg class="brand-mark" viewBox="0 0 64 48" aria-hidden="true">
+          <defs>
+            <linearGradient id="g-brand" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#19e3e3"/><stop offset=".55" stop-color="#5b7cff"/><stop offset="1" stop-color="#d946ef"/>
+            </linearGradient>
+          </defs>
+          <path d="M20 42 L32 8 L44 42" fill="none" stroke="url(#g-brand)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+          <ellipse cx="32" cy="27" rx="29" ry="9" fill="none" stroke="url(#g-brand)" stroke-width="2.6" transform="rotate(-14 32 27)"/>
+        </svg>
+        <span class="brand-name">AraStudio<span class="grad-text">Tech</span></span>
+      </a>
+      <nav class="legal-langs" aria-label="Language">
+{{langs}}
+      </nav>
+    </div>
+  </header>
+
+  <main class="container legal">
+    <a class="legal-back" href="{{home}}">&larr; {{back}}</a>
+    <h1>{{title}}</h1>
+    <p class="legal-meta">{{updatedlabel}}: {{updated}}</p>
+    <nav class="legal-switch" aria-label="Policies">
+{{switch}}
+    </nav>
+    <article class="legal-body">
+{{body}}
+    </article>
+    <p class="legal-note">{{langnote}}</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <nav class="footer-links" aria-label="Footer">
+          <a href="{{home}}#games">{{nav.games}}</a>
+          <a href="{{home}}#about">{{nav.about}}</a>
+          <a href="{{home}}#partners">{{nav.partners}}</a>
+          <a href="{{home}}#faq">{{faq.title}}</a>
+          <a href="{{home}}#contact">{{nav.contact}}</a>
+          <a href="{{privacyurl}}">{{footer.privacy}}</a>
+          <a href="{{contenturl}}">{{footer.content}}</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; {{year}} AraStudioTech. {{footer.rights}}</p>
+        <p class="tm">{{footer.tm}}</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
