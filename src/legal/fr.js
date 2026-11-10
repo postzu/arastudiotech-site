@@ -10,7 +10,7 @@ window.LEGAL_I18N.fr = {
   privacy: {
     title: "Politique de confidentialité",
     description: "Comment AraStudioTech traite les données sur arastudiotech.com et dans ses jeux FameUp et Faísca : ce qui est collecté, pourquoi, avec qui c'est partagé et quels sont vos droits.",
-    updated: "9 novembre 2026",
+    updated: "10 novembre 2026",
     body: `
 <p class="lead">Cette politique explique quelles données personnelles sont concernées lorsque vous visitez <strong>arastudiotech.com</strong>, jouez à nos jeux (<strong>FameUp: Influencer Life</strong> et <strong>Faísca</strong>, sur Android) ou nous contactez. AraStudioTech est un studio de jeux indépendant basé au Brésil (« AraStudioTech », « nous »). Nous sommes le responsable du traitement des données personnelles décrites ici.</p>
 
@@ -21,6 +21,7 @@ window.LEGAL_I18N.fr = {
     <li>Ce site n'utilise ni cookies, ni outils d'analyse ou de suivi.</li>
     <li>Votre progression dans les jeux est enregistrée uniquement sur votre appareil. Nous ne la recevons jamais.</li>
     <li>Nos jeux sont gratuits et affichent des publicités <strong>Google AdMob</strong>. Google collecte certaines données de l'appareil pour diffuser et mesurer ces publicités. Lorsque la loi l'exige, les publicités personnalisées ne sont affichées qu'avec votre consentement.</li>
+    <li>Nos jeux envoient des <strong>statistiques d’utilisation anonymes et des rapports de plantage</strong> à Google Firebase (par exemple, les niveaux joués et l’endroit où l’application a planté) pour que nous puissions les améliorer. Aucun nom, e-mail ni coordonnée.</li>
     <li>Nous ne vendons pas vos données personnelles.</li>
   </ul>
 </div>
@@ -39,6 +40,7 @@ window.LEGAL_I18N.fr = {
 <ul>
   <li><strong>Progression enregistrée sur votre appareil.</strong> Niveaux, étoiles, scores, objets, réglages et données similaires sont stockés uniquement dans le stockage local de l'application sur votre téléphone. Cela inclut le nom de scène que vous saisissez dans FameUp et, dans Faísca, la tranche d'âge choisie pour le test de QI et vos résultats. Nous ne recevons pas ces données. Si la sauvegarde Android est activée, Android lui-même peut les inclure dans la sauvegarde de votre compte Google, à laquelle nous n'avons pas accès. Désinstaller le jeu ou effacer ses données supprime tout.</li>
   <li><strong>Publicité (Google AdMob).</strong> Pour diffuser et mesurer les publicités et prévenir la fraude, le SDK Google Mobile Ads intégré à nos jeux peut collecter et traiter : l'identifiant publicitaire de l'appareil (et l'app set ID), votre adresse IP (qui permet d'estimer une localisation approximative), des informations sur l'appareil et le système, les interactions avec les publicités et l'application, et des données de diagnostic comme les plantages et les performances. Ces données sont envoyées directement à Google, chiffrées pendant le transfert. Nous ne voyons que des rapports agrégés (par exemple, le nombre de publicités affichées). En savoir plus sur <a href="https://policies.google.com/technologies/partner-sites?hl=fr" target="_blank" rel="noopener">la façon dont Google utilise les informations des applications qui utilisent ses services</a>.</li>
+  <li><strong>Statistiques d’utilisation et rapports de plantage (Google Firebase).</strong> Nos jeux utilisent Google Analytics pour Firebase et Firebase Crashlytics. Ils enregistrent un identifiant aléatoire de l’installation de l’application, des événements de jeu (niveau commencé, gagné ou perdu, temps passé sur un niveau, indices et vidéos récompensées utilisés, écrans ouverts, résultat du test de QI), la durée des sessions, le modèle de l’appareil, la version du système, la langue et le pays approximatif (estimé à partir de l’adresse IP) et, en cas de plantage, un rapport technique. Ils n’incluent ni votre nom, ni votre e-mail, ni le nom de scène que vous saisissez. Nous consultons ces données sous forme de rapports dans la console Firebase. Google conserve les données Analytics jusqu’à 14 mois et les rapports de plantage 90 jours. Voir <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">confidentialité et sécurité dans Firebase</a>.</li>
   <li><strong>Notifications.</strong> Si vous les autorisez, nos jeux programment des rappels locaux (par exemple, un défi quotidien). Ils sont créés sur votre appareil ; rien ne nous est envoyé.</li>
   <li><strong>Partage et avis.</strong> Le bouton « Partager » ouvre le menu de partage d'Android avec un court texte, envoyé par l'application que vous choisissez. Lorsqu'un jeu vous demande une note, celle-ci est gérée par Google Play. Nous ne recevons rien de personnel dans les deux cas.</li>
   <li><strong>Ni achats, ni chat.</strong> Nos jeux actuels n'ont ni achats intégrés, ni chat, ni comptes utilisateur.</li>
@@ -49,6 +51,7 @@ window.LEGAL_I18N.fr = {
 
 <h2 id="use">2. Comment nous utilisons les informations</h2>
 <ul>
+  <li>Pour comprendre comment nos jeux sont joués (par exemple, les niveaux où les joueurs bloquent ou abandonnent), corriger les plantages et mesurer les résultats de nos campagnes de promotion.</li>
   <li>Pour faire fonctionner le site et en assurer la sécurité.</li>
   <li>Pour garder nos jeux gratuits grâce à la publicité et prévenir la fraude publicitaire.</li>
   <li>Pour répondre à vos messages, fournir de l'assistance et discuter de partenariats.</li>
@@ -59,6 +62,7 @@ window.LEGAL_I18N.fr = {
 <h2 id="legal-bases">3. Bases légales</h2>
 <p>Au titre de la loi générale brésilienne sur la protection des données (LGPD) et du RGPD (UE/Royaume-Uni), nous nous appuyons sur :</p>
 <ul>
+  <li><strong>Intérêt légitime</strong>, pour les statistiques d’utilisation et les rapports de plantage qui nous servent à améliorer et corriger nos jeux.</li>
   <li><strong>Le consentement</strong>, pour les publicités personnalisées lorsque la loi l'exige (par exemple dans l'Espace économique européen, au Royaume-Uni et en Suisse). Vous pouvez le retirer à tout moment.</li>
   <li><strong>L'intérêt légitime</strong>, pour les publicités non personnalisées qui maintiennent les jeux gratuits, la prévention de la fraude, ainsi que l'hébergement et la sécurité du site.</li>
   <li><strong>Des mesures précontractuelles ou un contrat</strong>, lorsque vous nous contactez au sujet d'un projet ou d'un partenariat.</li>
@@ -69,6 +73,7 @@ window.LEGAL_I18N.fr = {
 <p>Nous travaillons avec un petit nombre de prestataires, chacun soumis à ses propres conditions de confidentialité :</p>
 <ul>
   <li><strong>Google</strong> : AdMob (publicités dans nos jeux), Google Play (distribution des applications, avis, sauvegarde Android) et Google Fonts (polices du site).</li>
+  <li><strong>Google Firebase</strong> : Analytics et Crashlytics (statistiques d’utilisation et rapports de plantage de nos jeux).</li>
   <li><strong>GitHub</strong> : hébergement du site.</li>
   <li><strong>Notre fournisseur de messagerie</strong> : pour recevoir vos messages et y répondre.</li>
 </ul>

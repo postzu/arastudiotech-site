@@ -10,7 +10,7 @@ window.LEGAL_I18N.es = {
   privacy: {
     title: "Política de Privacidad",
     description: "Cómo trata AraStudioTech los datos en arastudiotech.com y en nuestros juegos FameUp y Faísca: qué se recopila, por qué, con quién se comparte y cuáles son tus derechos.",
-    updated: "9 de noviembre de 2026",
+    updated: "10 de noviembre de 2026",
     body: `
 <p class="lead">Esta política explica qué datos personales intervienen cuando visitas <strong>arastudiotech.com</strong>, juegas a nuestros juegos (<strong>FameUp: Influencer Life</strong> y <strong>Faísca</strong>, para Android) o te pones en contacto con nosotros. AraStudioTech es un estudio independiente de videojuegos con sede en Brasil (“AraStudioTech”, “nosotros”). Somos el responsable del tratamiento de los datos personales descritos aquí.</p>
 
@@ -21,6 +21,7 @@ window.LEGAL_I18N.es = {
     <li>Este sitio no usa cookies ni herramientas de análisis o seguimiento.</li>
     <li>Tu progreso en los juegos se guarda solo en tu dispositivo. Nunca lo recibimos.</li>
     <li>Nuestros juegos son gratuitos y muestran anuncios de <strong>Google AdMob</strong>. Google recopila algunos datos del dispositivo para mostrar y medir esos anuncios. Donde la ley lo exige, los anuncios personalizados solo se muestran con tu consentimiento.</li>
+    <li>Nuestros juegos envían <strong>estadísticas de uso anónimas e informes de fallos</strong> a Google Firebase (por ejemplo, qué niveles se jugaron y dónde se cerró la app) para que podamos mejorarlos. Sin nombre, correo ni datos de contacto.</li>
     <li>No vendemos tus datos personales.</li>
   </ul>
 </div>
@@ -39,6 +40,7 @@ window.LEGAL_I18N.es = {
 <ul>
   <li><strong>Progreso guardado en tu dispositivo.</strong> Niveles, estrellas, puntuaciones, objetos, ajustes y datos similares se guardan solo en el almacenamiento local de la app en tu teléfono. Esto incluye el nombre artístico que escribes en FameUp y, en Faísca, la franja de edad que eliges para el test de CI y tus resultados. No recibimos estos datos. Si la copia de seguridad de Android está activada, el propio Android puede incluirlos en la copia de seguridad de tu cuenta de Google, a la que no tenemos acceso. Al desinstalar el juego o borrar sus datos, todo se elimina.</li>
   <li><strong>Publicidad (Google AdMob).</strong> Para mostrar anuncios, medirlos y prevenir fraudes, el SDK de Google Mobile Ads de nuestros juegos puede recopilar y tratar: el ID de publicidad del dispositivo (y el app set ID), tu dirección IP (que permite estimar una ubicación aproximada), información del dispositivo y del sistema, interacciones con los anuncios y con la app, y datos de diagnóstico como fallos y rendimiento. Estos datos van directamente a Google, cifrados en tránsito. Nosotros solo vemos informes agregados (por ejemplo, cuántos anuncios se mostraron). Más información sobre <a href="https://policies.google.com/technologies/partner-sites?hl=es" target="_blank" rel="noopener">cómo usa Google la información de las apps que utilizan sus servicios</a>.</li>
+  <li><strong>Estadísticas de uso e informes de fallos (Google Firebase).</strong> Nuestros juegos usan Google Analytics para Firebase y Firebase Crashlytics. Registran un identificador aleatorio de la instalación de la app, eventos de juego (nivel iniciado, ganado o perdido, tiempo en el nivel, pistas y vídeos con recompensa usados, pantallas abiertas, resultado del test de CI), la duración de las sesiones, el modelo del dispositivo, la versión del sistema, el idioma y el país aproximado (estimado por la dirección IP) y, si la app falla, un informe técnico del fallo. No incluyen tu nombre, tu correo ni el nombre artístico que escribes. Vemos estos datos como informes en la consola de Firebase. Google conserva los datos de Analytics hasta 14 meses y los informes de fallos 90 días. Consulta <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">privacidad y seguridad en Firebase</a>.</li>
   <li><strong>Notificaciones.</strong> Si las permites, nuestros juegos programan recordatorios locales (por ejemplo, un desafío diario). Se crean en tu dispositivo; no se nos envía nada.</li>
   <li><strong>Compartir y valorar.</strong> El botón “Compartir” abre el menú para compartir de Android con un texto corto, y lo envía la app que elijas. Cuando un juego te pide una valoración, la gestiona Google Play. No recibimos nada personal en ninguno de los dos casos.</li>
   <li><strong>Sin compras ni chat.</strong> Nuestros juegos actuales no tienen compras dentro de la app, chat ni cuentas de usuario.</li>
@@ -49,6 +51,7 @@ window.LEGAL_I18N.es = {
 
 <h2 id="use">2. Cómo usamos la información</h2>
 <ul>
+  <li>Para entender cómo se juegan nuestros juegos (por ejemplo, en qué niveles los jugadores se atascan o abandonan), corregir fallos y medir el resultado de nuestras campañas de promoción.</li>
   <li>Para mantener el sitio en funcionamiento y seguro.</li>
   <li>Para que nuestros juegos sigan siendo gratuitos gracias a la publicidad y para prevenir el fraude publicitario.</li>
   <li>Para responder a tus mensajes, ofrecer soporte y hablar de colaboraciones.</li>
@@ -59,6 +62,7 @@ window.LEGAL_I18N.es = {
 <h2 id="legal-bases">3. Bases legales</h2>
 <p>Según la Ley General de Protección de Datos de Brasil (LGPD) y el RGPD de la UE/Reino Unido, nos basamos en:</p>
 <ul>
+  <li><strong>Interés legítimo</strong>, para las estadísticas de uso y los informes de fallos que usamos para mejorar y corregir los juegos.</li>
   <li><strong>Consentimiento</strong>, para anuncios personalizados donde la ley lo exige (por ejemplo, en el Espacio Económico Europeo, el Reino Unido y Suiza). Puedes retirarlo en cualquier momento.</li>
   <li><strong>Interés legítimo</strong>, para anuncios no personalizados que mantienen los juegos gratuitos, la prevención del fraude y el alojamiento y la seguridad del sitio.</li>
   <li><strong>Medidas precontractuales o un contrato</strong>, cuando nos contactas por un proyecto o colaboración.</li>
@@ -69,6 +73,7 @@ window.LEGAL_I18N.es = {
 <p>Trabajamos con pocos proveedores de servicios, cada uno con sus propias condiciones de privacidad:</p>
 <ul>
   <li><strong>Google</strong>: AdMob (anuncios en nuestros juegos), Google Play (distribución de apps, valoraciones, copia de seguridad de Android) y Google Fonts (fuentes del sitio).</li>
+  <li><strong>Google Firebase</strong>: Analytics y Crashlytics (estadísticas de uso e informes de fallos de los juegos).</li>
   <li><strong>GitHub</strong>: alojamiento del sitio.</li>
   <li><strong>Nuestro proveedor de correo</strong>: para recibir y responder tus mensajes.</li>
 </ul>

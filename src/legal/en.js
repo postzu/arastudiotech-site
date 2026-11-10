@@ -11,7 +11,7 @@ window.LEGAL_I18N.en = {
   privacy: {
     title: "Privacy Policy",
     description: "How AraStudioTech handles data on arastudiotech.com and in our mobile games FameUp and Faísca: what is collected, why, who it is shared with and what your rights are.",
-    updated: "November 9, 2026",
+    updated: "November 10, 2026",
     body: `
 <p class="lead">This policy explains what personal data is involved when you visit <strong>arastudiotech.com</strong>, play our games (<strong>FameUp: Influencer Life</strong> and <strong>Faísca</strong>, on Android) or contact us. AraStudioTech is an independent game studio based in Brazil (“AraStudioTech”, “we”, “us”). We are the controller of the personal data described here.</p>
 
@@ -22,6 +22,7 @@ window.LEGAL_I18N.en = {
     <li>This website uses no cookies and no analytics or tracking tools.</li>
     <li>Your game progress is saved only on your device. We never receive it.</li>
     <li>Our games are free and show ads from <strong>Google AdMob</strong>. Google collects some device data to serve and measure those ads. Where the law requires it, personalized ads are only shown with your consent.</li>
+    <li>Our games send <strong>anonymous usage statistics and crash reports</strong> to Google Firebase (for example, which levels were played and where the app crashed) so we can improve them. No name, email or contact details.</li>
     <li>We do not sell your personal data.</li>
   </ul>
 </div>
@@ -40,6 +41,7 @@ window.LEGAL_I18N.en = {
 <ul>
   <li><strong>Progress saved on your device.</strong> Levels, stars, scores, items, settings and similar game data are stored only in the app's local storage on your phone. This includes the artist name you type in FameUp and, in Faísca, the age range you choose for the IQ test and your results. We do not receive this data. If Android backup is turned on, Android itself may include it in your Google Account backup, which we cannot access. Uninstalling the game or clearing its data deletes everything.</li>
   <li><strong>Advertising (Google AdMob).</strong> To show ads, measure them and prevent fraud, the Google Mobile Ads SDK inside our games may collect and process: your device's advertising ID (and app set ID), your IP address (from which an approximate location can be estimated), device and system information, interactions with ads and with the app, and diagnostic data such as crashes and performance. This data goes directly to Google, encrypted in transit. We only see aggregated reports (for example, how many ads were shown). Learn more in <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">how Google uses information from apps that use its services</a>.</li>
+  <li><strong>Usage statistics and crash reports (Google Firebase).</strong> Our games use Google Analytics for Firebase and Firebase Crashlytics. They record a random app-installation identifier, gameplay events (level started, won or lost, time spent on a level, hints and rewarded videos used, screens opened, IQ test result), session length, device model, OS version, language and approximate country (estimated from the IP address), and, if the app crashes, a technical crash report. They do not include your name, email or the stage name you type. We see this data as reports in the Firebase console. Google keeps Analytics data for up to 14 months and crash reports for 90 days. See <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Privacy and Security in Firebase</a>.</li>
   <li><strong>Notifications.</strong> If you allow them, our games schedule local reminders (for example, a daily challenge). They are created on your device; nothing is sent to us.</li>
   <li><strong>Sharing and reviews.</strong> The “Share” button opens Android's share menu with a short text; the app you choose sends it. When a game asks you to rate it, the rating is handled by Google Play. We receive nothing personal from either.</li>
   <li><strong>No purchases, no chat.</strong> Our current games have no in-app purchases, no chat and no user accounts.</li>
@@ -50,6 +52,7 @@ window.LEGAL_I18N.en = {
 
 <h2 id="use">2. How we use information</h2>
 <ul>
+  <li>To understand how our games are played (for example, which levels players get stuck on or quit), fix crashes and measure the results of our promotional campaigns.</li>
   <li>To run the website and keep it secure.</li>
   <li>To keep our games free through advertising and to prevent ad fraud.</li>
   <li>To answer your messages, provide support and discuss partnerships.</li>
@@ -60,6 +63,7 @@ window.LEGAL_I18N.en = {
 <h2 id="legal-bases">3. Legal bases</h2>
 <p>Under Brazil's General Data Protection Law (LGPD) and the EU/UK GDPR, we rely on:</p>
 <ul>
+  <li><strong>Legitimate interests</strong>, for the usage statistics and crash reports we use to improve and fix our games.</li>
   <li><strong>Consent</strong>, for personalized ads where the law requires it (for example in the European Economic Area, the UK and Switzerland). You can withdraw it at any time.</li>
   <li><strong>Legitimate interests</strong>, for non-personalized ads that keep the games free, fraud prevention, and hosting and securing the website.</li>
   <li><strong>Pre-contractual steps or a contract</strong>, when you contact us about a project or partnership.</li>
@@ -70,6 +74,7 @@ window.LEGAL_I18N.en = {
 <p>We work with a small number of service providers, each under its own privacy terms:</p>
 <ul>
   <li><strong>Google</strong>: AdMob (ads in our games), Google Play (app distribution, ratings, Android backup) and Google Fonts (website fonts).</li>
+  <li><strong>Google Firebase</strong>: Analytics and Crashlytics (usage statistics and crash reports from our games).</li>
   <li><strong>GitHub</strong>: website hosting.</li>
   <li><strong>Our email provider</strong>: to receive and answer your messages.</li>
 </ul>
