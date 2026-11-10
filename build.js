@@ -140,6 +140,7 @@ function render(l) {
 
   const vars = {
     html: t._html, code: t._code, root, home: root || "./",
+    reel: root + "assets/reel/" + l + "/",
     site: CONFIG.site, canonical: urlFor(l), email: CONFIG.email,
     hreflang, langmenu, faq, socials,
     oglocale: OG_LOCALE[l],
