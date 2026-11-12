@@ -1,0 +1,317 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs>
+  <radialGradient id="bg" cx="50%" cy="38%" r="75%">
+    <stop offset="0" stop-color="#ffd36b"/><stop offset="0.5" stop-color="#ff9d3c"/><stop offset="1" stop-color="#e5532d"/>
+  </radialGradient>
+  <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+    <stop offset="0.6" stop-color="#fff38a" stop-opacity="1"/><stop offset="1" stop-color="#fff38a" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="floor" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#7a2410" stop-opacity="0.55"/><stop offset="1" stop-color="#7a2410" stop-opacity="0"/>
+  </radialGradient>
+<clipPath id="cl"><rect width="1000" height="1000" rx="180"/></clipPath></defs><g clip-path="url(#cl)"><rect width="1000" height="1000" fill="url(#bg)"/><path d="M500 380 L1400 380 L1383.4644651028975 551.7280958388903z" fill="#ffffff" opacity="0.10"/><path d="M500 380 L1279.4228634059948 830 L1179.2386222004948 970.4531260914564z" fill="#ffffff" opacity="0.10"/><path d="M500 380 L950.0000000000001 1159.4228634059946 L793.0113390114411 1230.9667180393851z" fill="#ffffff" opacity="0.10"/><path d="M500 380 L500.00000000000006 1280 L328.27190416110966 1263.4644651028975z" fill="#ffffff" opacity="0.10"/><path d="M500 380 L50.00000000000023 1159.4228634059948 L-90.4531260914564 1059.2386222004948z" fill="#ffffff" opacity="0.10"/><path d="M500 380 L-279.4228634059948 830 L-350.9667180393851 673.0113390114409z" fill="#ffffff" opacity="0.10"/><path d="M500 380 L-400 380.0000000000001 L-383.46446510289763 208.27190416110975z" fill="#ffffff" opacity="0.10"/><path d="M500 380 L-279.4228634059947 -70.00000000000011 L-179.23862220049466 -210.45312609145662z" fill="#ffffff" opacity="0.10"/><path d="M500 380 L49.9999999999996 -399.4228634059947 L206.98866098855825 -470.9667180393849z" fill="#ffffff" opacity="0.10"/><path d="M500 380 L499.99999999999983 -520 L671.7280958388899 -503.46446510289763z" fill="#ffffff" opacity="0.10"/><path d="M500 380 L950.0000000000001 -399.4228634059947 L1090.4531260914564 -299.2386222004949z" fill="#ffffff" opacity="0.10"/><path d="M500 380 L1279.4228634059946 -70.0000000000004 L1350.966718039385 86.9886609885582z" fill="#ffffff" opacity="0.10"/><g transform="translate(500 520) scale(0.94) translate(-500 -520)">
+    <ellipse cx="500" cy="925" rx="470" ry="60" fill="url(#floor)"/>
+    <g transform="rotate(-9 150 330)"><ellipse cx="150" cy="468" rx="104" ry="14.000000000000002" fill="#5a1a08" opacity="0.3"/><svg x="56" y="264" width="200" height="200" viewBox="0 0 100 100" overflow="visible">
+  <defs>
+    <linearGradient id="tf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="0.75" stop-color="#fbfcfe"/><stop offset="1" stop-color="#e9edf4"/></linearGradient>
+    <linearGradient id="ts" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfd5e1"/><stop offset="1" stop-color="#a3abbd"/></linearGradient>
+    <filter id="tb" x="-10%" y="-10%" width="120%" height="125%"><feGaussianBlur stdDeviation="1.8"/></filter>
+  </defs>
+  <rect x="4" y="13" width="93" height="86" rx="18" fill="#2a1a14" opacity="0.2" filter="url(#tb)"/>
+  <rect x="3" y="10" width="94" height="86" rx="18" fill="url(#ts)" stroke="#8a93a8" stroke-width="1.5"/>
+  <rect x="3" y="2" width="94" height="82" rx="18" fill="url(#tf)" stroke="#b4bccb" stroke-width="1.5"/>
+  <rect x="6.5" y="5" width="87" height="76" rx="15" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+</svg><svg x="82" y="274" width="148" height="148" viewBox="0 0 100 100" overflow="visible"></svg><rect x="62" y="268" width="188" height="188" rx="36" fill="#3a1c10" opacity="0.4"/><svg x="50" y="230" width="200" height="200" viewBox="0 0 100 100" overflow="visible">
+  <defs>
+    <linearGradient id="tf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="0.75" stop-color="#fbfcfe"/><stop offset="1" stop-color="#e9edf4"/></linearGradient>
+    <linearGradient id="ts" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfd5e1"/><stop offset="1" stop-color="#a3abbd"/></linearGradient>
+    <filter id="tb" x="-10%" y="-10%" width="120%" height="125%"><feGaussianBlur stdDeviation="1.8"/></filter>
+  </defs>
+  <rect x="4" y="13" width="93" height="86" rx="18" fill="#2a1a14" opacity="0.2" filter="url(#tb)"/>
+  <rect x="3" y="10" width="94" height="86" rx="18" fill="url(#ts)" stroke="#8a93a8" stroke-width="1.5"/>
+  <rect x="3" y="2" width="94" height="82" rx="18" fill="url(#tf)" stroke="#b4bccb" stroke-width="1.5"/>
+  <rect x="6.5" y="5" width="87" height="76" rx="15" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+</svg><svg x="76" y="240" width="148" height="148" viewBox="0 0 100 100" overflow="visible"><defs><linearGradient id="zpanelag0" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#707074"/><stop offset="0.55" stop-color="#2d2d33"/><stop offset="1" stop-color="#29292f"/></linearGradient><linearGradient id="zpanelag1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d7dbe1"/><stop offset="0.55" stop-color="#c4cad3"/><stop offset="1" stop-color="#b4bac2"/></linearGradient><linearGradient id="zpanelag2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#edeff3"/><stop offset="0.55" stop-color="#e4e8ee"/><stop offset="1" stop-color="#d2d5db"/></linearGradient><filter id="zpanelav" x="-15%" y="-15%" width="130%" height="135%" color-interpolation-filters="sRGB">
+<feOffset in="SourceAlpha" dx="-3" dy="-4" result="a1"/><feGaussianBlur in="a1" stdDeviation="2.6" result="b1"/>
+<feComposite in="SourceAlpha" in2="b1" operator="out" result="e1"/><feFlood flood-color="#1c1020" flood-opacity="0.26"/><feComposite in2="e1" operator="in" result="shade"/>
+<feOffset in="SourceAlpha" dx="2.5" dy="3.5" result="a2"/><feGaussianBlur in="a2" stdDeviation="2.2" result="b2"/>
+<feComposite in="SourceAlpha" in2="b2" operator="out" result="e2"/><feFlood flood-color="#ffffff" flood-opacity="0.38"/><feComposite in2="e2" operator="in" result="hl"/>
+<feGaussianBlur in="SourceAlpha" stdDeviation="2.4" result="sb"/><feOffset in="sb" dy="3.5" result="so"/><feFlood flood-color="#2a1a14" flood-opacity="0.28"/><feComposite in2="so" operator="in" result="drop"/>
+<feMerge><feMergeNode in="drop"/><feMergeNode in="SourceGraphic"/><feMergeNode in="shade"/><feMergeNode in="hl"/></feMerge></filter></defs><g filter="url(#zpanelav)">
+    <rect x="70" y="38" width="26" height="9" rx="4.5" fill="url(#zpanelag0)" stroke="#1d1919" stroke-width="3.00" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M14 46 h62 v26 a10 10 0 0 1 -10 10 h-42 a10 10 0 0 1 -10 -10z" fill="url(#zpanelag1)" stroke="#4c4a4b" stroke-width="3.00" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M18 66 h54 v6 a8 8 0 0 1 -8 8 h-38 a8 8 0 0 1 -8 -8z" fill="#9aa2ad"/>
+    <ellipse cx="45" cy="45" rx="34" ry="9" fill="url(#zpanelag2)" stroke="#565453" stroke-width="3.00" stroke-linejoin="round" stroke-linecap="round"/>
+    <rect x="40" y="26" width="10" height="13" rx="3" fill="url(#zpanelag0)" stroke="#1d1919" stroke-width="3.00" stroke-linejoin="round" stroke-linecap="round"/>
+    <rect x="22" y="52" width="6" height="16" rx="3" fill="#ffffff" opacity="0.55"/></g></svg><rect x="56" y="234" width="188" height="188" rx="36" fill="#3a1c10" opacity="0.3"/></g><g transform="rotate(9 850 330)"><ellipse cx="850" cy="468" rx="104" ry="14.000000000000002" fill="#5a1a08" opacity="0.3"/><svg x="756" y="264" width="200" height="200" viewBox="0 0 100 100" overflow="visible">
+  <defs>
+    <linearGradient id="tf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="0.75" stop-color="#fbfcfe"/><stop offset="1" stop-color="#e9edf4"/></linearGradient>
+    <linearGradient id="ts" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfd5e1"/><stop offset="1" stop-color="#a3abbd"/></linearGradient>
+    <filter id="tb" x="-10%" y="-10%" width="120%" height="125%"><feGaussianBlur stdDeviation="1.8"/></filter>
+  </defs>
+  <rect x="4" y="13" width="93" height="86" rx="18" fill="#2a1a14" opacity="0.2" filter="url(#tb)"/>
+  <rect x="3" y="10" width="94" height="86" rx="18" fill="url(#ts)" stroke="#8a93a8" stroke-width="1.5"/>
+  <rect x="3" y="2" width="94" height="82" rx="18" fill="url(#tf)" stroke="#b4bccb" stroke-width="1.5"/>
+  <rect x="6.5" y="5" width="87" height="76" rx="15" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+</svg><svg x="782" y="274" width="148" height="148" viewBox="0 0 100 100" overflow="visible"></svg><rect x="762" y="268" width="188" height="188" rx="36" fill="#3a1c10" opacity="0.4"/><svg x="750" y="230" width="200" height="200" viewBox="0 0 100 100" overflow="visible">
+  <defs>
+    <linearGradient id="tf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="0.75" stop-color="#fbfcfe"/><stop offset="1" stop-color="#e9edf4"/></linearGradient>
+    <linearGradient id="ts" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfd5e1"/><stop offset="1" stop-color="#a3abbd"/></linearGradient>
+    <filter id="tb" x="-10%" y="-10%" width="120%" height="125%"><feGaussianBlur stdDeviation="1.8"/></filter>
+  </defs>
+  <rect x="4" y="13" width="93" height="86" rx="18" fill="#2a1a14" opacity="0.2" filter="url(#tb)"/>
+  <rect x="3" y="10" width="94" height="86" rx="18" fill="url(#ts)" stroke="#8a93a8" stroke-width="1.5"/>
+  <rect x="3" y="2" width="94" height="82" rx="18" fill="url(#tf)" stroke="#b4bccb" stroke-width="1.5"/>
+  <rect x="6.5" y="5" width="87" height="76" rx="15" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+</svg><svg x="776" y="240" width="148" height="148" viewBox="0 0 100 100" overflow="visible"><defs><linearGradient id="zplantag0" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e5a384"/><stop offset="0.55" stop-color="#d9774a"/><stop offset="1" stop-color="#c86d44"/></linearGradient><linearGradient id="zplantag1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#efb092"/><stop offset="0.55" stop-color="#e88b5f"/><stop offset="1" stop-color="#d58057"/></linearGradient><filter id="zplantav" x="-15%" y="-15%" width="130%" height="135%" color-interpolation-filters="sRGB">
+<feOffset in="SourceAlpha" dx="-3" dy="-4" result="a1"/><feGaussianBlur in="a1" stdDeviation="2.6" result="b1"/>
+<feComposite in="SourceAlpha" in2="b1" operator="out" result="e1"/><feFlood flood-color="#1c1020" flood-opacity="0.26"/><feComposite in2="e1" operator="in" result="shade"/>
+<feOffset in="SourceAlpha" dx="2.5" dy="3.5" result="a2"/><feGaussianBlur in="a2" stdDeviation="2.2" result="b2"/>
+<feComposite in="SourceAlpha" in2="b2" operator="out" result="e2"/><feFlood flood-color="#ffffff" flood-opacity="0.38"/><feComposite in2="e2" operator="in" result="hl"/>
+<feGaussianBlur in="SourceAlpha" stdDeviation="2.4" result="sb"/><feOffset in="sb" dy="3.5" result="so"/><feFlood flood-color="#2a1a14" flood-opacity="0.28"/><feComposite in2="so" operator="in" result="drop"/>
+<feMerge><feMergeNode in="drop"/><feMergeNode in="SourceGraphic"/><feMergeNode in="shade"/><feMergeNode in="hl"/></feMerge></filter></defs><g filter="url(#zplantav)">
+    <path d="M30 22 l10 46 M50 8 l2 60 M68 18 l-8 50" stroke="#1d3218" stroke-width="14" stroke-linecap="round"/>
+    <path d="M30 22 l10 46 M50 8 l2 60 M68 18 l-8 50" stroke="#2e7d32" stroke-width="7" stroke-linecap="round"/>
+    <path d="M50 14 l1 40" stroke="#c5e1a5" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M26 62 h48 l-6 28 h-36z" fill="url(#zplantag0)" stroke="#533020" stroke-width="3.00" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M54 62 h20 l-6 28 h-10z" fill="#b5582e"/>
+    <path d="M26 62 h48 l-6 28 h-36z" fill="none" stroke="#533020" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+    <rect x="22" y="58" width="56" height="9" rx="3" fill="url(#zplantag1)" stroke="#583626" stroke-width="3.00" stroke-linejoin="round" stroke-linecap="round"/></g></svg><rect x="756" y="234" width="188" height="188" rx="36" fill="#3a1c10" opacity="0.3"/></g><g transform="rotate(-5 500 170)"><ellipse cx="500" cy="401.75" rx="117" ry="15.750000000000002" fill="#5a1a08" opacity="0.3"/><svg x="394.25" y="172.25" width="225" height="225" viewBox="0 0 100 100" overflow="visible">
+  <defs>
+    <linearGradient id="tf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="0.75" stop-color="#fbfcfe"/><stop offset="1" stop-color="#e9edf4"/></linearGradient>
+    <linearGradient id="ts" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfd5e1"/><stop offset="1" stop-color="#a3abbd"/></linearGradient>
+    <filter id="tb" x="-10%" y="-10%" width="120%" height="125%"><feGaussianBlur stdDeviation="1.8"/></filter>
+  </defs>
+  <rect x="4" y="13" width="93" height="86" rx="18" fill="#2a1a14" opacity="0.2" filter="url(#tb)"/>
+  <rect x="3" y="10" width="94" height="86" rx="18" fill="url(#ts)" stroke="#8a93a8" stroke-width="1.5"/>
+  <rect x="3" y="2" width="94" height="82" rx="18" fill="url(#tf)" stroke="#b4bccb" stroke-width="1.5"/>
+  <rect x="6.5" y="5" width="87" height="76" rx="15" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+</svg><svg x="423.5" y="183.5" width="166.5" height="166.5" viewBox="0 0 100 100" overflow="visible"></svg><rect x="401" y="176.75" width="211.5" height="211.5" rx="40.5" fill="#3a1c10" opacity="0.30000000000000004"/><svg x="383" y="134" width="225" height="225" viewBox="0 0 100 100" overflow="visible">
+  <defs>
+    <linearGradient id="tf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="0.75" stop-color="#fbfcfe"/><stop offset="1" stop-color="#e9edf4"/></linearGradient>
+    <linearGradient id="ts" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfd5e1"/><stop offset="1" stop-color="#a3abbd"/></linearGradient>
+    <filter id="tb" x="-10%" y="-10%" width="120%" height="125%"><feGaussianBlur stdDeviation="1.8"/></filter>
+  </defs>
+  <rect x="4" y="13" width="93" height="86" rx="18" fill="#2a1a14" opacity="0.2" filter="url(#tb)"/>
+  <rect x="3" y="10" width="94" height="86" rx="18" fill="url(#ts)" stroke="#8a93a8" stroke-width="1.5"/>
+  <rect x="3" y="2" width="94" height="82" rx="18" fill="url(#tf)" stroke="#b4bccb" stroke-width="1.5"/>
+  <rect x="6.5" y="5" width="87" height="76" rx="15" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+</svg><svg x="412.25" y="145.25" width="166.5" height="166.5" viewBox="0 0 100 100" overflow="visible"></svg><rect x="389.75" y="138.5" width="211.5" height="211.5" rx="40.5" fill="#3a1c10" opacity="0.2"/><svg x="394.25" y="95.75" width="225" height="225" viewBox="0 0 100 100" overflow="visible">
+  <defs>
+    <linearGradient id="tf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="0.75" stop-color="#fbfcfe"/><stop offset="1" stop-color="#e9edf4"/></linearGradient>
+    <linearGradient id="ts" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfd5e1"/><stop offset="1" stop-color="#a3abbd"/></linearGradient>
+    <filter id="tb" x="-10%" y="-10%" width="120%" height="125%"><feGaussianBlur stdDeviation="1.8"/></filter>
+  </defs>
+  <rect x="4" y="13" width="93" height="86" rx="18" fill="#2a1a14" opacity="0.2" filter="url(#tb)"/>
+  <rect x="3" y="10" width="94" height="86" rx="18" fill="url(#ts)" stroke="#8a93a8" stroke-width="1.5"/>
+  <rect x="3" y="2" width="94" height="82" rx="18" fill="url(#tf)" stroke="#b4bccb" stroke-width="1.5"/>
+  <rect x="6.5" y="5" width="87" height="76" rx="15" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+</svg><svg x="423.5" y="107" width="166.5" height="166.5" viewBox="0 0 100 100" overflow="visible"></svg><rect x="401" y="100.25" width="211.5" height="211.5" rx="40.5" fill="#3a1c10" opacity="0.1"/><svg x="387.5" y="57.5" width="225" height="225" viewBox="0 0 100 100" overflow="visible">
+  <defs>
+    <linearGradient id="tf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="0.75" stop-color="#fbfcfe"/><stop offset="1" stop-color="#e9edf4"/></linearGradient>
+    <linearGradient id="ts" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfd5e1"/><stop offset="1" stop-color="#a3abbd"/></linearGradient>
+    <filter id="tb" x="-10%" y="-10%" width="120%" height="125%"><feGaussianBlur stdDeviation="1.8"/></filter>
+  </defs>
+  <rect x="4" y="13" width="93" height="86" rx="18" fill="#2a1a14" opacity="0.2" filter="url(#tb)"/>
+  <rect x="3" y="10" width="94" height="86" rx="18" fill="url(#ts)" stroke="#8a93a8" stroke-width="1.5"/>
+  <rect x="3" y="2" width="94" height="82" rx="18" fill="url(#tf)" stroke="#b4bccb" stroke-width="1.5"/>
+  <rect x="6.5" y="5" width="87" height="76" rx="15" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+</svg><svg x="416.75" y="68.75" width="166.5" height="166.5" viewBox="0 0 100 100" overflow="visible"><defs><linearGradient id="zpupg0" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c4946e"/><stop offset="0.55" stop-color="#a8622a"/><stop offset="1" stop-color="#9b5a27"/></linearGradient><linearGradient id="zpupg1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e5af7a"/><stop offset="0.55" stop-color="#d9893b"/><stop offset="1" stop-color="#c87e36"/></linearGradient><linearGradient id="zpupg2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f9e7cd"/><stop offset="0.55" stop-color="#f6dcb5"/><stop offset="1" stop-color="#e2caa7"/></linearGradient><linearGradient id="zpupg3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffa5af"/><stop offset="0.55" stop-color="#ff7b8a"/><stop offset="1" stop-color="#eb717f"/></linearGradient><filter id="zpupv" x="-15%" y="-15%" width="130%" height="135%" color-interpolation-filters="sRGB">
+<feOffset in="SourceAlpha" dx="-3" dy="-4" result="a1"/><feGaussianBlur in="a1" stdDeviation="2.6" result="b1"/>
+<feComposite in="SourceAlpha" in2="b1" operator="out" result="e1"/><feFlood flood-color="#1c1020" flood-opacity="0.26"/><feComposite in2="e1" operator="in" result="shade"/>
+<feOffset in="SourceAlpha" dx="2.5" dy="3.5" result="a2"/><feGaussianBlur in="a2" stdDeviation="2.2" result="b2"/>
+<feComposite in="SourceAlpha" in2="b2" operator="out" result="e2"/><feFlood flood-color="#ffffff" flood-opacity="0.38"/><feComposite in2="e2" operator="in" result="hl"/>
+<feGaussianBlur in="SourceAlpha" stdDeviation="2.4" result="sb"/><feOffset in="sb" dy="3.5" result="so"/><feFlood flood-color="#2a1a14" flood-opacity="0.28"/><feComposite in2="so" operator="in" result="drop"/>
+<feMerge><feMergeNode in="drop"/><feMergeNode in="SourceGraphic"/><feMergeNode in="shade"/><feMergeNode in="hl"/></feMerge></filter></defs><g filter="url(#zpupv)">
+  <path d="M20 30 q-14 4 -10 30 q4 10 14 4z" fill="url(#zpupg0)" stroke="#432916" stroke-width="3.00" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M80 30 q14 4 10 30 q-4 10 -14 4z" fill="url(#zpupg0)" stroke="#432916" stroke-width="3.00" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M50 18 q34 0 34 36 q0 34 -34 34 q-34 0 -34 -34 q0 -36 34 -36z" fill="url(#zpupg1)" stroke="#53361b" stroke-width="3.00" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M30 26 q20 -8 40 0 q-6 10 -20 10 q-14 0 -20 -10z" fill="#e9a35a"/>
+  <ellipse cx="50" cy="66" rx="20" ry="15" fill="url(#zpupg2)" stroke="#5c5042" stroke-width="2.25" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="37" cy="48" r="5" fill="#3a2a22"/><circle cx="63" cy="48" r="5" fill="#3a2a22"/>
+  <circle cx="39" cy="46" r="1.8" fill="#ffffff"/><circle cx="65" cy="46" r="1.8" fill="#ffffff"/>
+  <ellipse cx="50" cy="59" rx="7" ry="5" fill="#3a2a22"/>
+  <path d="M50 64 v6 M42 70 q8 6 16 0" fill="none" stroke="#432916" stroke-width="2.25" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M46 72 q4 12 8 0" fill="url(#zpupg3)" stroke="#5f3134" stroke-width="1.88" stroke-linejoin="round" stroke-linecap="round"/></g></svg></g><ellipse cx="372.6" cy="610.7" rx="127.4" ry="17.150000000000002" fill="#5a1a08" opacity="0.3"/><svg x="245.20000000000005" y="360.8" width="245" height="245" viewBox="0 0 100 100" overflow="visible">
+  <defs>
+    <linearGradient id="tf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="0.75" stop-color="#fbfcfe"/><stop offset="1" stop-color="#e9edf4"/></linearGradient>
+    <linearGradient id="ts" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfd5e1"/><stop offset="1" stop-color="#a3abbd"/></linearGradient>
+    <filter id="tb" x="-10%" y="-10%" width="120%" height="125%"><feGaussianBlur stdDeviation="1.8"/></filter>
+  </defs>
+  <rect x="4" y="13" width="93" height="86" rx="18" fill="#2a1a14" opacity="0.2" filter="url(#tb)"/>
+  <rect x="3" y="10" width="94" height="86" rx="18" fill="url(#ts)" stroke="#8a93a8" stroke-width="1.5"/>
+  <rect x="3" y="2" width="94" height="82" rx="18" fill="url(#tf)" stroke="#b4bccb" stroke-width="1.5"/>
+  <rect x="6.5" y="5" width="87" height="76" rx="15" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+</svg><svg x="277.05000000000007" y="373.04999999999995" width="181.3" height="181.3" viewBox="0 0 100 100" overflow="visible"></svg><rect x="252.55000000000004" y="365.7" width="230.3" height="230.3" rx="44.1" fill="#3a1c10" opacity="0.26"/><svg x="257.45000000000005" y="319.15" width="245" height="245" viewBox="0 0 100 100" overflow="visible">
+  <defs>
+    <linearGradient id="tf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="0.75" stop-color="#fbfcfe"/><stop offset="1" stop-color="#e9edf4"/></linearGradient>
+    <linearGradient id="ts" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfd5e1"/><stop offset="1" stop-color="#a3abbd"/></linearGradient>
+    <filter id="tb" x="-10%" y="-10%" width="120%" height="125%"><feGaussianBlur stdDeviation="1.8"/></filter>
+  </defs>
+  <rect x="4" y="13" width="93" height="86" rx="18" fill="#2a1a14" opacity="0.2" filter="url(#tb)"/>
+  <rect x="3" y="10" width="94" height="86" rx="18" fill="url(#ts)" stroke="#8a93a8" stroke-width="1.5"/>
+  <rect x="3" y="2" width="94" height="82" rx="18" fill="url(#tf)" stroke="#b4bccb" stroke-width="1.5"/>
+  <rect x="6.5" y="5" width="87" height="76" rx="15" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+</svg><svg x="289.30000000000007" y="331.4" width="181.3" height="181.3" viewBox="0 0 100 100" overflow="visible"></svg><rect x="264.80000000000007" y="324.04999999999995" width="230.3" height="230.3" rx="44.1" fill="#3a1c10" opacity="0.16"/><svg x="250.10000000000002" y="277.5" width="245" height="245" viewBox="0 0 100 100" overflow="visible">
+  <defs>
+    <linearGradient id="tf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="0.75" stop-color="#fbfcfe"/><stop offset="1" stop-color="#e9edf4"/></linearGradient>
+    <linearGradient id="ts" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfd5e1"/><stop offset="1" stop-color="#a3abbd"/></linearGradient>
+    <filter id="tb" x="-10%" y="-10%" width="120%" height="125%"><feGaussianBlur stdDeviation="1.8"/></filter>
+  </defs>
+  <rect x="4" y="13" width="93" height="86" rx="18" fill="#2a1a14" opacity="0.2" filter="url(#tb)"/>
+  <rect x="3" y="10" width="94" height="86" rx="18" fill="url(#ts)" stroke="#8a93a8" stroke-width="1.5"/>
+  <rect x="3" y="2" width="94" height="82" rx="18" fill="url(#tf)" stroke="#b4bccb" stroke-width="1.5"/>
+  <rect x="6.5" y="5" width="87" height="76" rx="15" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+</svg><svg x="281.95000000000005" y="289.75" width="181.3" height="181.3" viewBox="0 0 100 100" overflow="visible"><defs><linearGradient id="zpresenteg0" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ea8179"/><stop offset="0.55" stop-color="#e0453a"/><stop offset="1" stop-color="#ce3f35"/></linearGradient><linearGradient id="zpresenteg1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff9a92"/><stop offset="0.55" stop-color="#ff6b5e"/><stop offset="1" stop-color="#eb6256"/></linearGradient><linearGradient id="zpresenteg2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6da85"/><stop offset="0.55" stop-color="#f2c94c"/><stop offset="1" stop-color="#dfb946"/></linearGradient><filter id="zpresentev" x="-15%" y="-15%" width="130%" height="135%" color-interpolation-filters="sRGB">
+<feOffset in="SourceAlpha" dx="-3" dy="-4" result="a1"/><feGaussianBlur in="a1" stdDeviation="2.6" result="b1"/>
+<feComposite in="SourceAlpha" in2="b1" operator="out" result="e1"/><feFlood flood-color="#1c1020" flood-opacity="0.26"/><feComposite in2="e1" operator="in" result="shade"/>
+<feOffset in="SourceAlpha" dx="2.5" dy="3.5" result="a2"/><feGaussianBlur in="a2" stdDeviation="2.2" result="b2"/>
+<feComposite in="SourceAlpha" in2="b2" operator="out" result="e2"/><feFlood flood-color="#ffffff" flood-opacity="0.38"/><feComposite in2="e2" operator="in" result="hl"/>
+<feGaussianBlur in="SourceAlpha" stdDeviation="2.4" result="sb"/><feOffset in="sb" dy="3.5" result="so"/><feFlood flood-color="#2a1a14" flood-opacity="0.28"/><feComposite in2="so" operator="in" result="drop"/>
+<feMerge><feMergeNode in="drop"/><feMergeNode in="SourceGraphic"/><feMergeNode in="shade"/><feMergeNode in="hl"/></feMerge></filter></defs><g filter="url(#zpresentev)">
+    <rect x="16" y="40" width="68" height="48" rx="5" fill="url(#zpresenteg0)" stroke="#55201b" stroke-width="3.00" stroke-linejoin="round" stroke-linecap="round"/>
+    <rect x="12" y="30" width="76" height="16" rx="4" fill="url(#zpresenteg1)" stroke="#5f2c26" stroke-width="3.00" stroke-linejoin="round" stroke-linecap="round"/>
+    <rect x="44" y="30" width="12" height="58" fill="url(#zpresenteg2)" stroke="#5b4a20" stroke-width="2.25" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M50 30 q-26 -26 -20 -4 q4 8 20 4 q16 4 20 -4 q6 -22 -20 4z" fill="url(#zpresenteg2)" stroke="#5b4a20" stroke-width="3.00" stroke-linejoin="round" stroke-linecap="round"/>
+    <rect x="22" y="50" width="6" height="28" rx="3" fill="#ffffff" opacity="0.35"/></g></svg><rect x="257.45000000000005" y="282.4" width="230.3" height="230.3" rx="44.1" fill="#3a1c10" opacity="0.06"/><ellipse cx="627.4" cy="610.7" rx="127.4" ry="17.150000000000002" fill="#5a1a08" opacity="0.3"/><svg x="500" y="360.8" width="245" height="245" viewBox="0 0 100 100" overflow="visible">
+  <defs>
+    <linearGradient id="tf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="0.75" stop-color="#fbfcfe"/><stop offset="1" stop-color="#e9edf4"/></linearGradient>
+    <linearGradient id="ts" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfd5e1"/><stop offset="1" stop-color="#a3abbd"/></linearGradient>
+    <filter id="tb" x="-10%" y="-10%" width="120%" height="125%"><feGaussianBlur stdDeviation="1.8"/></filter>
+  </defs>
+  <rect x="4" y="13" width="93" height="86" rx="18" fill="#2a1a14" opacity="0.2" filter="url(#tb)"/>
+  <rect x="3" y="10" width="94" height="86" rx="18" fill="url(#ts)" stroke="#8a93a8" stroke-width="1.5"/>
+  <rect x="3" y="2" width="94" height="82" rx="18" fill="url(#tf)" stroke="#b4bccb" stroke-width="1.5"/>
+  <rect x="6.5" y="5" width="87" height="76" rx="15" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+</svg><svg x="531.85" y="373.04999999999995" width="181.3" height="181.3" viewBox="0 0 100 100" overflow="visible"></svg><rect x="507.35" y="365.7" width="230.3" height="230.3" rx="44.1" fill="#3a1c10" opacity="0.26"/><svg x="512.25" y="319.15" width="245" height="245" viewBox="0 0 100 100" overflow="visible">
+  <defs>
+    <linearGradient id="tf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="0.75" stop-color="#fbfcfe"/><stop offset="1" stop-color="#e9edf4"/></linearGradient>
+    <linearGradient id="ts" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfd5e1"/><stop offset="1" stop-color="#a3abbd"/></linearGradient>
+    <filter id="tb" x="-10%" y="-10%" width="120%" height="125%"><feGaussianBlur stdDeviation="1.8"/></filter>
+  </defs>
+  <rect x="4" y="13" width="93" height="86" rx="18" fill="#2a1a14" opacity="0.2" filter="url(#tb)"/>
+  <rect x="3" y="10" width="94" height="86" rx="18" fill="url(#ts)" stroke="#8a93a8" stroke-width="1.5"/>
+  <rect x="3" y="2" width="94" height="82" rx="18" fill="url(#tf)" stroke="#b4bccb" stroke-width="1.5"/>
+  <rect x="6.5" y="5" width="87" height="76" rx="15" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+</svg><svg x="544.1" y="331.4" width="181.3" height="181.3" viewBox="0 0 100 100" overflow="visible"></svg><rect x="519.6" y="324.04999999999995" width="230.3" height="230.3" rx="44.1" fill="#3a1c10" opacity="0.16"/><svg x="504.9" y="277.5" width="245" height="245" viewBox="0 0 100 100" overflow="visible">
+  <defs>
+    <linearGradient id="tf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="0.75" stop-color="#fbfcfe"/><stop offset="1" stop-color="#e9edf4"/></linearGradient>
+    <linearGradient id="ts" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfd5e1"/><stop offset="1" stop-color="#a3abbd"/></linearGradient>
+    <filter id="tb" x="-10%" y="-10%" width="120%" height="125%"><feGaussianBlur stdDeviation="1.8"/></filter>
+  </defs>
+  <rect x="4" y="13" width="93" height="86" rx="18" fill="#2a1a14" opacity="0.2" filter="url(#tb)"/>
+  <rect x="3" y="10" width="94" height="86" rx="18" fill="url(#ts)" stroke="#8a93a8" stroke-width="1.5"/>
+  <rect x="3" y="2" width="94" height="82" rx="18" fill="url(#tf)" stroke="#b4bccb" stroke-width="1.5"/>
+  <rect x="6.5" y="5" width="87" height="76" rx="15" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+</svg><svg x="536.75" y="289.75" width="181.3" height="181.3" viewBox="0 0 100 100" overflow="visible"><defs><linearGradient id="zlaranjag0" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8ba69"/><stop offset="0.55" stop-color="#f59a23"/><stop offset="1" stop-color="#e18e20"/></linearGradient><linearGradient id="zlaranjag1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#85c988"/><stop offset="0.55" stop-color="#4caf50"/><stop offset="1" stop-color="#46a14a"/></linearGradient><filter id="zlaranjav" x="-15%" y="-15%" width="130%" height="135%" color-interpolation-filters="sRGB">
+<feOffset in="SourceAlpha" dx="-3" dy="-4" result="a1"/><feGaussianBlur in="a1" stdDeviation="2.6" result="b1"/>
+<feComposite in="SourceAlpha" in2="b1" operator="out" result="e1"/><feFlood flood-color="#1c1020" flood-opacity="0.26"/><feComposite in2="e1" operator="in" result="shade"/>
+<feOffset in="SourceAlpha" dx="2.5" dy="3.5" result="a2"/><feGaussianBlur in="a2" stdDeviation="2.2" result="b2"/>
+<feComposite in="SourceAlpha" in2="b2" operator="out" result="e2"/><feFlood flood-color="#ffffff" flood-opacity="0.38"/><feComposite in2="e2" operator="in" result="hl"/>
+<feGaussianBlur in="SourceAlpha" stdDeviation="2.4" result="sb"/><feOffset in="sb" dy="3.5" result="so"/><feFlood flood-color="#2a1a14" flood-opacity="0.28"/><feComposite in2="so" operator="in" result="drop"/>
+<feMerge><feMergeNode in="drop"/><feMergeNode in="SourceGraphic"/><feMergeNode in="shade"/><feMergeNode in="hl"/></feMerge></filter></defs><g filter="url(#zlaranjav)">
+    <circle cx="50" cy="56" r="34" fill="url(#zlaranjag0)" stroke="#5c3b14" stroke-width="3.00" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M28 76 a34 34 0 0 0 56 -20 a30 30 0 0 1 -56 20z" fill="#d97a12"/>
+    <circle cx="50" cy="56" r="34" fill="none" stroke="#5c3b14" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M50 24 q4 -10 14 -12 q-2 12 -14 12z" fill="url(#zlaranjag1)" stroke="#264222" stroke-width="3.00" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="36" cy="42" r="7" fill="#ffffff" opacity="0.55"/></g></svg><rect x="512.25" y="282.4" width="230.3" height="230.3" rx="44.1" fill="#3a1c10" opacity="0.06"/><ellipse cx="224.60000000000002" cy="866.3" rx="140.4" ry="18.900000000000002" fill="#5a1a08" opacity="0.3"/><svg x="97.70000000000002" y="590.9" width="270" height="270" viewBox="0 0 100 100" overflow="visible">
+  <defs>
+    <linearGradient id="tf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="0.75" stop-color="#fbfcfe"/><stop offset="1" stop-color="#e9edf4"/></linearGradient>
+    <linearGradient id="ts" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfd5e1"/><stop offset="1" stop-color="#a3abbd"/></linearGradient>
+    <filter id="tb" x="-10%" y="-10%" width="120%" height="125%"><feGaussianBlur stdDeviation="1.8"/></filter>
+  </defs>
+  <rect x="4" y="13" width="93" height="86" rx="18" fill="#2a1a14" opacity="0.2" filter="url(#tb)"/>
+  <rect x="3" y="10" width="94" height="86" rx="18" fill="url(#ts)" stroke="#8a93a8" stroke-width="1.5"/>
+  <rect x="3" y="2" width="94" height="82" rx="18" fill="url(#tf)" stroke="#b4bccb" stroke-width="1.5"/>
+  <rect x="6.5" y="5" width="87" height="76" rx="15" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+</svg><svg x="132.8" y="604.4" width="199.8" height="199.8" viewBox="0 0 100 100" overflow="visible"></svg><rect x="105.80000000000001" y="596.3" width="253.8" height="253.8" rx="48.6" fill="#3a1c10" opacity="0.1"/><rect x="65.30000000000003" y="526.1" width="318.59999999999997" height="302.40000000000003" rx="81" fill="url(#glow)"/><svg x="89.60000000000002" y="545" width="270" height="270" viewBox="0 0 100 100" overflow="visible">
+  <defs>
+    <linearGradient id="tf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="0.75" stop-color="#fbfcfe"/><stop offset="1" stop-color="#e9edf4"/></linearGradient>
+    <linearGradient id="ts" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfd5e1"/><stop offset="1" stop-color="#a3abbd"/></linearGradient>
+    <filter id="tb" x="-10%" y="-10%" width="120%" height="125%"><feGaussianBlur stdDeviation="1.8"/></filter>
+  </defs>
+  <rect x="4" y="13" width="93" height="86" rx="18" fill="#2a1a14" opacity="0.2" filter="url(#tb)"/>
+  <rect x="3" y="10" width="94" height="86" rx="18" fill="url(#ts)" stroke="#8a93a8" stroke-width="1.5"/>
+  <rect x="3" y="2" width="94" height="82" rx="18" fill="url(#tf)" stroke="#b4bccb" stroke-width="1.5"/>
+  <rect x="6.5" y="5" width="87" height="76" rx="15" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+</svg><svg x="124.70000000000002" y="558.5" width="199.8" height="199.8" viewBox="0 0 100 100" overflow="visible"><defs><linearGradient id="zpatinhog0" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8d752"/><stop offset="0.55" stop-color="#f5c400"/><stop offset="1" stop-color="#e1b400"/></linearGradient><linearGradient id="zpatinhog1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe067"/><stop offset="0.55" stop-color="#ffd21f"/><stop offset="1" stop-color="#ebc11d"/></linearGradient><linearGradient id="zpatinhog2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffaf66"/><stop offset="0.55" stop-color="#ff8a1e"/><stop offset="1" stop-color="#eb7f1c"/></linearGradient><filter id="zpatinhov" x="-15%" y="-15%" width="130%" height="135%" color-interpolation-filters="sRGB">
+<feOffset in="SourceAlpha" dx="-3" dy="-4" result="a1"/><feGaussianBlur in="a1" stdDeviation="2.6" result="b1"/>
+<feComposite in="SourceAlpha" in2="b1" operator="out" result="e1"/><feFlood flood-color="#1c1020" flood-opacity="0.26"/><feComposite in2="e1" operator="in" result="shade"/>
+<feOffset in="SourceAlpha" dx="2.5" dy="3.5" result="a2"/><feGaussianBlur in="a2" stdDeviation="2.2" result="b2"/>
+<feComposite in="SourceAlpha" in2="b2" operator="out" result="e2"/><feFlood flood-color="#ffffff" flood-opacity="0.38"/><feComposite in2="e2" operator="in" result="hl"/>
+<feGaussianBlur in="SourceAlpha" stdDeviation="2.4" result="sb"/><feOffset in="sb" dy="3.5" result="so"/><feFlood flood-color="#2a1a14" flood-opacity="0.28"/><feComposite in2="so" operator="in" result="drop"/>
+<feMerge><feMergeNode in="drop"/><feMergeNode in="SourceGraphic"/><feMergeNode in="shade"/><feMergeNode in="hl"/></feMerge></filter></defs><g filter="url(#zpatinhov)">
+    <path d="M82 52 l10 -14 l-2 22z" fill="url(#zpatinhog0)" stroke="#5c4809" stroke-width="3.00" stroke-linejoin="round" stroke-linecap="round"/>
+    <ellipse cx="54" cy="66" rx="34" ry="20" fill="url(#zpatinhog1)" stroke="#5f4d12" stroke-width="3.00" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="36" cy="38" r="17" fill="url(#zpatinhog1)" stroke="#5f4d12" stroke-width="3.00" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M20 40 l-14 3 l13 8z" fill="url(#zpatinhog2)" stroke="#5f3612" stroke-width="3.00" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="33" cy="34" r="3.5" fill="#3a2a22"/>
+    <path d="M48 64 q14 10 28 -2" fill="none" stroke="#5c4809" stroke-width="2.63" stroke-linejoin="round" stroke-linecap="round"/>
+    <ellipse cx="44" cy="58" rx="6" ry="3" fill="#ffffff" opacity="0.55"/></g></svg><ellipse cx="775.4" cy="866.3" rx="140.4" ry="18.900000000000002" fill="#5a1a08" opacity="0.3"/><svg x="648.5" y="590.9" width="270" height="270" viewBox="0 0 100 100" overflow="visible">
+  <defs>
+    <linearGradient id="tf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="0.75" stop-color="#fbfcfe"/><stop offset="1" stop-color="#e9edf4"/></linearGradient>
+    <linearGradient id="ts" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfd5e1"/><stop offset="1" stop-color="#a3abbd"/></linearGradient>
+    <filter id="tb" x="-10%" y="-10%" width="120%" height="125%"><feGaussianBlur stdDeviation="1.8"/></filter>
+  </defs>
+  <rect x="4" y="13" width="93" height="86" rx="18" fill="#2a1a14" opacity="0.2" filter="url(#tb)"/>
+  <rect x="3" y="10" width="94" height="86" rx="18" fill="url(#ts)" stroke="#8a93a8" stroke-width="1.5"/>
+  <rect x="3" y="2" width="94" height="82" rx="18" fill="url(#tf)" stroke="#b4bccb" stroke-width="1.5"/>
+  <rect x="6.5" y="5" width="87" height="76" rx="15" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+</svg><svg x="683.6" y="604.4" width="199.8" height="199.8" viewBox="0 0 100 100" overflow="visible"></svg><rect x="656.6" y="596.3" width="253.8" height="253.8" rx="48.6" fill="#3a1c10" opacity="0.1"/><rect x="616.1" y="526.1" width="318.59999999999997" height="302.40000000000003" rx="81" fill="url(#glow)"/><svg x="640.4" y="545" width="270" height="270" viewBox="0 0 100 100" overflow="visible">
+  <defs>
+    <linearGradient id="tf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="0.75" stop-color="#fbfcfe"/><stop offset="1" stop-color="#e9edf4"/></linearGradient>
+    <linearGradient id="ts" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfd5e1"/><stop offset="1" stop-color="#a3abbd"/></linearGradient>
+    <filter id="tb" x="-10%" y="-10%" width="120%" height="125%"><feGaussianBlur stdDeviation="1.8"/></filter>
+  </defs>
+  <rect x="4" y="13" width="93" height="86" rx="18" fill="#2a1a14" opacity="0.2" filter="url(#tb)"/>
+  <rect x="3" y="10" width="94" height="86" rx="18" fill="url(#ts)" stroke="#8a93a8" stroke-width="1.5"/>
+  <rect x="3" y="2" width="94" height="82" rx="18" fill="url(#tf)" stroke="#b4bccb" stroke-width="1.5"/>
+  <rect x="6.5" y="5" width="87" height="76" rx="15" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+</svg><svg x="675.5" y="558.5" width="199.8" height="199.8" viewBox="0 0 100 100" overflow="visible"><defs><linearGradient id="zpatinhog0" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8d752"/><stop offset="0.55" stop-color="#f5c400"/><stop offset="1" stop-color="#e1b400"/></linearGradient><linearGradient id="zpatinhog1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe067"/><stop offset="0.55" stop-color="#ffd21f"/><stop offset="1" stop-color="#ebc11d"/></linearGradient><linearGradient id="zpatinhog2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffaf66"/><stop offset="0.55" stop-color="#ff8a1e"/><stop offset="1" stop-color="#eb7f1c"/></linearGradient><filter id="zpatinhov" x="-15%" y="-15%" width="130%" height="135%" color-interpolation-filters="sRGB">
+<feOffset in="SourceAlpha" dx="-3" dy="-4" result="a1"/><feGaussianBlur in="a1" stdDeviation="2.6" result="b1"/>
+<feComposite in="SourceAlpha" in2="b1" operator="out" result="e1"/><feFlood flood-color="#1c1020" flood-opacity="0.26"/><feComposite in2="e1" operator="in" result="shade"/>
+<feOffset in="SourceAlpha" dx="2.5" dy="3.5" result="a2"/><feGaussianBlur in="a2" stdDeviation="2.2" result="b2"/>
+<feComposite in="SourceAlpha" in2="b2" operator="out" result="e2"/><feFlood flood-color="#ffffff" flood-opacity="0.38"/><feComposite in2="e2" operator="in" result="hl"/>
+<feGaussianBlur in="SourceAlpha" stdDeviation="2.4" result="sb"/><feOffset in="sb" dy="3.5" result="so"/><feFlood flood-color="#2a1a14" flood-opacity="0.28"/><feComposite in2="so" operator="in" result="drop"/>
+<feMerge><feMergeNode in="drop"/><feMergeNode in="SourceGraphic"/><feMergeNode in="shade"/><feMergeNode in="hl"/></feMerge></filter></defs><g filter="url(#zpatinhov)">
+    <path d="M82 52 l10 -14 l-2 22z" fill="url(#zpatinhog0)" stroke="#5c4809" stroke-width="3.00" stroke-linejoin="round" stroke-linecap="round"/>
+    <ellipse cx="54" cy="66" rx="34" ry="20" fill="url(#zpatinhog1)" stroke="#5f4d12" stroke-width="3.00" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="36" cy="38" r="17" fill="url(#zpatinhog1)" stroke="#5f4d12" stroke-width="3.00" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M20 40 l-14 3 l13 8z" fill="url(#zpatinhog2)" stroke="#5f3612" stroke-width="3.00" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="33" cy="34" r="3.5" fill="#3a2a22"/>
+    <path d="M48 64 q14 10 28 -2" fill="none" stroke="#5c4809" stroke-width="2.63" stroke-linejoin="round" stroke-linecap="round"/>
+    <ellipse cx="44" cy="58" rx="6" ry="3" fill="#ffffff" opacity="0.55"/></g></svg><ellipse cx="500" cy="866.3" rx="140.4" ry="18.900000000000002" fill="#5a1a08" opacity="0.3"/><svg x="373.1" y="590.9" width="270" height="270" viewBox="0 0 100 100" overflow="visible">
+  <defs>
+    <linearGradient id="tf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="0.75" stop-color="#fbfcfe"/><stop offset="1" stop-color="#e9edf4"/></linearGradient>
+    <linearGradient id="ts" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfd5e1"/><stop offset="1" stop-color="#a3abbd"/></linearGradient>
+    <filter id="tb" x="-10%" y="-10%" width="120%" height="125%"><feGaussianBlur stdDeviation="1.8"/></filter>
+  </defs>
+  <rect x="4" y="13" width="93" height="86" rx="18" fill="#2a1a14" opacity="0.2" filter="url(#tb)"/>
+  <rect x="3" y="10" width="94" height="86" rx="18" fill="url(#ts)" stroke="#8a93a8" stroke-width="1.5"/>
+  <rect x="3" y="2" width="94" height="82" rx="18" fill="url(#tf)" stroke="#b4bccb" stroke-width="1.5"/>
+  <rect x="6.5" y="5" width="87" height="76" rx="15" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+</svg><svg x="408.20000000000005" y="604.4" width="199.8" height="199.8" viewBox="0 0 100 100" overflow="visible"></svg><rect x="381.20000000000005" y="596.3" width="253.8" height="253.8" rx="48.6" fill="#3a1c10" opacity="0.1"/><rect x="340.7" y="526.1" width="318.59999999999997" height="302.40000000000003" rx="81" fill="url(#glow)"/><svg x="365" y="545" width="270" height="270" viewBox="0 0 100 100" overflow="visible">
+  <defs>
+    <linearGradient id="tf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="0.75" stop-color="#fbfcfe"/><stop offset="1" stop-color="#e9edf4"/></linearGradient>
+    <linearGradient id="ts" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfd5e1"/><stop offset="1" stop-color="#a3abbd"/></linearGradient>
+    <filter id="tb" x="-10%" y="-10%" width="120%" height="125%"><feGaussianBlur stdDeviation="1.8"/></filter>
+  </defs>
+  <rect x="4" y="13" width="93" height="86" rx="18" fill="#2a1a14" opacity="0.2" filter="url(#tb)"/>
+  <rect x="3" y="10" width="94" height="86" rx="18" fill="url(#ts)" stroke="#8a93a8" stroke-width="1.5"/>
+  <rect x="3" y="2" width="94" height="82" rx="18" fill="url(#tf)" stroke="#b4bccb" stroke-width="1.5"/>
+  <rect x="6.5" y="5" width="87" height="76" rx="15" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+</svg><svg x="400.1" y="558.5" width="199.8" height="199.8" viewBox="0 0 100 100" overflow="visible"><defs><linearGradient id="zpatinhog0" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8d752"/><stop offset="0.55" stop-color="#f5c400"/><stop offset="1" stop-color="#e1b400"/></linearGradient><linearGradient id="zpatinhog1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe067"/><stop offset="0.55" stop-color="#ffd21f"/><stop offset="1" stop-color="#ebc11d"/></linearGradient><linearGradient id="zpatinhog2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffaf66"/><stop offset="0.55" stop-color="#ff8a1e"/><stop offset="1" stop-color="#eb7f1c"/></linearGradient><filter id="zpatinhov" x="-15%" y="-15%" width="130%" height="135%" color-interpolation-filters="sRGB">
+<feOffset in="SourceAlpha" dx="-3" dy="-4" result="a1"/><feGaussianBlur in="a1" stdDeviation="2.6" result="b1"/>
+<feComposite in="SourceAlpha" in2="b1" operator="out" result="e1"/><feFlood flood-color="#1c1020" flood-opacity="0.26"/><feComposite in2="e1" operator="in" result="shade"/>
+<feOffset in="SourceAlpha" dx="2.5" dy="3.5" result="a2"/><feGaussianBlur in="a2" stdDeviation="2.2" result="b2"/>
+<feComposite in="SourceAlpha" in2="b2" operator="out" result="e2"/><feFlood flood-color="#ffffff" flood-opacity="0.38"/><feComposite in2="e2" operator="in" result="hl"/>
+<feGaussianBlur in="SourceAlpha" stdDeviation="2.4" result="sb"/><feOffset in="sb" dy="3.5" result="so"/><feFlood flood-color="#2a1a14" flood-opacity="0.28"/><feComposite in2="so" operator="in" result="drop"/>
+<feMerge><feMergeNode in="drop"/><feMergeNode in="SourceGraphic"/><feMergeNode in="shade"/><feMergeNode in="hl"/></feMerge></filter></defs><g filter="url(#zpatinhov)">
+    <path d="M82 52 l10 -14 l-2 22z" fill="url(#zpatinhog0)" stroke="#5c4809" stroke-width="3.00" stroke-linejoin="round" stroke-linecap="round"/>
+    <ellipse cx="54" cy="66" rx="34" ry="20" fill="url(#zpatinhog1)" stroke="#5f4d12" stroke-width="3.00" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="36" cy="38" r="17" fill="url(#zpatinhog1)" stroke="#5f4d12" stroke-width="3.00" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M20 40 l-14 3 l13 8z" fill="url(#zpatinhog2)" stroke="#5f3612" stroke-width="3.00" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="33" cy="34" r="3.5" fill="#3a2a22"/>
+    <path d="M48 64 q14 10 28 -2" fill="none" stroke="#5c4809" stroke-width="2.63" stroke-linejoin="round" stroke-linecap="round"/>
+    <ellipse cx="44" cy="58" rx="6" ry="3" fill="#ffffff" opacity="0.55"/></g></svg>
+    <path transform="translate(300 110) scale(0.64)" d="M0 -50 q6 42 50 50 q-44 8 -50 50 q-6 -42 -50 -50 q44 -8 50 -50z" fill="#ffffff" opacity="1"/><path transform="translate(720 90) scale(0.48)" d="M0 -50 q6 42 50 50 q-44 8 -50 50 q-6 -42 -50 -50 q44 -8 50 -50z" fill="#ffffff" opacity="1"/><path transform="translate(110 560) scale(0.44)" d="M0 -50 q6 42 50 50 q-44 8 -50 50 q-6 -42 -50 -50 q44 -8 50 -50z" fill="#ffffff" opacity="0.95"/><path transform="translate(900 560) scale(0.54)" d="M0 -50 q6 42 50 50 q-44 8 -50 50 q-6 -42 -50 -50 q44 -8 50 -50z" fill="#ffffff" opacity="1"/>
+  </g></g></svg>
