@@ -96,7 +96,7 @@ function jsonld(l, t) {
     foundingDate: CONFIG.founded,
     address: { "@type": "PostalAddress", addressCountry: "BR" },
     areaServed: "Worldwide",
-    knowsAbout: ["Mobile game development", "Android games", "Puzzle games", "Match-3 games", "Brain training games", "App development"],
+    knowsAbout: ["Mobile game development", "Android games", "Puzzle games", "Match-3 games", "Brain training games", "Triple match games", "Tidy-up puzzle games", "App development"],
     contactPoint: { "@type": "ContactPoint", email: CONFIG.email, contactType: "customer support", availableLanguage: LANGS.map((x) => I18N[x]._html) }
   };
   if (socialEntries.length) org.sameAs = socialEntries.map(([, u]) => u);
@@ -118,7 +118,7 @@ function jsonld(l, t) {
   const faq = {
     "@type": "FAQPage",
     "@id": url + "#faq",
-    mainEntity: [1, 2, 3, 4, 5, 6].map((i) => ({
+    mainEntity: [1, 2, 3, 4, 5, 6, 7].map((i) => ({
       "@type": "Question", name: t["faq.q" + i],
       acceptedAnswer: { "@type": "Answer", text: t["faq.a" + i] }
     }))
@@ -146,7 +146,7 @@ function render(l) {
   const langmenu = LANGS.map((x) =>
     `            <li><a href="${root}${x === DEFAULT ? "" : x + "/"}" hreflang="${I18N[x]._html}" lang="${I18N[x]._html}" data-lang="${x}"${x === l ? ' aria-current="true"' : ""}><span>${esc(I18N[x]._name)}</span><small>${x.toUpperCase()}</small></a></li>`
   ).join("\n");
-  const faq = [1, 2, 3, 4, 5, 6].map((i) =>
+  const faq = [1, 2, 3, 4, 5, 6, 7].map((i) =>
     `          <details class="faq-item"${i === 1 ? " open" : ""}>\n            <summary><h3>${esc(t["faq.q" + i])}</h3></summary>\n            <p>${esc(t["faq.a" + i])}</p>\n          </details>`
   ).join("\n");
   const socials = socialEntries.length

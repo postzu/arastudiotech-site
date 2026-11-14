@@ -125,10 +125,10 @@ window.LEGAL_I18N.zh = {
   },
   content: {
     title: "内容政策",
-    description: "创作者和粉丝可以如何使用 AraStudioTech 的游戏 FameUp 和 Faísca：视频、直播、变现、同人作品、周边商品和模组。",
+    description: "创作者和粉丝可以如何使用 AraStudioTech 的游戏 FameUp、Faísca 和 Mess Zero：视频、直播、变现、同人作品、周边商品和模组。",
     updated: "2026年11月9日",
     body: `
-<p class="lead">我们很高兴看到大家玩我们的游戏、录制视频、绘画创作和讨论交流。本政策说明您无需事先征得我们同意，即可如何使用 AraStudioTech 游戏（<strong>FameUp: Influencer Life</strong>、<strong>Faísca</strong> 及未来游戏）中的内容。</p>
+<p class="lead">我们很高兴看到大家玩我们的游戏、录制视频、绘画创作和讨论交流。本政策说明您无需事先征得我们同意，即可如何使用 AraStudioTech 游戏（<strong>FameUp: Influencer Life</strong>、<strong>Faísca</strong>、<strong>Mess Zero</strong> 及未来游戏）中的内容。</p>
 <p>我们的游戏，包括名称、标志、角色、美术、音乐、音效和代码，均归 AraStudioTech 或我们的许可方所有。本政策授予您以下述方式使用这些内容的有限、非独占且可撤销的许可，并不向您转让任何所有权。</p>
 
 <h2 id="videos">1. 视频、直播与社交媒体帖子</h2>

@@ -125,10 +125,10 @@ window.LEGAL_I18N.ja = {
   },
   content: {
     title: "コンテンツポリシー",
-    description: "AraStudioTech のゲーム「FameUp」「Faísca」について、クリエイターやファンができること（動画、配信、収益化、ファンアート、グッズ、MOD）を説明します。",
+    description: "AraStudioTech のゲーム「FameUp」「Faísca」「Mess Zero」について、クリエイターやファンができること（動画、配信、収益化、ファンアート、グッズ、MOD）を説明します。",
     updated: "2026年11月9日",
     body: `
-<p class="lead">当スタジオのゲームをプレイし、撮影し、描き、語ってくれる皆さんを見るのが大好きです。本ポリシーは、AraStudioTech のゲーム（<strong>FameUp: Influencer Life</strong>、<strong>Faísca</strong>、および今後のゲーム）のコンテンツについて、事前の許可なくできることを説明するものです。</p>
+<p class="lead">当スタジオのゲームをプレイし、撮影し、描き、語ってくれる皆さんを見るのが大好きです。本ポリシーは、AraStudioTech のゲーム（<strong>FameUp: Influencer Life</strong>、<strong>Faísca</strong>、<strong>Mess Zero</strong>、および今後のゲーム）のコンテンツについて、事前の許可なくできることを説明するものです。</p>
 <p>当スタジオのゲーム（名称、ロゴ、キャラクター、アート、音楽、効果音、コードを含む）は、AraStudioTech またはライセンサーに帰属します。本ポリシーは、以下に定める方法でそれらのコンテンツを利用するための、限定的・非独占的かつ撤回可能な許可をあなたに与えるものです。いかなる所有権もあなたに移転するものではありません。</p>
 
 <h2 id="videos">1. 動画・配信・SNS 投稿</h2>

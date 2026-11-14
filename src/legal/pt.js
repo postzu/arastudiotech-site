@@ -126,10 +126,10 @@ Dúvidas, pedidos e canal de contato do encarregado de dados (LGPD, art. 41): <a
   },
   content: {
     title: "Política de Conteúdo",
-    description: "O que criadores e fãs podem fazer com os jogos da AraStudioTech: vídeos, lives, monetização, fan art, produtos e mods do FameUp e do Faísca.",
+    description: "O que criadores e fãs podem fazer com os jogos da AraStudioTech: vídeos, lives, monetização, fan art, produtos e mods do FameUp, do Faísca e do Bagunça Zero.",
     updated: "9 de novembro de 2026",
     body: `
-<p class="lead">A gente adora ver as pessoas jogando, gravando, desenhando e falando dos nossos jogos. Esta política explica o que você pode fazer com o conteúdo dos jogos da AraStudioTech (<strong>FameUp: Influencer Life</strong>, <strong>Faísca</strong> e os próximos) sem precisar pedir antes.</p>
+<p class="lead">A gente adora ver as pessoas jogando, gravando, desenhando e falando dos nossos jogos. Esta política explica o que você pode fazer com o conteúdo dos jogos da AraStudioTech (<strong>FameUp: Influencer Life</strong>, <strong>Faísca</strong>, <strong>Bagunça Zero</strong> e os próximos) sem precisar pedir antes.</p>
 <p>Nossos jogos, incluindo nomes, logotipos, personagens, artes, músicas, efeitos sonoros e código, pertencem à AraStudioTech ou aos nossos licenciadores. Esta política dá a você uma permissão limitada, não exclusiva e revogável para usar esse conteúdo das formas descritas abaixo. Ela não transfere nenhuma propriedade para você.</p>
 
 <h2 id="videos">1. Vídeos, lives e posts</h2>

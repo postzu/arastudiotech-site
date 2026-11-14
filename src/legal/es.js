@@ -125,10 +125,10 @@ Dudas, solicitudes y canal de contacto de protección de datos (encargado según
   },
   content: {
     title: "Política de Contenido",
-    description: "Qué pueden hacer creadores y fans con los juegos de AraStudioTech: vídeos, directos, monetización, fan art, productos y mods de FameUp y Faísca.",
+    description: "Qué pueden hacer creadores y fans con los juegos de AraStudioTech: vídeos, directos, monetización, fan art, productos y mods de FameUp, Faísca y Desorden Cero.",
     updated: "9 de noviembre de 2026",
     body: `
-<p class="lead">Nos encanta ver a la gente jugar, grabar, dibujar y hablar de nuestros juegos. Esta política explica qué puedes hacer con el contenido de los juegos de AraStudioTech (<strong>FameUp: Influencer Life</strong>, <strong>Faísca</strong> y futuros juegos) sin tener que pedirnos permiso antes.</p>
+<p class="lead">Nos encanta ver a la gente jugar, grabar, dibujar y hablar de nuestros juegos. Esta política explica qué puedes hacer con el contenido de los juegos de AraStudioTech (<strong>FameUp: Influencer Life</strong>, <strong>Faísca</strong>, <strong>Desorden Cero</strong> y futuros juegos) sin tener que pedirnos permiso antes.</p>
 <p>Nuestros juegos, incluidos sus nombres, logotipos, personajes, arte, música, efectos de sonido y código, pertenecen a AraStudioTech o a nuestros licenciantes. Esta política te da un permiso limitado, no exclusivo y revocable para usar ese contenido de las formas descritas a continuación. No te transfiere ninguna propiedad.</p>
 
 <h2 id="videos">1. Vídeos, directos y publicaciones</h2>

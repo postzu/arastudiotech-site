@@ -125,10 +125,10 @@ Fragen, Anfragen und Datenschutz-Kontakt („encarregado“ nach LGPD): <a href=
   },
   content: {
     title: "Inhaltsrichtlinie",
-    description: "Was Creator und Fans mit den Spielen von AraStudioTech machen dürfen: Videos, Streams, Monetarisierung, Fan-Art, Merchandise und Mods für FameUp und Faísca.",
+    description: "Was Creator und Fans mit den Spielen von AraStudioTech machen dürfen: Videos, Streams, Monetarisierung, Fan-Art, Merchandise und Mods für FameUp, Faísca und Mess Zero.",
     updated: "9. November 2026",
     body: `
-<p class="lead">Wir lieben es, wenn Leute unsere Spiele spielen, filmen, zeichnen und darüber sprechen. Diese Richtlinie erklärt, was du mit Inhalten aus Spielen von AraStudioTech (<strong>FameUp: Influencer Life</strong>, <strong>Faísca</strong> und künftigen Spielen) machen darfst, ohne uns vorher zu fragen.</p>
+<p class="lead">Wir lieben es, wenn Leute unsere Spiele spielen, filmen, zeichnen und darüber sprechen. Diese Richtlinie erklärt, was du mit Inhalten aus Spielen von AraStudioTech (<strong>FameUp: Influencer Life</strong>, <strong>Faísca</strong>, <strong>Mess Zero</strong> und künftigen Spielen) machen darfst, ohne uns vorher zu fragen.</p>
 <p>Unsere Spiele, einschließlich Namen, Logos, Figuren, Grafiken, Musik, Soundeffekten und Code, gehören AraStudioTech oder unseren Lizenzgebern. Diese Richtlinie gibt dir eine eingeschränkte, nicht exklusive und widerrufliche Erlaubnis, diese Inhalte wie unten beschrieben zu nutzen. Sie überträgt dir kein Eigentum.</p>
 
 <h2 id="videos">1. Videos, Streams und Social-Media-Beiträge</h2>
