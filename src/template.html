@@ -165,11 +165,43 @@
           </div>
         </div>
 
-        <!-- 9. Encerramento -->
+        <!-- 9. Mess Zero: apresentação -->
+        <div class="scene scene-messzero scene-title" data-duration="3000">
+          <img class="title-icon" src="{{@root}}assets/reel/messzero-icon.webp" alt="" width="360" height="360" loading="lazy">
+          <div class="title-text">
+            <p class="title-name">{{game.messzero.name}}</p>
+            <p class="title-tag">{{reel.messzero.tag}}</p>
+          </div>
+        </div>
+
+        <!-- 10–12. Mess Zero: telas -->
+        <div class="scene scene-messzero" data-duration="3000">
+          <div class="reel-phones">
+            <img class="side" src="{{@reel}}messzero-2.webp" alt="" width="506" height="900" loading="lazy">
+            <img class="main" src="{{@reel}}messzero-1.webp" alt="{{img.messzero}}" width="506" height="900" loading="lazy">
+            <img class="side" src="{{@reel}}messzero-3.webp" alt="" width="506" height="900" loading="lazy">
+          </div>
+        </div>
+        <div class="scene scene-messzero" data-duration="3000">
+          <div class="reel-phones">
+            <img class="side" src="{{@reel}}messzero-4.webp" alt="" width="506" height="900" loading="lazy">
+            <img class="main" src="{{@reel}}messzero-5.webp" alt="" width="506" height="900" loading="lazy">
+            <img class="side" src="{{@reel}}messzero-6.webp" alt="" width="506" height="900" loading="lazy">
+          </div>
+        </div>
+        <div class="scene scene-messzero" data-duration="3000">
+          <div class="reel-phones">
+            <img class="side" src="{{@reel}}messzero-7.webp" alt="" width="506" height="900" loading="lazy">
+            <img class="main" src="{{@reel}}messzero-8.webp" alt="" width="506" height="900" loading="lazy">
+          </div>
+        </div>
+
+        <!-- 13. Encerramento -->
         <div class="scene scene-outro" data-duration="3000">
           <div class="outro-icons">
             <img src="{{@root}}assets/reel/faisca-icon.webp" alt="Faísca" width="360" height="360" loading="lazy">
             <img src="{{@root}}assets/reel/fameup-icon.webp" alt="FameUp" width="360" height="360" loading="lazy">
+            <img src="{{@root}}assets/reel/messzero-icon.webp" alt="{{game.messzero.name}}" width="360" height="360" loading="lazy">
           </div>
           <p class="outro-text">{{reel.outro}}</p>
           <a class="btn btn-play" href="#games">

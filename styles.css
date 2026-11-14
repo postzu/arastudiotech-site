@@ -163,6 +163,7 @@ h1, h2, h3, h4 { font-family: "Exo 2", sans-serif; line-height: 1.2; margin: 0; 
 .scene-intro, .scene-outro { background: radial-gradient(ellipse at 50% 120%, #1a1240 0, #000 60%); }
 .scene-faisca { background: radial-gradient(ellipse at 50% -10%, #7a6538 0, transparent 55%), linear-gradient(165deg, #1f1d52, #26204c 55%, #3a2340); }
 .scene-fameup { background: radial-gradient(ellipse at 50% -10%, #ff62aa 0, transparent 55%), linear-gradient(165deg, #8a2fa6, #4a1d80 55%, #23124d); }
+.scene-messzero { background: radial-gradient(ellipse at 50% -10%, #ffe08a 0, transparent 55%), linear-gradient(165deg, #ffab47, #f07a35 55%, #c9452a); }
 
 .scene-intro .hero-logo { transform: scale(.92); opacity: 0; transition: transform 1.2s cubic-bezier(.2,.8,.2,1), opacity 1s; }
 .scene-intro.is-active .hero-logo { transform: none; opacity: 1; }
@@ -202,6 +203,7 @@ h1, h2, h3, h4 { font-family: "Exo 2", sans-serif; line-height: 1.2; margin: 0; 
 .scene-faisca .title-name { color: #ffd34d; text-shadow: 0 4px 0 #b4650f, 0 0 40px rgba(255,200,60,.45); }
 .scene-fameup .title-name { color: #fff; text-shadow: 0 4px 24px rgba(0,0,0,.35); }
 .scene-fameup .title-name small { color: #ffd34d; }
+.scene-messzero .title-name { color: #fff; text-shadow: 0 4px 0 #a8391c, 0 6px 24px rgba(0,0,0,.3); }
 .title-tag { margin: 14px 0 0; max-width: 520px; color: #fff; font: 600 clamp(15px, 2.1vw, 24px)/1.35 "Inter", sans-serif; opacity: .92; }
 
 /* Encerramento */
@@ -210,6 +212,7 @@ h1, h2, h3, h4 { font-family: "Exo 2", sans-serif; line-height: 1.2; margin: 0; 
 .outro-icons img { width: clamp(64px, 11vw, 120px); height: auto; border-radius: 22%; box-shadow: 0 14px 40px rgba(0,0,0,.5); transform: translateY(20px); opacity: 0; transition: transform .8s cubic-bezier(.3,1.4,.5,1), opacity .6s; }
 .outro-icons img.round { border-radius: 50%; }
 .outro-icons img + img { transition-delay: .15s; }
+.outro-icons img + img + img { transition-delay: .3s; }
 .outro-text { margin: 0; font: 800 clamp(22px, 3.6vw, 40px)/1.15 "Exo 2", sans-serif; opacity: 0; transition: opacity .8s .3s; }
 .scene-outro .btn { opacity: 0; transition: opacity .8s .5s, transform .15s, box-shadow .2s; }
 .scene-outro.is-active .outro-icons img { transform: none; opacity: 1; }
