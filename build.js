@@ -20,6 +20,12 @@ const CONFIG = {
   },
   // Vídeo do topo: preencha UM dos dois
   video: { youtube: "", mp4: "" },
+  // Vídeo de cada jogo (página do jogo). Vazio = as telas passam sozinhas como um vídeo.
+  //   youtube: ID de um vídeo/Short (ex.: "abc123XYZ")   mp4: caminho, ex.: "assets/video/faisca.mp4" (vertical 9:16)
+  gameVideo: {
+    faisca: { youtube: "", mp4: "" },
+    fameup: { youtube: "", mp4: "" }
+  },
   // Redes sociais: deixe "" para esconder. Também viram "sameAs" para o Google.
   socials: {
     instagram: "",
@@ -170,6 +176,114 @@ for (const l of LANGS) {
   console.log("ok", l === DEFAULT ? "index.html" : l + "/index.html");
 }
 
+/* -------- páginas dos jogos: faisca/, fameup/ e pt/faisca/, es/faisca/... -------- */
+const { qrSvg } = require("./src/qr.js");
+const gameTpl = fs.readFileSync(path.join(ROOT, "src/game.html"), "utf8");
+const GAMES = [
+  { id: "faisca", name: "Faísca", full: "Faísca", small: "", screens: 6, genre: ["Puzzle", "Brain training", "Logic"], other: "fameup" },
+  { id: "fameup", name: "FameUp", full: "FameUp: Influencer Life", small: "Influencer Life", screens: 8, genre: ["Puzzle", "Match-3", "Casual"], other: "faisca" }
+];
+const gameById = (id) => GAMES.find((g) => g.id === id);
+const gamePath = (id, l) => (l === DEFAULT ? "" : l + "/") + id + "/";
+const gameUrl = (id, l) => CONFIG.site + "/" + gamePath(id, l);
+// QR code: página curta que leva direto ao jogo no Google Play (funciona antes e depois do lançamento)
+const QR = Object.fromEntries(GAMES.map((g) => [g.id, qrSvg(CONFIG.site + "/" + g.id + "/jogar/?c=qr")]));
+
+function gameMedia(g, l, t, root) {
+  const v = (CONFIG.gameVideo || {})[g.id] || {};
+  if (v.youtube) {
+    return `        <iframe class="gp-video" src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(v.youtube)}?rel=0&amp;playsinline=1" title="${esc(g.full)}" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>`;
+  }
+  if (v.mp4) {
+    return `        <video class="gp-video" src="${esc(root + v.mp4)}" poster="${root}assets/reel/${l}/${g.id}-1.webp" autoplay muted loop playsinline controls></video>`;
+  }
+  const imgs = [];
+  for (let i = 1; i <= g.screens; i++) {
+    imgs.push(`          <img${i === 1 ? ' class="is-active"' : ""} src="${root}assets/reel/${l}/${g.id}-${i}.webp" alt="${i === 1 ? esc(t["img." + g.id]) : ""}" width="506" height="900"${i > 2 ? ' loading="lazy"' : ""}>`);
+  }
+  return `        <div class="gp-slides" id="gp-slides">\n${imgs.join("\n")}\n        </div>\n` +
+    `        <div class="reel-progress" aria-hidden="true"><i id="gp-bar"></i></div>\n` +
+    `        <div class="gp-dots" id="gp-dots"></div>`;
+}
+
+function gameJsonld(g, l, t) {
+  const url = gameUrl(g.id, l);
+  return JSON.stringify({
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MobileApplication", "@id": CONFIG.site + "/#" + g.id,
+        name: g.full, alternateName: g.name === g.full ? undefined : g.name,
+        description: t["games." + g.id], operatingSystem: "Android", applicationCategory: "GameApplication",
+        genre: g.genre, image: CONFIG.site + "/assets/games/" + g.id + ".jpg", url: CONFIG.play[g.id],
+        screenshot: Array.from({ length: g.screens }, (_, i) => `${CONFIG.site}/assets/reel/${l}/${g.id}-${i + 1}.webp`),
+        inLanguage: t._html,
+        offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+        author: { "@type": "Organization", "@id": CONFIG.site + "/#org", name: "AraStudioTech", url: CONFIG.site + "/" }
+      },
+      { "@type": "WebPage", "@id": url + "#page", url, name: t["gp." + g.id + ".title"], description: t["games." + g.id], inLanguage: t._html, about: { "@id": CONFIG.site + "/#" + g.id } },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "AraStudioTech", item: urlFor(l) },
+          { "@type": "ListItem", position: 2, name: t["nav.games"], item: urlFor(l) + "#games" },
+          { "@type": "ListItem", position: 3, name: g.full, item: url }
+        ]
+      }
+    ]
+  }, null, 2).replace(/</g, "\\u003c").split("\n").map((s) => "  " + s).join("\n");
+}
+
+function renderGame(g, l) {
+  const t = I18N[l];
+  const root = l === DEFAULT ? "../" : "../../";
+  const o = gameById(g.other);
+  const hreflang = LANGS.map((x) => `  <link rel="alternate" hreflang="${I18N[x]._html}" href="${gameUrl(g.id, x)}">`)
+    .concat(`  <link rel="alternate" hreflang="x-default" href="${gameUrl(g.id, DEFAULT)}">`).join("\n");
+  const langmenu = LANGS.map((x) =>
+    `            <li><a href="${root}${gamePath(g.id, x)}" hreflang="${I18N[x]._html}" lang="${I18N[x]._html}" data-lang="${x}"${x === l ? ' aria-current="true"' : ""}><span>${esc(I18N[x]._name)}</span><small>${x.toUpperCase()}</small></a></li>`
+  ).join("\n");
+  const socials = socialEntries.length
+    ? `        <div class="socials">\n          <span>${esc(t["footer.follow"])}</span>\n` +
+      socialEntries.map(([k, u]) =>
+        `          <a href="${esc(u)}" target="_blank" rel="noopener me" aria-label="${LABELS[k]}"><svg viewBox="0 0 24 24">${ICONS[k]}</svg></a>`
+      ).join("\n") + "\n        </div>"
+    : "";
+  const vars = {
+    html: t._html, code: t._code, root, home: "../", site: CONFIG.site,
+    id: g.id, name: esc(g.full),
+    namesmall: g.small ? "" : "",
+    metatitle: esc(t["gp." + g.id + ".title"]),
+    desc: esc(t["games." + g.id]), tags: esc(t["games." + g.id + ".tags"]), tagline: esc(t["reel." + g.id + ".tag"]),
+    canonical: gameUrl(g.id, l), hreflang, langmenu, socials,
+    oglocale: OG_LOCALE[l], jsonld: gameJsonld(g, l, t),
+    media: gameMedia(g, l, t, root),
+    qr: "          " + QR[g.id],
+    play: esc(CONFIG.play[g.id]),
+    otherid: o.id, othername: esc(o.full), othertag: esc(t["reel." + o.id + ".tag"]), otherhref: "../" + o.id + "/",
+    privacyurl: root + legalSlug("privacy", l), contenturl: root + legalSlug("content", l),
+    year: String(new Date().getFullYear())
+  };
+  const missing = [];
+  const out = gameTpl.replace(/\{\{(@?)([\w.]+)\}\}/g, (m, at, key) => {
+    if (at) { if (key in vars) return vars[key]; missing.push("@" + key); return m; }
+    const v = t[key] != null ? t[key] : I18N[DEFAULT][key];
+    if (v == null) { missing.push(key); return m; }
+    return esc(v);
+  });
+  if (missing.length) throw new Error(`[${g.id}/${l}] chaves faltando: ${[...new Set(missing)].join(", ")}`);
+  return out;
+}
+
+for (const g of GAMES) {
+  for (const l of LANGS) {
+    const dir = path.join(ROOT, gamePath(g.id, l));
+    fs.mkdirSync(dir, { recursive: true });
+    fs.writeFileSync(path.join(dir, "index.html"), renderGame(g, l));
+  }
+  console.log("ok", g.id + "/ (" + LANGS.length + " idiomas)");
+}
+
 /* -------- políticas: privacy/, content-policy/ e as versões de cada idioma (ex.: pt/privacidade/) -------- */
 const slugOf = (kind, l) => LEGAL[l].slug[kind];
 function renderLegal(kind, l) {
@@ -226,10 +340,15 @@ const legalEntries = LEGAL_KINDS.flatMap((kind) => {
     .concat(`    <xhtml:link rel="alternate" hreflang="x-default" href="${CONFIG.site}/${slugOf(kind, DEFAULT)}"/>`).join("\n");
   return LEGAL_LANGS.map((l) => `  <url>\n    <loc>${CONFIG.site}/${slugOf(kind, l)}</loc>\n    <lastmod>${today}</lastmod>\n${la}\n  </url>`);
 });
+const gameEntries = GAMES.flatMap((g) => {
+  const ga = LANGS.map((x) => `    <xhtml:link rel="alternate" hreflang="${I18N[x]._html}" href="${gameUrl(g.id, x)}"/>`)
+    .concat(`    <xhtml:link rel="alternate" hreflang="x-default" href="${gameUrl(g.id, DEFAULT)}"/>`).join("\n");
+  return LANGS.map((l) => `  <url>\n    <loc>${gameUrl(g.id, l)}</loc>\n    <lastmod>${today}</lastmod>\n${ga}\n  </url>`);
+});
 fs.writeFileSync(path.join(ROOT, "sitemap.xml"),
 `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-${LANGS.map((l) => `  <url>\n    <loc>${urlFor(l)}</loc>\n    <lastmod>${today}</lastmod>\n${alts}\n  </url>`).concat(legalEntries).join("\n")}
+${LANGS.map((l) => `  <url>\n    <loc>${urlFor(l)}</loc>\n    <lastmod>${today}</lastmod>\n${alts}\n  </url>`).concat(gameEntries, legalEntries).join("\n")}
 </urlset>
 `);
 

@@ -9,10 +9,10 @@ window.LEGAL_I18N.es = {
   },
   privacy: {
     title: "Política de Privacidad",
-    description: "Cómo trata AraStudioTech los datos en arastudiotech.com y en nuestros juegos FameUp y Faísca: qué se recopila, por qué, con quién se comparte y cuáles son tus derechos.",
-    updated: "10 de noviembre de 2026",
+    description: "Cómo trata AraStudioTech los datos en arastudiotech.com y en nuestros juegos FameUp, Faísca y Desorden Cero: qué se recopila, por qué, con quién se comparte y cuáles son tus derechos.",
+    updated: "14 de noviembre de 2026",
     body: `
-<p class="lead">Esta política explica qué datos personales intervienen cuando visitas <strong>arastudiotech.com</strong>, juegas a nuestros juegos (<strong>FameUp: Influencer Life</strong> y <strong>Faísca</strong>, para Android) o te pones en contacto con nosotros. AraStudioTech es un estudio independiente de videojuegos con sede en Brasil (“AraStudioTech”, “nosotros”). Somos el responsable del tratamiento de los datos personales descritos aquí.</p>
+<p class="lead">Esta política explica qué datos personales intervienen cuando visitas <strong>arastudiotech.com</strong>, juegas a nuestros juegos (<strong>FameUp: Influencer Life</strong>, <strong>Faísca</strong> y <strong>Desorden Cero</strong>, para Android) o te pones en contacto con nosotros. AraStudioTech es un estudio independiente de videojuegos con sede en Brasil (“AraStudioTech”, “nosotros”). Somos el responsable del tratamiento de los datos personales descritos aquí.</p>
 
 <div class="callout">
   <h2>En resumen</h2>
@@ -43,7 +43,8 @@ window.LEGAL_I18N.es = {
   <li><strong>Estadísticas de uso e informes de fallos (Google Firebase).</strong> Nuestros juegos usan Google Analytics para Firebase y Firebase Crashlytics. Registran un identificador aleatorio de la instalación de la app, eventos de juego (nivel iniciado, ganado o perdido, tiempo en el nivel, pistas y vídeos con recompensa usados, pantallas abiertas, resultado del test de CI), la duración de las sesiones, el modelo del dispositivo, la versión del sistema, el idioma y el país aproximado (estimado por la dirección IP) y, si la app falla, un informe técnico del fallo. No incluyen tu nombre, tu correo ni el nombre artístico que escribes. Vemos estos datos como informes en la consola de Firebase. Google conserva los datos de Analytics hasta 14 meses y los informes de fallos 90 días. Consulta <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">privacidad y seguridad en Firebase</a>.</li>
   <li><strong>Notificaciones.</strong> Si las permites, nuestros juegos programan recordatorios locales (por ejemplo, un desafío diario). Se crean en tu dispositivo; no se nos envía nada.</li>
   <li><strong>Compartir y valorar.</strong> El botón “Compartir” abre el menú para compartir de Android con un texto corto, y lo envía la app que elijas. Cuando un juego te pide una valoración, la gestiona Google Play. No recibimos nada personal en ninguno de los dos casos.</li>
-  <li><strong>Sin compras ni chat.</strong> Nuestros juegos actuales no tienen compras dentro de la app, chat ni cuentas de usuario.</li>
+  <li><strong>Compra dentro de la app (Google Play Billing).</strong> Desorden Cero ofrece una compra única y opcional, “Quitar anuncios”. El pago lo gestiona por completo Google Play: no recibimos ni guardamos datos de pago (tarjeta, cuenta, dirección de facturación). El juego solo recibe de Google Play la confirmación de que la compra se hizo con esta Cuenta de Google; se guarda en el dispositivo para mantener los anuncios desactivados y para restaurar la compra en otro teléfono. Firebase Analytics registra únicamente que la compra se realizó. FameUp y Faísca no tienen compras dentro de la app.</li>
+  <li><strong>Sin chat ni cuentas.</strong> Nuestros juegos actuales no tienen chat ni cuentas de usuario.</li>
 </ul>
 
 <h3>Cuando nos contactas</h3>
@@ -72,7 +73,7 @@ window.LEGAL_I18N.es = {
 <h2 id="share">4. Con quién compartimos información</h2>
 <p>Trabajamos con pocos proveedores de servicios, cada uno con sus propias condiciones de privacidad:</p>
 <ul>
-  <li><strong>Google</strong>: AdMob (anuncios en nuestros juegos), Google Play (distribución de apps, valoraciones, copia de seguridad de Android) y Google Fonts (fuentes del sitio).</li>
+  <li><strong>Google</strong>: AdMob (anuncios en nuestros juegos), Google Play (distribución de apps, valoraciones, copia de seguridad de Android y pago de la compra dentro de la app, mediante Google Play Billing) y Google Fonts (fuentes del sitio).</li>
   <li><strong>Google Firebase</strong>: Analytics y Crashlytics (estadísticas de uso e informes de fallos de los juegos).</li>
   <li><strong>GitHub</strong>: alojamiento del sitio.</li>
   <li><strong>Nuestro proveedor de correo</strong>: para recibir y responder tus mensajes.</li>
@@ -113,7 +114,7 @@ window.LEGAL_I18N.es = {
 <p>Nuestro sitio y nuestros juegos enlazan a servicios que no controlamos, como Google Play y redes sociales. Cuando los usas se aplican sus políticas de privacidad, y no somos responsables de sus prácticas.</p>
 
 <h2 id="games">11. Juegos incluidos</h2>
-<p>Esta política se aplica a todos los juegos publicados por AraStudioTech en Google Play, incluidos <strong>FameUp: Influencer Life</strong> y <strong>Faísca</strong>. Faísca se publicaba antes con el nombre “Faísca Games”, que ahora es AraStudioTech. Si nos escribiste a una dirección antigua de Faísca Games, escríbenos a <a href="mailto:{{email}}">{{email}}</a>.</p>
+<p>Esta política se aplica a todos los juegos publicados por AraStudioTech en Google Play, incluidos <strong>FameUp: Influencer Life</strong>, <strong>Faísca</strong> y <strong>Desorden Cero</strong>. Faísca se publicaba antes con el nombre “Faísca Games”, que ahora es AraStudioTech. Si nos escribiste a una dirección antigua de Faísca Games, escríbenos a <a href="mailto:{{email}}">{{email}}</a>.</p>
 
 <h2 id="changes">12. Cambios en esta política</h2>
 <p>Podemos actualizar esta política cuando cambien nuestros juegos, el sitio o la ley. La fecha de arriba indica la versión vigente. Si el cambio es importante, también lo anunciaremos en este sitio o en la ficha del juego en Google Play.</p>

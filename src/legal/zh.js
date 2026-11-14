@@ -9,10 +9,10 @@ window.LEGAL_I18N.zh = {
   },
   privacy: {
     title: "隐私政策",
-    description: "AraStudioTech 如何在 arastudiotech.com 及游戏 FameUp 和 Faísca 中处理数据：收集哪些信息、为何收集、与谁共享以及您享有哪些权利。",
-    updated: "2026年11月10日",
+    description: "AraStudioTech 如何在 arastudiotech.com 及游戏 FameUp、Faísca 和 Mess Zero 中处理数据：收集哪些信息、为何收集、与谁共享以及您享有哪些权利。",
+    updated: "2026年11月14日",
     body: `
-<p class="lead">本政策说明当您访问 <strong>arastudiotech.com</strong>、玩我们的游戏（Android 平台的 <strong>FameUp: Influencer Life</strong> 和 <strong>Faísca</strong>）或联系我们时，会涉及哪些个人数据。AraStudioTech 是一家位于巴西的独立游戏工作室（“AraStudioTech”或“我们”）。我们是本政策所述个人数据的控制者。</p>
+<p class="lead">本政策说明当您访问 <strong>arastudiotech.com</strong>、玩我们的游戏（Android 平台的 <strong>FameUp: Influencer Life</strong>、<strong>Faísca</strong> 和 <strong>Mess Zero</strong>）或联系我们时，会涉及哪些个人数据。AraStudioTech 是一家位于巴西的独立游戏工作室（“AraStudioTech”或“我们”）。我们是本政策所述个人数据的控制者。</p>
 
 <div class="callout">
   <h2>简要说明</h2>
@@ -43,7 +43,8 @@ window.LEGAL_I18N.zh = {
   <li><strong>使用统计和崩溃报告（Google Firebase）。</strong>我们的游戏使用 Google Analytics for Firebase 和 Firebase Crashlytics。它们会记录应用安装的随机标识符、游戏事件（关卡开始、通过或失败，关卡用时，使用的提示和激励视频，打开的页面，IQ 测试结果）、会话时长、设备型号、系统版本、语言和大致国家（根据 IP 地址估算），以及应用崩溃时的技术崩溃报告。其中不包含你的姓名、电子邮件或你输入的艺名。我们在 Firebase 控制台中以报告形式查看这些数据。Google 保存 Analytics 数据最长 14 个月，崩溃报告保存 90 天。详见 <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase 中的隐私和安全</a>。</li>
   <li><strong>通知。</strong>如果您允许，游戏会设置本地提醒（例如每日挑战）。提醒在您的设备上创建，不会向我们发送任何内容。</li>
   <li><strong>分享与评分。</strong>“分享”按钮会打开 Android 的分享菜单并附带一段简短文字，由您选择的应用发送。当游戏请您评分时，评分由 Google Play 处理。在这两种情况下，我们都不会收到任何个人信息。</li>
-  <li><strong>无内购，无聊天。</strong>我们目前的游戏没有应用内购买、聊天功能或用户账号。</li>
+  <li><strong>应用内购买（Google Play 结算）。</strong>Mess Zero 提供一项可选的一次性购买：“移除广告”。付款完全由 Google Play 处理：我们不会收到也不会保存任何付款数据（银行卡、账户、账单地址）。游戏只会从 Google Play 收到“此 Google 账号已完成购买”的确认，并将其保存在您的设备上，用于保持广告关闭以及在其他手机上恢复购买。Firebase Analytics 仅记录购买已发生这一事实。FameUp 和 Faísca 没有应用内购买。</li>
+  <li><strong>无聊天，无账号。</strong>我们目前的游戏没有聊天功能或用户账号。</li>
 </ul>
 
 <h3>当您联系我们时</h3>
@@ -72,7 +73,7 @@ window.LEGAL_I18N.zh = {
 <h2 id="share">4. 我们与谁共享信息</h2>
 <p>我们只与少数服务提供商合作，每家都适用其自身的隐私条款：</p>
 <ul>
-  <li><strong>Google</strong>：AdMob（游戏广告）、Google Play（应用分发、评分、Android 备份）和 Google Fonts（网站字体）。</li>
+  <li><strong>Google</strong>：AdMob（游戏广告）、Google Play（应用分发、评分、Android 备份，以及通过 Google Play 结算完成的应用内购买付款）和 Google Fonts（网站字体）。</li>
   <li><strong>Google Firebase</strong>：Analytics 和 Crashlytics（游戏的使用统计和崩溃报告）。</li>
   <li><strong>GitHub</strong>：网站托管。</li>
   <li><strong>我们的电子邮件服务商</strong>：用于接收和回复您的邮件。</li>
@@ -113,7 +114,7 @@ window.LEGAL_I18N.zh = {
 <p>我们的网站和游戏包含指向我们无法控制的服务的链接，例如 Google Play 和社交网络。使用这些服务时适用其各自的隐私政策，我们不对其做法负责。</p>
 
 <h2 id="games">11. 适用的游戏</h2>
-<p>本政策适用于 AraStudioTech 在 Google Play 上发布的所有游戏，包括 <strong>FameUp: Influencer Life</strong> 和 <strong>Faísca</strong>。Faísca 此前以“Faísca Games”的名义发布，现已更名为 AraStudioTech。如果您曾通过旧的 Faísca Games 地址联系我们，请改为发送邮件至 <a href="mailto:{{email}}">{{email}}</a>。</p>
+<p>本政策适用于 AraStudioTech 在 Google Play 上发布的所有游戏，包括 <strong>FameUp: Influencer Life</strong>、<strong>Faísca</strong> 和 <strong>Mess Zero</strong>。Faísca 此前以“Faísca Games”的名义发布，现已更名为 AraStudioTech。如果您曾通过旧的 Faísca Games 地址联系我们，请改为发送邮件至 <a href="mailto:{{email}}">{{email}}</a>。</p>
 
 <h2 id="changes">12. 本政策的变更</h2>
 <p>当我们的游戏、网站或法律发生变化时，我们可能会更新本政策。页面顶部的日期表示当前版本。如有重大变更，我们也会在本网站或 Google Play 的游戏页面上公告。</p>

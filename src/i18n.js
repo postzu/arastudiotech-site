@@ -61,7 +61,15 @@ window.I18N = {
     "reel.fameup.tag": "Match 3 and go viral. From zero followers to superstar.",
     "reel.outro": "Both free on Google Play",
     "reel.pause": "Pause showreel",
-    "reel.play": "Play showreel"
+    "reel.play": "Play showreel",
+    "gp.faisca.title": "Faísca: Brain Training Puzzle Game with IQ Test for Android | AraStudioTech",
+    "gp.fameup.title": "FameUp: Influencer Life, Match-3 Influencer Game for Android | AraStudioTech",
+    "gp.or": "or",
+    "gp.scan": "Scan with your phone camera to download",
+    "gp.about": "About the game",
+    "gp.more": "More games",
+    "gp.top": "Back to top",
+    "games.view": "See the game"
   },
 
   pt: {
@@ -120,7 +128,15 @@ window.I18N = {
     "reel.fameup.tag": "Combine 3 e viralize. Do zero ao estrelato.",
     "reel.outro": "Os dois grátis no Google Play",
     "reel.pause": "Pausar showreel",
-    "reel.play": "Reproduzir showreel"
+    "reel.play": "Reproduzir showreel",
+    "gp.faisca.title": "Faísca: Jogo de Raciocínio com Teste de QI para Android | AraStudioTech",
+    "gp.fameup.title": "FameUp: Influencer Life, Jogo de Combinar 3 de Influenciador para Android | AraStudioTech",
+    "gp.or": "ou",
+    "gp.scan": "Aponte a câmera do celular para baixar",
+    "gp.about": "Sobre o jogo",
+    "gp.more": "Mais jogos",
+    "gp.top": "Voltar ao topo",
+    "games.view": "Ver o jogo"
   },
 
   es: {
@@ -179,7 +195,15 @@ window.I18N = {
     "reel.fameup.tag": "Combina 3 y hazte viral. De cero a superestrella.",
     "reel.outro": "Los dos gratis en Google Play",
     "reel.pause": "Pausar showreel",
-    "reel.play": "Reproducir showreel"
+    "reel.play": "Reproducir showreel",
+    "gp.faisca.title": "Faísca: Juego de Entrenamiento Mental con Test de CI para Android | AraStudioTech",
+    "gp.fameup.title": "FameUp: Influencer Life, Juego de Combinar 3 de Influencers para Android | AraStudioTech",
+    "gp.or": "o",
+    "gp.scan": "Escanea con la cámara del móvil para descargar",
+    "gp.about": "Sobre el juego",
+    "gp.more": "Más juegos",
+    "gp.top": "Volver arriba",
+    "games.view": "Ver el juego"
   },
 
   fr: {
@@ -238,7 +262,15 @@ window.I18N = {
     "reel.fameup.tag": "Alignez-en 3 et devenez viral. De zéro à superstar.",
     "reel.outro": "Les deux gratuits sur Google Play",
     "reel.pause": "Mettre en pause",
-    "reel.play": "Lire"
+    "reel.play": "Lire",
+    "gp.faisca.title": "Faísca : Jeu d'Entraînement Cérébral avec Test de QI pour Android | AraStudioTech",
+    "gp.fameup.title": "FameUp: Influencer Life, Jeu de Match-3 d'Influenceur pour Android | AraStudioTech",
+    "gp.or": "ou",
+    "gp.scan": "Scannez avec l'appareil photo de votre téléphone pour télécharger",
+    "gp.about": "À propos du jeu",
+    "gp.more": "Autres jeux",
+    "gp.top": "Retour en haut",
+    "games.view": "Voir le jeu"
   },
 
   de: {
@@ -297,7 +329,15 @@ window.I18N = {
     "reel.fameup.tag": "Drei in einer Reihe und viral gehen. Vom Niemand zum Superstar.",
     "reel.outro": "Beide kostenlos bei Google Play",
     "reel.pause": "Showreel pausieren",
-    "reel.play": "Showreel abspielen"
+    "reel.play": "Showreel abspielen",
+    "gp.faisca.title": "Faísca: Gehirntraining-Puzzlespiel mit IQ-Test für Android | AraStudioTech",
+    "gp.fameup.title": "FameUp: Influencer Life, Match-3-Influencer-Spiel für Android | AraStudioTech",
+    "gp.or": "oder",
+    "gp.scan": "Mit der Handykamera scannen und herunterladen",
+    "gp.about": "Über das Spiel",
+    "gp.more": "Weitere Spiele",
+    "gp.top": "Nach oben",
+    "games.view": "Zum Spiel"
   },
 
   ru: {
@@ -356,7 +396,15 @@ window.I18N = {
     "reel.fameup.tag": "Три в ряд — и вы в трендах. От нуля до суперзвезды.",
     "reel.outro": "Обе игры бесплатно в Google Play",
     "reel.pause": "Пауза",
-    "reel.play": "Воспроизвести"
+    "reel.play": "Воспроизвести",
+    "gp.faisca.title": "Faísca: головоломка-тренажёр для мозга с IQ-тестом для Android | AraStudioTech",
+    "gp.fameup.title": "FameUp: Influencer Life — игра «три в ряд» об инфлюенсере для Android | AraStudioTech",
+    "gp.or": "или",
+    "gp.scan": "Наведите камеру телефона, чтобы скачать",
+    "gp.about": "Об игре",
+    "gp.more": "Другие игры",
+    "gp.top": "Наверх",
+    "games.view": "Об игре"
   },
 
   ja: {
@@ -415,7 +463,15 @@ window.I18N = {
     "reel.fameup.tag": "3つそろえてバズろう。ゼロからスーパースターへ。",
     "reel.outro": "どちらも Google Play で無料",
     "reel.pause": "一時停止",
-    "reel.play": "再生"
+    "reel.play": "再生",
+    "gp.faisca.title": "Faísca：IQテスト付き脳トレパズルゲーム（Android）| AraStudioTech",
+    "gp.fameup.title": "FameUp: Influencer Life：インフルエンサーのマッチ3ゲーム（Android）| AraStudioTech",
+    "gp.or": "または",
+    "gp.scan": "スマホのカメラで読み取ってダウンロード",
+    "gp.about": "ゲームについて",
+    "gp.more": "ほかのゲーム",
+    "gp.top": "トップへ戻る",
+    "games.view": "ゲームを見る"
   },
 
   zh: {
@@ -474,6 +530,14 @@ window.I18N = {
     "reel.fameup.tag": "三消一下，瞬间走红。从零到超级明星。",
     "reel.outro": "两款游戏均可在 Google Play 免费下载",
     "reel.pause": "暂停",
-    "reel.play": "播放"
+    "reel.play": "播放",
+    "gp.faisca.title": "Faísca：带 IQ 测试的 Android 大脑训练益智游戏 | AraStudioTech",
+    "gp.fameup.title": "FameUp: Influencer Life：Android 网红三消游戏 | AraStudioTech",
+    "gp.or": "或",
+    "gp.scan": "用手机相机扫码下载",
+    "gp.about": "关于游戏",
+    "gp.more": "更多游戏",
+    "gp.top": "回到顶部",
+    "games.view": "查看游戏"
   }
 };

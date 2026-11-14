@@ -449,3 +449,108 @@ h1, h2, h3, h4 { font-family: "Exo 2", sans-serif; line-height: 1.2; margin: 0; 
   .legal-body .callout { padding: 4px 16px 10px; }
   .legal-body h2 { font-size: 21px; }
 }
+
+/* ============ Cartões de jogo: links para a página do jogo ============ */
+a.game-cover img { transition: transform .5s ease; }
+a.game-cover:hover img { transform: scale(1.04); }
+.game-body h3 a:hover { color: var(--cyan); }
+.game-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+
+/* ============ Página do jogo ============ */
+.gp { padding-bottom: 24px; }
+.gp-crumbs { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; font-size: 14px; color: var(--muted); }
+.gp-crumbs a { color: var(--cyan); }
+.gp-crumbs a:hover { color: #fff; }
+
+.gp-head { display: flex; align-items: center; justify-content: center; gap: clamp(14px, 3vw, 24px); max-width: 860px; margin: 28px auto 0; }
+.gp-icon { flex: none; width: clamp(76px, 12vw, 108px); height: auto; border-radius: 24%; box-shadow: 0 14px 36px rgba(0,0,0,.5); }
+.gp-head h1 { font-size: clamp(28px, 4.6vw, 48px); font-weight: 800; }
+.gp-tag { margin: 6px 0 10px; color: var(--muted); font-size: clamp(15px, 1.8vw, 18px); }
+
+/* Palco do "vídeo" (formato celular em pé) */
+.gp-stage {
+  position: relative; display: flex; justify-content: center;
+  margin-top: 30px; padding: clamp(20px, 3.4vw, 40px) 16px 60px;
+  border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden;
+}
+.theme-faisca .gp-stage { background: radial-gradient(ellipse at 50% -10%, #7a6538 0, transparent 55%), linear-gradient(165deg, #1f1d52, #26204c 55%, #3a2340); }
+.theme-fameup .gp-stage { background: radial-gradient(ellipse at 50% -10%, #ff62aa 0, transparent 55%), linear-gradient(165deg, #8a2fa6, #4a1d80 55%, #23124d); }
+.gp-phone { position: relative; width: min(360px, 76vw); aspect-ratio: 506 / 900; }
+.gp-slides, .gp-video {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  border: 0; border-radius: clamp(16px, 3vw, 26px); overflow: hidden; background: #000;
+  box-shadow: 0 30px 70px rgba(0,0,0,.55);
+}
+.gp-video { object-fit: cover; }
+.gp-slides img {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+  opacity: 0; transform: scale(1.05); transition: opacity .7s ease, transform 3.2s ease-out;
+}
+.gp-slides img.is-active { opacity: 1; transform: none; }
+.gp-phone .reel-progress { left: 18%; right: 18%; bottom: -26px; border-radius: 3px; overflow: hidden; }
+.gp-dots { position: absolute; left: 0; right: 0; bottom: -46px; display: flex; justify-content: center; gap: 6px; }
+.gp-dots button {
+  width: 8px; height: 8px; padding: 0; border: 0; border-radius: 99px; cursor: pointer;
+  background: rgba(255,255,255,.35); transition: width .3s, background .3s;
+}
+.gp-dots button[aria-current="true"] { width: 22px; background: #fff; }
+
+/* Baixar: botão + QR code */
+.gp-get {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: clamp(16px, 4vw, 40px);
+  max-width: 760px; margin: 28px auto 0; padding: 24px;
+  background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius);
+}
+.btn-play-lg { padding: 14px 26px; }
+.btn-play-lg svg { width: 28px; height: 28px; }
+.btn-play-lg span { font-size: 21px; }
+.gp-or { color: var(--muted); font: 600 13px "Exo 2", sans-serif; letter-spacing: .14em; text-transform: uppercase; }
+.gp-qr { display: flex; align-items: center; gap: 14px; max-width: 300px; }
+.gp-qr-code { flex: none; width: 124px; height: 124px; padding: 6px; background: #fff; border-radius: 12px; box-shadow: 0 0 0 4px rgba(25,227,227,.18); }
+.gp-qr-code svg { display: block; width: 100%; height: 100%; }
+.gp-qr p { margin: 0; color: var(--muted); font-size: 14px; }
+
+.gp-about, .gp-more { max-width: 860px; margin: 56px auto 0; }
+.gp-about > p { margin: 18px 0 0; color: var(--muted); font-size: 18px; }
+.gp-about .game-tags { margin-top: 12px; color: var(--cyan); font-weight: 600; font-size: 14px; }
+.gp-other {
+  display: flex; align-items: center; gap: 18px; margin-top: 22px; padding: 16px 20px;
+  background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); transition: border-color .2s, box-shadow .2s;
+}
+.gp-other:hover { border-color: var(--cyan); box-shadow: 0 0 24px rgba(25,227,227,.15); }
+.gp-other img { flex: none; width: 72px; height: 72px; border-radius: 18px; }
+.gp-other span { flex: 1; display: flex; flex-direction: column; gap: 2px; }
+.gp-other strong { font: 700 20px "Exo 2", sans-serif; }
+.gp-other small { color: var(--muted); font-size: 14px; }
+.gp-other svg { flex: none; width: 22px; height: 22px; color: var(--cyan); }
+
+/* ============ Cordinha (desce com a rolagem; clicar volta ao topo) ============ */
+.rope {
+  position: fixed; top: 0; right: clamp(6px, 2.2vw, 34px); z-index: 45;
+  display: flex; flex-direction: column; align-items: center;
+  transform-origin: 50% 0; transform: rotate(var(--swing, 0deg));
+  transition: transform .7s cubic-bezier(.3, 1.6, .5, 1);
+}
+.rope-line {
+  display: block; width: 4px; height: var(--rope, 90px); border-radius: 2px;
+  background: repeating-linear-gradient(160deg, #d29e57 0 5px, #8a5a26 5px 8px);
+  box-shadow: 0 0 0 1px rgba(0,0,0,.25);
+}
+.rope-knot { width: 12px; height: 12px; margin-top: -3px; border-radius: 50%; background: #8a5a26; box-shadow: inset 0 -2px 0 rgba(0,0,0,.3); }
+.rope-buddy {
+  width: 66px; height: 66px; margin-top: -4px; border-radius: 18px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.5);
+  transform-origin: 50% 0; animation: buddy 3s ease-in-out infinite;
+}
+@keyframes buddy { 0%, 100% { transform: rotate(-3deg); } 50% { transform: rotate(3deg); } }
+.rope:hover .rope-buddy, .rope:focus-visible .rope-buddy { animation-duration: .7s; }
+
+@media (max-width: 620px) {
+  .gp-head { flex-direction: column; text-align: center; }
+  .gp-head .game-meta { justify-content: center; }
+  .gp-or, .gp-qr { display: none; } /* no celular o QR não faz sentido: fica só o botão */
+  .gp-get { padding: 18px; }
+  .rope { right: 2px; }
+  .rope-line { width: 3px; }
+  .rope-buddy { width: 44px; height: 44px; border-radius: 12px; }
+}

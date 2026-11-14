@@ -10,10 +10,10 @@ window.LEGAL_I18N.en = {
   },
   privacy: {
     title: "Privacy Policy",
-    description: "How AraStudioTech handles data on arastudiotech.com and in our mobile games FameUp and Faísca: what is collected, why, who it is shared with and what your rights are.",
-    updated: "November 10, 2026",
+    description: "How AraStudioTech handles data on arastudiotech.com and in our mobile games FameUp, Faísca and Mess Zero: what is collected, why, who it is shared with and what your rights are.",
+    updated: "November 14, 2026",
     body: `
-<p class="lead">This policy explains what personal data is involved when you visit <strong>arastudiotech.com</strong>, play our games (<strong>FameUp: Influencer Life</strong> and <strong>Faísca</strong>, on Android) or contact us. AraStudioTech is an independent game studio based in Brazil (“AraStudioTech”, “we”, “us”). We are the controller of the personal data described here.</p>
+<p class="lead">This policy explains what personal data is involved when you visit <strong>arastudiotech.com</strong>, play our games (<strong>FameUp: Influencer Life</strong>, <strong>Faísca</strong> and <strong>Mess Zero</strong>, on Android) or contact us. AraStudioTech is an independent game studio based in Brazil (“AraStudioTech”, “we”, “us”). We are the controller of the personal data described here.</p>
 
 <div class="callout">
   <h2>The short version</h2>
@@ -44,7 +44,8 @@ window.LEGAL_I18N.en = {
   <li><strong>Usage statistics and crash reports (Google Firebase).</strong> Our games use Google Analytics for Firebase and Firebase Crashlytics. They record a random app-installation identifier, gameplay events (level started, won or lost, time spent on a level, hints and rewarded videos used, screens opened, IQ test result), session length, device model, OS version, language and approximate country (estimated from the IP address), and, if the app crashes, a technical crash report. They do not include your name, email or the stage name you type. We see this data as reports in the Firebase console. Google keeps Analytics data for up to 14 months and crash reports for 90 days. See <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Privacy and Security in Firebase</a>.</li>
   <li><strong>Notifications.</strong> If you allow them, our games schedule local reminders (for example, a daily challenge). They are created on your device; nothing is sent to us.</li>
   <li><strong>Sharing and reviews.</strong> The “Share” button opens Android's share menu with a short text; the app you choose sends it. When a game asks you to rate it, the rating is handled by Google Play. We receive nothing personal from either.</li>
-  <li><strong>No purchases, no chat.</strong> Our current games have no in-app purchases, no chat and no user accounts.</li>
+  <li><strong>In-app purchase (Google Play Billing).</strong> Mess Zero offers one optional, one-time purchase, “Remove ads”. Payment is handled entirely by Google Play: we do not receive or store any payment data (card, account, billing address). The game only receives confirmation from Google Play that the purchase was made on this Google Account; it is kept on your device to keep ads turned off and to restore the purchase on another phone. Firebase Analytics records only that the purchase happened. FameUp and Faísca have no in-app purchases.</li>
+  <li><strong>No chat, no accounts.</strong> Our current games have no chat and no user accounts.</li>
 </ul>
 
 <h3>When you contact us</h3>
@@ -73,7 +74,7 @@ window.LEGAL_I18N.en = {
 <h2 id="share">4. Who we share information with</h2>
 <p>We work with a small number of service providers, each under its own privacy terms:</p>
 <ul>
-  <li><strong>Google</strong>: AdMob (ads in our games), Google Play (app distribution, ratings, Android backup) and Google Fonts (website fonts).</li>
+  <li><strong>Google</strong>: AdMob (ads in our games), Google Play (app distribution, ratings, Android backup and payment for the in-app purchase, through Google Play Billing) and Google Fonts (website fonts).</li>
   <li><strong>Google Firebase</strong>: Analytics and Crashlytics (usage statistics and crash reports from our games).</li>
   <li><strong>GitHub</strong>: website hosting.</li>
   <li><strong>Our email provider</strong>: to receive and answer your messages.</li>
@@ -114,7 +115,7 @@ window.LEGAL_I18N.en = {
 <p>Our site and games link to services we do not control, such as Google Play and social networks. Their privacy policies apply when you use them, and we are not responsible for their practices.</p>
 
 <h2 id="games">11. Games covered</h2>
-<p>This policy applies to all games published by AraStudioTech on Google Play, including <strong>FameUp: Influencer Life</strong> and <strong>Faísca</strong>. Faísca was previously published under the name “Faísca Games”, which is now AraStudioTech. If you contacted us at an old Faísca Games address, please write to <a href="mailto:{{email}}">{{email}}</a>.</p>
+<p>This policy applies to all games published by AraStudioTech on Google Play, including <strong>FameUp: Influencer Life</strong>, <strong>Faísca</strong> and <strong>Mess Zero</strong>. Faísca was previously published under the name “Faísca Games”, which is now AraStudioTech. If you contacted us at an old Faísca Games address, please write to <a href="mailto:{{email}}">{{email}}</a>.</p>
 
 <h2 id="changes">12. Changes to this policy</h2>
 <p>We may update this policy when our games, the website or the law change. The date at the top shows the current version. If a change is significant, we will also announce it on this site or in the game's Google Play listing.</p>

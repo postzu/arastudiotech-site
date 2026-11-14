@@ -78,3 +78,9 @@ No repositório: **Settings → Pages → Deploy from a branch → main / (root)
 | A | @ | 185.199.110.153 |
 | A | @ | 185.199.111.153 |
 | CNAME | www | postzu.github.io |
+
+## Páginas dos jogos
+- `faisca/` e `fameup/` (e `pt/faisca/`, `es/fameup/`...) são geradas pelo build a partir de `src/game.html`.
+- **Vídeo do jogo:** em `build.js` → `CONFIG.gameVideo`, coloque o ID do YouTube (ou o caminho de um `.mp4` vertical 9:16) e rode `node build.js`. Sem vídeo, as telas do jogo passam sozinhas.
+- **QR code:** gerado no build (`src/qr.js`, sem dependências) e aponta para `/<jogo>/jogar/?c=qr`, que leva direto ao Google Play (no Android) e marca a origem "qr" nas instalações.
+- **Cordinha:** o ícone do jogo pendurado à direita desce com a rolagem; clicar volta ao topo.

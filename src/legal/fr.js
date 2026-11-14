@@ -9,10 +9,10 @@ window.LEGAL_I18N.fr = {
   },
   privacy: {
     title: "Politique de confidentialité",
-    description: "Comment AraStudioTech traite les données sur arastudiotech.com et dans ses jeux FameUp et Faísca : ce qui est collecté, pourquoi, avec qui c'est partagé et quels sont vos droits.",
-    updated: "10 novembre 2026",
+    description: "Comment AraStudioTech traite les données sur arastudiotech.com et dans ses jeux FameUp, Faísca et Mess Zero : ce qui est collecté, pourquoi, avec qui c'est partagé et quels sont vos droits.",
+    updated: "14 novembre 2026",
     body: `
-<p class="lead">Cette politique explique quelles données personnelles sont concernées lorsque vous visitez <strong>arastudiotech.com</strong>, jouez à nos jeux (<strong>FameUp: Influencer Life</strong> et <strong>Faísca</strong>, sur Android) ou nous contactez. AraStudioTech est un studio de jeux indépendant basé au Brésil (« AraStudioTech », « nous »). Nous sommes le responsable du traitement des données personnelles décrites ici.</p>
+<p class="lead">Cette politique explique quelles données personnelles sont concernées lorsque vous visitez <strong>arastudiotech.com</strong>, jouez à nos jeux (<strong>FameUp: Influencer Life</strong>, <strong>Faísca</strong> et <strong>Mess Zero</strong>, sur Android) ou nous contactez. AraStudioTech est un studio de jeux indépendant basé au Brésil (« AraStudioTech », « nous »). Nous sommes le responsable du traitement des données personnelles décrites ici.</p>
 
 <div class="callout">
   <h2>En bref</h2>
@@ -43,7 +43,8 @@ window.LEGAL_I18N.fr = {
   <li><strong>Statistiques d’utilisation et rapports de plantage (Google Firebase).</strong> Nos jeux utilisent Google Analytics pour Firebase et Firebase Crashlytics. Ils enregistrent un identifiant aléatoire de l’installation de l’application, des événements de jeu (niveau commencé, gagné ou perdu, temps passé sur un niveau, indices et vidéos récompensées utilisés, écrans ouverts, résultat du test de QI), la durée des sessions, le modèle de l’appareil, la version du système, la langue et le pays approximatif (estimé à partir de l’adresse IP) et, en cas de plantage, un rapport technique. Ils n’incluent ni votre nom, ni votre e-mail, ni le nom de scène que vous saisissez. Nous consultons ces données sous forme de rapports dans la console Firebase. Google conserve les données Analytics jusqu’à 14 mois et les rapports de plantage 90 jours. Voir <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">confidentialité et sécurité dans Firebase</a>.</li>
   <li><strong>Notifications.</strong> Si vous les autorisez, nos jeux programment des rappels locaux (par exemple, un défi quotidien). Ils sont créés sur votre appareil ; rien ne nous est envoyé.</li>
   <li><strong>Partage et avis.</strong> Le bouton « Partager » ouvre le menu de partage d'Android avec un court texte, envoyé par l'application que vous choisissez. Lorsqu'un jeu vous demande une note, celle-ci est gérée par Google Play. Nous ne recevons rien de personnel dans les deux cas.</li>
-  <li><strong>Ni achats, ni chat.</strong> Nos jeux actuels n'ont ni achats intégrés, ni chat, ni comptes utilisateur.</li>
+  <li><strong>Achat intégré (Google Play Billing).</strong> Mess Zero propose un achat unique et facultatif, « Supprimer les publicités ». Le paiement est entièrement géré par Google Play : nous ne recevons ni ne conservons aucune donnée de paiement (carte, compte, adresse de facturation). Le jeu reçoit seulement de Google Play la confirmation que l'achat a été effectué avec ce compte Google ; elle est conservée sur votre appareil pour garder les publicités désactivées et pour restaurer l'achat sur un autre téléphone. Firebase Analytics enregistre uniquement le fait que l'achat a eu lieu. FameUp et Faísca n'ont pas d'achats intégrés.</li>
+  <li><strong>Ni chat, ni comptes.</strong> Nos jeux actuels n'ont ni chat ni comptes utilisateur.</li>
 </ul>
 
 <h3>Lorsque vous nous contactez</h3>
@@ -72,7 +73,7 @@ window.LEGAL_I18N.fr = {
 <h2 id="share">4. Avec qui nous partageons les informations</h2>
 <p>Nous travaillons avec un petit nombre de prestataires, chacun soumis à ses propres conditions de confidentialité :</p>
 <ul>
-  <li><strong>Google</strong> : AdMob (publicités dans nos jeux), Google Play (distribution des applications, avis, sauvegarde Android) et Google Fonts (polices du site).</li>
+  <li><strong>Google</strong> : AdMob (publicités dans nos jeux), Google Play (distribution des applications, avis, sauvegarde Android et paiement de l'achat intégré, via Google Play Billing) et Google Fonts (polices du site).</li>
   <li><strong>Google Firebase</strong> : Analytics et Crashlytics (statistiques d’utilisation et rapports de plantage de nos jeux).</li>
   <li><strong>GitHub</strong> : hébergement du site.</li>
   <li><strong>Notre fournisseur de messagerie</strong> : pour recevoir vos messages et y répondre.</li>
@@ -113,7 +114,7 @@ window.LEGAL_I18N.fr = {
 <p>Notre site et nos jeux renvoient vers des services que nous ne contrôlons pas, comme Google Play et les réseaux sociaux. Leurs politiques de confidentialité s'appliquent lorsque vous les utilisez, et nous ne sommes pas responsables de leurs pratiques.</p>
 
 <h2 id="games">11. Jeux concernés</h2>
-<p>Cette politique s'applique à tous les jeux publiés par AraStudioTech sur Google Play, notamment <strong>FameUp: Influencer Life</strong> et <strong>Faísca</strong>. Faísca était auparavant publié sous le nom « Faísca Games », qui est désormais AraStudioTech. Si vous nous avez écrit à une ancienne adresse Faísca Games, écrivez-nous à <a href="mailto:{{email}}">{{email}}</a>.</p>
+<p>Cette politique s'applique à tous les jeux publiés par AraStudioTech sur Google Play, notamment <strong>FameUp: Influencer Life</strong>, <strong>Faísca</strong> et <strong>Mess Zero</strong>. Faísca était auparavant publié sous le nom « Faísca Games », qui est désormais AraStudioTech. Si vous nous avez écrit à une ancienne adresse Faísca Games, écrivez-nous à <a href="mailto:{{email}}">{{email}}</a>.</p>
 
 <h2 id="changes">12. Modifications de cette politique</h2>
 <p>Nous pouvons mettre à jour cette politique lorsque nos jeux, le site ou la loi évoluent. La date en haut indique la version en vigueur. Si la modification est importante, nous l'annoncerons aussi sur ce site ou sur la fiche du jeu sur Google Play.</p>

@@ -213,34 +213,40 @@
 
         <div class="games-grid">
           <article class="game-card" id="fameup">
-            <div class="game-cover cover-fameup">
+            <a class="game-cover cover-fameup" href="fameup/" aria-label="FameUp: Influencer Life: {{games.view}}">
               <img src="{{@root}}assets/games/fameup.jpg" alt="{{img.fameup}}" width="1280" height="800" loading="lazy" decoding="async">
-            </div>
+            </a>
             <div class="game-body">
               <div class="game-meta"><span class="chip">{{games.genre}}</span><span class="platform">Android</span></div>
-              <h3>FameUp <small>Influencer Life</small></h3>
+              <h3><a href="fameup/">FameUp <small>Influencer Life</small></a></h3>
               <p>{{games.fameup}}</p>
               <p class="game-tags">{{games.fameup.tags}}</p>
-              <a class="btn btn-play" href="{{@play.fameup}}" target="_blank" rel="noopener" aria-label="FameUp: {{games.getit}} Google Play">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 2.8v18.4c0 .5.5.8.9.6L21 12.6c.5-.3.5-.9 0-1.2L4.9 2.2c-.4-.2-.9.1-.9.6Z" fill="currentColor"/></svg>
-                <span><small>{{games.getit}}</small>Google Play</span>
-              </a>
+              <div class="game-actions">
+                <a class="btn btn-play" href="{{@play.fameup}}" target="_blank" rel="noopener" aria-label="FameUp: {{games.getit}} Google Play">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 2.8v18.4c0 .5.5.8.9.6L21 12.6c.5-.3.5-.9 0-1.2L4.9 2.2c-.4-.2-.9.1-.9.6Z" fill="currentColor"/></svg>
+                  <span><small>{{games.getit}}</small>Google Play</span>
+                </a>
+                <a class="btn btn-outline" href="fameup/">{{games.view}}</a>
+              </div>
             </div>
           </article>
 
           <article class="game-card" id="faisca">
-            <div class="game-cover cover-faisca">
+            <a class="game-cover cover-faisca" href="faisca/" aria-label="Faísca: {{games.view}}">
               <img src="{{@root}}assets/games/faisca.jpg" alt="{{img.faisca}}" width="1280" height="800" loading="lazy" decoding="async">
-            </div>
+            </a>
             <div class="game-body">
               <div class="game-meta"><span class="chip">{{games.genre}}</span><span class="platform">Android</span></div>
-              <h3>Faísca</h3>
+              <h3><a href="faisca/">Faísca</a></h3>
               <p>{{games.faisca}}</p>
               <p class="game-tags">{{games.faisca.tags}}</p>
-              <a class="btn btn-play" href="{{@play.faisca}}" target="_blank" rel="noopener" aria-label="Faísca: {{games.getit}} Google Play">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 2.8v18.4c0 .5.5.8.9.6L21 12.6c.5-.3.5-.9 0-1.2L4.9 2.2c-.4-.2-.9.1-.9.6Z" fill="currentColor"/></svg>
-                <span><small>{{games.getit}}</small>Google Play</span>
-              </a>
+              <div class="game-actions">
+                <a class="btn btn-play" href="{{@play.faisca}}" target="_blank" rel="noopener" aria-label="Faísca: {{games.getit}} Google Play">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 2.8v18.4c0 .5.5.8.9.6L21 12.6c.5-.3.5-.9 0-1.2L4.9 2.2c-.4-.2-.9.1-.9.6Z" fill="currentColor"/></svg>
+                  <span><small>{{games.getit}}</small>Google Play</span>
+                </a>
+                <a class="btn btn-outline" href="faisca/">{{games.view}}</a>
+              </div>
             </div>
           </article>
 

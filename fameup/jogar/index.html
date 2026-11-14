@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FameUp: Influencer Life — get it free</title>
+<link rel="canonical" href="https://arastudiotech.com/fameup/jogar/">
+<!-- Prévia do link no WhatsApp/Telegram/redes (lida sem JavaScript). -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AraStudioTech">
+<meta property="og:title" content="FameUp: Influencer Life ⭐ From zero to superstar">
+<meta property="og:description" content="Match 3 and go viral! Decorate your place, go on a world tour and grow your followers. Free and offline.">
+<meta property="og:image" content="https://arastudiotech.com/assets/games/fameup.jpg">
+<meta property="og:url" content="https://arastudiotech.com/fameup/jogar/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#23124d">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg">
+<style>
+  :root { --bg: #23124d; --ink: #f6eefc; --dim: #cdbbe3; --accent: #ffd34d; }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; text-align: center;
+    background: radial-gradient(120% 60% at 50% 0%, #c2398f, var(--bg)); color: var(--ink);
+    font: 17px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { padding: 24px 16px; max-width: 460px; }
+  img { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); }
+  h1 { margin: 14px 0 4px; font-size: 32px; color: var(--accent); }
+  p { margin: 6px 0; color: var(--dim); }
+  .play { display: inline-block; margin-top: 18px; padding: 14px 26px; border-radius: 18px; text-decoration: none;
+    font-weight: 800; font-size: 19px; color: #10351a; background: linear-gradient(180deg, #7cea6a, #33b04a); box-shadow: 0 5px 0 #1d7a33; }
+  small { display: block; margin-top: 16px; color: var(--dim); font-size: 13px; }
+</style>
+</head>
+<body>
+<main>
+  <img src="../../assets/reel/fameup-icon.webp" alt="FameUp: Influencer Life">
+  <h1>FameUp</h1>
+  <p id="sub">Match 3 and go viral! From zero followers to superstar. Free and offline.</p>
+  <a class="play" id="go" href="https://play.google.com/store/apps/details?id=com.arastudiotech.fameup">▶ Google Play</a>
+  <small id="note">Available for Android.</small>
+  <small><a href="https://arastudiotech.com/" style="color:inherit">AraStudioTech</a></small>
+</main>
+<script>
+/*
+ * Link de download: https://arastudiotech.com/fameup/jogar/?c=<origem>
+ *   c = de onde veio (qr, site, tiktok...) → vira utm_medium no "referrer" da Play Store.
+ * Android: vai direto para a Play Store. Outros aparelhos: mostra a página com o botão.
+ */
+(function () {
+  var APP = 'com.arastudiotech.fameup';
+  var q = new URLSearchParams(location.search);
+  var src = (q.get('c') || 'link').replace(/[^a-z0-9_-]/gi, '').slice(0, 20) || 'link';
+  var ref = 'utm_source=share&utm_medium=' + src + '&utm_campaign=viral';
+  var url = 'https://play.google.com/store/apps/details?id=' + APP + '&referrer=' + encodeURIComponent(ref);
+
+  var T = {
+    pt: ['Combine 3 e viralize! Do zero ao estrelato. Grátis e offline.', 'Disponível para Android.'],
+    en: ['Match 3 and go viral! From zero followers to superstar. Free and offline.', 'Available for Android.'],
+    es: ['¡Combina 3 y hazte viral! De cero a superestrella. Gratis y sin conexión.', 'Disponible para Android.'],
+    fr: ['Alignez-en 3 et devenez viral ! De zéro à superstar. Gratuit et hors ligne.', 'Disponible sur Android.'],
+    de: ['Drei in einer Reihe und viral gehen! Vom Niemand zum Superstar. Kostenlos und offline.', 'Für Android verfügbar.'],
+    ru: ['Три в ряд — и вы в трендах! От нуля до суперзвезды. Бесплатно и офлайн.', 'Доступно для Android.'],
+    ja: ['3つそろえてバズろう！ゼロからスーパースターへ。無料・オフライン対応。', 'Android で配信。'],
+    zh: ['三消一下，瞬间走红！从零到超级明星。免费，可离线游玩。', '适用于 Android。']
+  };
+  var lang = ((navigator.languages && navigator.languages[0]) || navigator.language || 'en').toLowerCase().slice(0, 2);
+  var L = T[lang] || T.en;
+  document.documentElement.lang = T[lang] ? lang : 'en';
+  document.getElementById('sub').textContent = L[0];
+  document.getElementById('note').textContent = L[1];
+  var go = document.getElementById('go');
+  go.href = url;
+
+  // Android: direto para a loja (sem cliques a mais).
+  if (/android/i.test(navigator.userAgent)) location.replace(url);
+})();
+</script>
+</body>
+</html>

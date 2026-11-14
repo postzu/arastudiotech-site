@@ -74,17 +74,20 @@
     sections.forEach(function (s) { if (s.offsetTop <= y) current = "#" + s.id; });
     links.forEach(function (a) { a.classList.toggle("active", a.getAttribute("href") === current); });
   }
-  window.addEventListener("scroll", onScroll, { passive: true });
-  onScroll();
+  if (sections.length) {
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+  }
 
   /* ---------- Barra de notícia ---------- */
-  document.getElementById("news-bar-close").addEventListener("click", function () {
+  var newsClose = document.getElementById("news-bar-close");
+  if (newsClose) newsClose.addEventListener("click", function () {
     document.getElementById("news-bar").classList.add("hidden");
   });
 
-  /* ---------- Showreel (cenas animadas) ---------- */
+  /* ---------- Showreel (cenas animadas, só na página inicial) ---------- */
   var hero = document.getElementById("hero");
-  (function reel() {
+  if (hero) (function reel() {
     var scenes = hero.querySelectorAll(".scene");
     if (!scenes.length) return;
     var dotsWrap = document.getElementById("reel-dots");
@@ -169,23 +172,124 @@
   })();
 
   /* ---------- Vídeo real (opcional) ---------- */
-  var yt = (hero.dataset.youtube || "").trim();
-  var mp4 = (hero.dataset.mp4 || "").trim();
-  if (!yt && !mp4) hero.classList.add("no-video");
+  if (hero) (function () {
+    var yt = (hero.dataset.youtube || "").trim();
+    var mp4 = (hero.dataset.mp4 || "").trim();
+    if (!yt && !mp4) hero.classList.add("no-video");
 
-  document.getElementById("play-btn").addEventListener("click", function () {
-    if (hero.querySelector("iframe, video")) return;
-    if (yt) {
-      var f = document.createElement("iframe");
-      f.src = "https://www.youtube-nocookie.com/embed/" + encodeURIComponent(yt) + "?autoplay=1&rel=0";
-      f.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
-      f.allowFullscreen = true;
-      f.title = "AraStudioTech showreel";
-      hero.appendChild(f);
-    } else if (mp4) {
-      var v = document.createElement("video");
-      v.src = mp4; v.controls = true; v.autoplay = true; v.playsInline = true;
-      hero.appendChild(v);
+    document.getElementById("play-btn").addEventListener("click", function () {
+      if (hero.querySelector("iframe, video")) return;
+      if (yt) {
+        var f = document.createElement("iframe");
+        f.src = "https://www.youtube-nocookie.com/embed/" + encodeURIComponent(yt) + "?autoplay=1&rel=0";
+        f.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+        f.allowFullscreen = true;
+        f.title = "AraStudioTech showreel";
+        hero.appendChild(f);
+      } else if (mp4) {
+        var v = document.createElement("video");
+        v.src = mp4; v.controls = true; v.autoplay = true; v.playsInline = true;
+        hero.appendChild(v);
+      }
+    });
+  })();
+
+  var reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ---------- Página do jogo: telas passando como um vídeo ---------- */
+  var slidesBox = document.getElementById("gp-slides");
+  if (slidesBox) (function () {
+    var slides = slidesBox.querySelectorAll("img");
+    var dotsWrap = document.getElementById("gp-dots");
+    var bar = document.getElementById("gp-bar");
+    var MS = 3000, index = 0, timer = null, visible = true, paused = reduced;
+
+    var dots = Array.prototype.map.call(slides, function (s, i) {
+      var b = document.createElement("button");
+      b.type = "button";
+      b.setAttribute("aria-label", (i + 1) + " / " + slides.length);
+      b.addEventListener("click", function () { paused = false; go(i); });
+      dotsWrap.appendChild(b);
+      return b;
+    });
+
+    function runBar(on) {
+      bar.style.transition = "none";
+      bar.style.width = "0";
+      void bar.offsetWidth;
+      if (on) { bar.style.transition = "width " + MS + "ms linear"; bar.style.width = "100%"; }
     }
-  });
+    function show(i) {
+      slides[index].classList.remove("is-active");
+      dots[index].removeAttribute("aria-current");
+      index = (i + slides.length) % slides.length;
+      slides[index].classList.add("is-active");
+      dots[index].setAttribute("aria-current", "true");
+      // carrega a próxima tela antes de ela aparecer
+      var next = slides[(index + 1) % slides.length];
+      if (next.loading === "lazy") next.loading = "eager";
+    }
+    function schedule() {
+      clearTimeout(timer);
+      if (paused || !visible) { runBar(false); return; }
+      runBar(true);
+      timer = setTimeout(function () { show(index + 1); schedule(); }, MS);
+    }
+    function go(i) { show(i); schedule(); }
+
+    // Tocar na tela pausa / continua
+    slidesBox.addEventListener("click", function () { paused = !paused; schedule(); });
+
+    // Arrastar para o lado no celular
+    var x0 = null;
+    slidesBox.addEventListener("touchstart", function (e) { x0 = e.touches[0].clientX; }, { passive: true });
+    slidesBox.addEventListener("touchend", function (e) {
+      if (x0 === null) return;
+      var dx = e.changedTouches[0].clientX - x0;
+      if (Math.abs(dx) > 40) { paused = false; go(index + (dx < 0 ? 1 : -1)); }
+      x0 = null;
+    });
+
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(function (entries) {
+        visible = entries[0].isIntersecting && !document.hidden;
+        schedule();
+      }, { threshold: 0.3 }).observe(slidesBox);
+    }
+    document.addEventListener("visibilitychange", function () { visible = !document.hidden; schedule(); });
+
+    dots[0].setAttribute("aria-current", "true");
+    schedule();
+  })();
+
+  /* ---------- Cordinha: desce conforme a página rola ---------- */
+  var rope = document.getElementById("rope");
+  if (rope) (function () {
+    var lastY = window.scrollY, ticking = false, settle = null;
+    function update() {
+      ticking = false;
+      var max = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+      var p = Math.min(1, Math.max(0, window.scrollY / max));
+      var minLen = 70, maxLen = Math.max(minLen, window.innerHeight * 0.62);
+      rope.style.setProperty("--rope", Math.round(minLen + p * (maxLen - minLen)) + "px");
+      if (!reduced) {
+        // balança para o lado contrário da rolagem e volta ao centro
+        var v = window.scrollY - lastY;
+        var swing = Math.max(-14, Math.min(14, -v * 0.35));
+        rope.style.setProperty("--swing", swing.toFixed(1) + "deg");
+        clearTimeout(settle);
+        settle = setTimeout(function () { rope.style.setProperty("--swing", "0deg"); }, 120);
+      }
+      lastY = window.scrollY;
+    }
+    window.addEventListener("scroll", function () {
+      if (!ticking) { ticking = true; requestAnimationFrame(update); }
+    }, { passive: true });
+    window.addEventListener("resize", update);
+    rope.addEventListener("click", function (e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: reduced ? "auto" : "smooth" });
+    });
+    update();
+  })();
 })();
