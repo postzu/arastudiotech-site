@@ -94,7 +94,7 @@
     <header class="gp-head">
       <img class="gp-icon" src="{{@root}}assets/reel/{{@id}}-icon.webp" alt="" width="360" height="360">
       <div>
-        <h1>{{@name}}{{@namesmall}}</h1>
+        <h1>{{@name}}</h1>
         <p class="gp-tag">{{@tagline}}</p>
         <div class="game-meta"><span class="chip">{{games.genre}}</span><span class="platform">Android</span></div>
       </div>
@@ -134,14 +134,9 @@
     <!-- ============ OUTRO JOGO ============ -->
     <section class="gp-more">
       <h2 class="section-title">{{gp.more}}</h2>
-      <a class="gp-other" href="{{@otherhref}}">
-        <img src="{{@root}}assets/reel/{{@otherid}}-icon.webp" alt="" width="360" height="360" loading="lazy">
-        <span>
-          <strong>{{@othername}}</strong>
-          <small>{{@othertag}}</small>
-        </span>
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
+      <div class="gp-others">
+{{@others}}
+      </div>
     </section>
 
   </main>

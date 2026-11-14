@@ -16,6 +16,7 @@ const CONFIG = {
   // Links reais das páginas na Play Store (troque pelos "details?id=...")
   play: {
     fameup: "https://play.google.com/store/search?q=FameUp%20Influencer%20Life&c=apps",
+    messzero: "https://play.google.com/store/search?q=Mess%20Zero%20Tidy%20Triple%20Match&c=apps",
     faisca: "https://play.google.com/store/search?q=Fa%C3%ADsca&c=apps"
   },
   // Vídeo do topo: preencha UM dos dois
@@ -24,7 +25,8 @@ const CONFIG = {
   //   youtube: ID de um vídeo/Short (ex.: "abc123XYZ")   mp4: caminho, ex.: "assets/video/faisca.mp4" (vertical 9:16)
   gameVideo: {
     faisca: { youtube: "", mp4: "" },
-    fameup: { youtube: "", mp4: "" }
+    fameup: { youtube: "", mp4: "" },
+    messzero: { youtube: "", mp4: "" }
   },
   // Redes sociais: deixe "" para esconder. Também viram "sameAs" para o Google.
   socials: {
@@ -59,6 +61,15 @@ const legalTpl = fs.readFileSync(path.join(ROOT, "src/legal.html"), "utf8");
 
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const urlFor = (l) => CONFIG.site + "/" + (l === DEFAULT ? "" : l + "/");
+
+/* "Versão" no link do CSS/JS (ex.: styles.css?v=a1b2c3d4): quando o arquivo muda, o navegador baixa de novo
+   na hora, em vez de usar a cópia antiga guardada (o GitHub Pages deixa guardar por 10 min). */
+const crypto = require("crypto");
+const fileVer = (f) => crypto.createHash("sha1").update(fs.readFileSync(path.join(ROOT, f))).digest("hex").slice(0, 8);
+const VER = { css: fileVer("styles.css"), js: fileVer("script.js") };
+const bust = (html) => html
+  .replace(/(href="[^"]*styles\.css)(")/g, `$1?v=${VER.css}$2`)
+  .replace(/(src="[^"]*script\.js)(")/g, `$1?v=${VER.js}$2`);
 
 const ICONS = {
   instagram: '<path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4ZM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4ZM16.1 2H7.9A5.9 5.9 0 0 0 2 7.9v8.2A5.9 5.9 0 0 0 7.9 22h8.2a5.9 5.9 0 0 0 5.9-5.9V7.9A5.9 5.9 0 0 0 16.1 2Zm4.1 14.1a4.1 4.1 0 0 1-4.1 4.1H7.9a4.1 4.1 0 0 1-4.1-4.1V7.9a4.1 4.1 0 0 1 4.1-4.1h8.2a4.1 4.1 0 0 1 4.1 4.1v8.2Z"/>',
@@ -120,6 +131,7 @@ function jsonld(l, t) {
       { "@type": "WebPage", "@id": url + "#page", url, name: t["meta.title"], description: t["meta.description"], inLanguage: t._html, isPartOf: { "@id": CONFIG.site + "/#website" }, about: { "@id": CONFIG.site + "/#org" } },
       app("fameup", "FameUp: Influencer Life", "FameUp", t["games.fameup"], ["Puzzle", "Match-3", "Casual"], CONFIG.play.fameup),
       app("faisca", "Faísca", "Faisca", t["games.faisca"], ["Puzzle", "Brain training", "Logic"], CONFIG.play.faisca),
+      app("messzero", t["game.messzero.full"] || "Mess Zero: Tidy Triple Match", t["game.messzero.name"] || "Mess Zero", t["games.messzero"], ["Puzzle", "Triple match", "Casual"], CONFIG.play.messzero),
       faq
     ]
   }, null, 2).replace(/</g, "\\u003c").split("\n").map((s) => "  " + s).join("\n");
@@ -154,7 +166,7 @@ function render(l) {
     jsonld: jsonld(l, t),
     year: String(new Date().getFullYear()),
     privacyurl: root + legalSlug("privacy", l), contenturl: root + legalSlug("content", l),
-    "play.fameup": esc(CONFIG.play.fameup), "play.faisca": esc(CONFIG.play.faisca),
+    "play.fameup": esc(CONFIG.play.fameup), "play.faisca": esc(CONFIG.play.faisca), "play.messzero": esc(CONFIG.play.messzero),
     "video.youtube": esc(CONFIG.video.youtube), "video.mp4": esc(CONFIG.video.mp4 ? root + CONFIG.video.mp4 : "")
   };
 
@@ -165,7 +177,7 @@ function render(l) {
     return esc(v);
   });
   if (missing.length) throw new Error(`[${l}] chaves faltando: ${[...new Set(missing)].join(", ")}`);
-  return out;
+  return bust(out);
 }
 
 /* -------- páginas -------- */
@@ -180,10 +192,13 @@ for (const l of LANGS) {
 const { qrSvg } = require("./src/qr.js");
 const gameTpl = fs.readFileSync(path.join(ROOT, "src/game.html"), "utf8");
 const GAMES = [
-  { id: "faisca", name: "Faísca", full: "Faísca", small: "", screens: 6, genre: ["Puzzle", "Brain training", "Logic"], other: "fameup" },
-  { id: "fameup", name: "FameUp", full: "FameUp: Influencer Life", small: "Influencer Life", screens: 8, genre: ["Puzzle", "Match-3", "Casual"], other: "faisca" }
+  { id: "faisca", name: "Faísca", full: "Faísca", screens: 6, genre: ["Puzzle", "Brain training", "Logic"] },
+  { id: "fameup", name: "FameUp", full: "FameUp: Influencer Life", screens: 8, genre: ["Puzzle", "Match-3", "Casual"] },
+  { id: "messzero", name: "Mess Zero", full: "Mess Zero: Tidy Triple Match", screens: 8, genre: ["Puzzle", "Triple match", "Casual"] }
 ];
-const gameById = (id) => GAMES.find((g) => g.id === id);
+// Nome do jogo no idioma (ex.: Bagunça Zero em pt); sem tradução usa o nome padrão
+const gameName = (g, t) => t["game." + g.id + ".name"] || g.name;
+const gameFull = (g, t) => t["game." + g.id + ".full"] || g.full;
 const gamePath = (id, l) => (l === DEFAULT ? "" : l + "/") + id + "/";
 const gameUrl = (id, l) => CONFIG.site + "/" + gamePath(id, l);
 // QR code: página curta que leva direto ao jogo no Google Play (funciona antes e depois do lançamento)
@@ -192,7 +207,7 @@ const QR = Object.fromEntries(GAMES.map((g) => [g.id, qrSvg(CONFIG.site + "/" + 
 function gameMedia(g, l, t, root) {
   const v = (CONFIG.gameVideo || {})[g.id] || {};
   if (v.youtube) {
-    return `        <iframe class="gp-video" src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(v.youtube)}?rel=0&amp;playsinline=1" title="${esc(g.full)}" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>`;
+    return `        <iframe class="gp-video" src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(v.youtube)}?rel=0&amp;playsinline=1" title="${esc(gameFull(g, t))}" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>`;
   }
   if (v.mp4) {
     return `        <video class="gp-video" src="${esc(root + v.mp4)}" poster="${root}assets/reel/${l}/${g.id}-1.webp" autoplay muted loop playsinline controls></video>`;
@@ -213,7 +228,7 @@ function gameJsonld(g, l, t) {
     "@graph": [
       {
         "@type": "MobileApplication", "@id": CONFIG.site + "/#" + g.id,
-        name: g.full, alternateName: g.name === g.full ? undefined : g.name,
+        name: gameFull(g, t), alternateName: gameName(g, t) === gameFull(g, t) ? undefined : gameName(g, t),
         description: t["games." + g.id], operatingSystem: "Android", applicationCategory: "GameApplication",
         genre: g.genre, image: CONFIG.site + "/assets/games/" + g.id + ".jpg", url: CONFIG.play[g.id],
         screenshot: Array.from({ length: g.screens }, (_, i) => `${CONFIG.site}/assets/reel/${l}/${g.id}-${i + 1}.webp`),
@@ -227,7 +242,7 @@ function gameJsonld(g, l, t) {
         itemListElement: [
           { "@type": "ListItem", position: 1, name: "AraStudioTech", item: urlFor(l) },
           { "@type": "ListItem", position: 2, name: t["nav.games"], item: urlFor(l) + "#games" },
-          { "@type": "ListItem", position: 3, name: g.full, item: url }
+          { "@type": "ListItem", position: 3, name: gameFull(g, t), item: url }
         ]
       }
     ]
@@ -237,7 +252,13 @@ function gameJsonld(g, l, t) {
 function renderGame(g, l) {
   const t = I18N[l];
   const root = l === DEFAULT ? "../" : "../../";
-  const o = gameById(g.other);
+  const others = GAMES.filter((x) => x.id !== g.id).map((o) =>
+    `      <a class="gp-other" href="../${o.id}/">\n` +
+    `        <img src="${root}assets/reel/${o.id}-icon.webp" alt="" width="360" height="360" loading="lazy">\n` +
+    `        <span>\n          <strong>${esc(gameFull(o, t))}</strong>\n          <small>${esc(t["reel." + o.id + ".tag"])}</small>\n        </span>\n` +
+    `        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>\n` +
+    `      </a>`
+  ).join("\n");
   const hreflang = LANGS.map((x) => `  <link rel="alternate" hreflang="${I18N[x]._html}" href="${gameUrl(g.id, x)}">`)
     .concat(`  <link rel="alternate" hreflang="x-default" href="${gameUrl(g.id, DEFAULT)}">`).join("\n");
   const langmenu = LANGS.map((x) =>
@@ -251,8 +272,7 @@ function renderGame(g, l) {
     : "";
   const vars = {
     html: t._html, code: t._code, root, home: "../", site: CONFIG.site,
-    id: g.id, name: esc(g.full),
-    namesmall: g.small ? "" : "",
+    id: g.id, name: esc(gameFull(g, t)), others,
     metatitle: esc(t["gp." + g.id + ".title"]),
     desc: esc(t["games." + g.id]), tags: esc(t["games." + g.id + ".tags"]), tagline: esc(t["reel." + g.id + ".tag"]),
     canonical: gameUrl(g.id, l), hreflang, langmenu, socials,
@@ -260,7 +280,6 @@ function renderGame(g, l) {
     media: gameMedia(g, l, t, root),
     qr: "          " + QR[g.id],
     play: esc(CONFIG.play[g.id]),
-    otherid: o.id, othername: esc(o.full), othertag: esc(t["reel." + o.id + ".tag"]), otherhref: "../" + o.id + "/",
     privacyurl: root + legalSlug("privacy", l), contenturl: root + legalSlug("content", l),
     year: String(new Date().getFullYear())
   };
@@ -272,7 +291,7 @@ function renderGame(g, l) {
     return esc(v);
   });
   if (missing.length) throw new Error(`[${g.id}/${l}] chaves faltando: ${[...new Set(missing)].join(", ")}`);
-  return out;
+  return bust(out);
 }
 
 for (const g of GAMES) {
@@ -319,7 +338,7 @@ function renderLegal(kind, l) {
     return esc(v);
   });
   if (missing.length) throw new Error(`[${kind}/${l}] chaves faltando: ${[...new Set(missing)].join(", ")}`);
-  return out;
+  return bust(out);
 }
 
 for (const kind of LEGAL_KINDS) {

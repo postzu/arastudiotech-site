@@ -554,3 +554,13 @@ a.game-cover:hover img { transform: scale(1.04); }
   .rope-line { width: 3px; }
   .rope-buddy { width: 44px; height: 44px; border-radius: 12px; }
 }
+
+/* ============ Ajustes: Bagunça Zero, lista de outros jogos, botões compactos ============ */
+.theme-messzero .gp-stage { background: radial-gradient(ellipse at 50% -10%, #ffe08a 0, transparent 55%), linear-gradient(165deg, #ffab47, #f07a35 55%, #c9452a); }
+.gp-others { display: grid; gap: 12px; margin-top: 22px; }
+.gp-others .gp-other { margin-top: 0; }
+.game-actions { gap: 8px; }
+.game-actions .btn { padding: 9px 16px; font-size: 15px; }
+.game-actions .btn-play svg { width: 18px; height: 18px; }
+.game-actions .btn-play span { font-size: 15px; }
+.game-actions .btn-play small { font-size: 9px; }

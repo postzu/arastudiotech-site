@@ -69,7 +69,14 @@ window.I18N = {
     "gp.about": "About the game",
     "gp.more": "More games",
     "gp.top": "Back to top",
-    "games.view": "See the game"
+    "games.view": "See the game",
+    "game.messzero.name": "Mess Zero",
+    "game.messzero.full": "Mess Zero: Tidy Triple Match",
+    "games.messzero": "Grandma's house is a total mess, and it's up to you and Caramelo the pup. Tap the objects, match 3 of a kind and watch every room shine. No timer, no rush.",
+    "games.messzero.tags": "Triple match · 6 rooms to tidy · Daily challenge · Works offline",
+    "reel.messzero.tag": "Match 3 and tidy up Grandma's house.",
+    "img.messzero": "Mess Zero: Tidy Triple Match, a relaxing tidy-up triple match game for Android",
+    "gp.messzero.title": "Mess Zero: Tidy Triple Match, Relaxing Tidy-Up Game for Android | AraStudioTech"
   },
 
   pt: {
@@ -136,7 +143,14 @@ window.I18N = {
     "gp.about": "Sobre o jogo",
     "gp.more": "Mais jogos",
     "gp.top": "Voltar ao topo",
-    "games.view": "Ver o jogo"
+    "games.view": "Ver o jogo",
+    "game.messzero.name": "Bagunça Zero",
+    "game.messzero.full": "Bagunça Zero: Jogo de Arrumar",
+    "games.messzero": "A casa da Vó Cida está uma bagunça, e quem vai arrumar é você com o Caramelo. Toque nos objetos, junte 3 iguais e deixe cada cômodo um brinco. Sem cronômetro e sem pressa.",
+    "games.messzero.tags": "Junte 3 iguais · 6 cômodos para arrumar · Desafio diário · Funciona offline",
+    "reel.messzero.tag": "Junte 3 iguais e arrume a casa da Vó.",
+    "img.messzero": "Bagunça Zero: Jogo de Arrumar, jogo relaxante de juntar 3 iguais para Android",
+    "gp.messzero.title": "Bagunça Zero: Jogo de Arrumar e Juntar 3 Iguais para Android | AraStudioTech"
   },
 
   es: {
@@ -203,7 +217,14 @@ window.I18N = {
     "gp.about": "Sobre el juego",
     "gp.more": "Más juegos",
     "gp.top": "Volver arriba",
-    "games.view": "Ver el juego"
+    "games.view": "Ver el juego",
+    "game.messzero.name": "Desorden Cero",
+    "game.messzero.full": "Desorden Cero: Ordenar y Unir",
+    "games.messzero": "La casa de la abuela Cida es un desastre, y te toca ordenarla con Caramelo, el perrito. Toca los objetos, une 3 iguales y deja cada habitación impecable. Sin reloj y sin prisa.",
+    "games.messzero.tags": "Une 3 iguales · 6 habitaciones para ordenar · Reto diario · Funciona sin conexión",
+    "reel.messzero.tag": "Une 3 iguales y ordena la casa de la abuela.",
+    "img.messzero": "Desorden Cero: Ordenar y Unir, juego relajante de unir 3 iguales para Android",
+    "gp.messzero.title": "Desorden Cero: Juego de Ordenar y Unir 3 Iguales para Android | AraStudioTech"
   },
 
   fr: {
@@ -270,7 +291,14 @@ window.I18N = {
     "gp.about": "À propos du jeu",
     "gp.more": "Autres jeux",
     "gp.top": "Retour en haut",
-    "games.view": "Voir le jeu"
+    "games.view": "Voir le jeu",
+    "game.messzero.name": "Mess Zero",
+    "game.messzero.full": "Mess Zero: Tidy Triple Match",
+    "games.messzero": "La maison de Mamie Cida est un vrai bazar, et c'est à vous de la ranger avec Caramelo le chiot. Touchez les objets, associez-en 3 identiques et faites briller chaque pièce. Sans chrono, sans pression.",
+    "games.messzero.tags": "Triple association · 6 pièces à ranger · Défi du jour · Fonctionne hors ligne",
+    "reel.messzero.tag": "Associez-en 3 et rangez la maison de Mamie.",
+    "img.messzero": "Mess Zero: Tidy Triple Match, jeu de rangement relaxant pour Android",
+    "gp.messzero.title": "Mess Zero : Jeu de Rangement et de Triple Association pour Android | AraStudioTech"
   },
 
   de: {
@@ -337,7 +365,14 @@ window.I18N = {
     "gp.about": "Über das Spiel",
     "gp.more": "Weitere Spiele",
     "gp.top": "Nach oben",
-    "games.view": "Zum Spiel"
+    "games.view": "Zum Spiel",
+    "game.messzero.name": "Mess Zero",
+    "game.messzero.full": "Mess Zero: Tidy Triple Match",
+    "games.messzero": "Omas Haus ist das reinste Chaos, und du räumst es mit Welpe Caramelo auf. Tippe auf die Gegenstände, sammle 3 gleiche und bring jedes Zimmer zum Strahlen. Ohne Timer, ohne Stress.",
+    "games.messzero.tags": "Triple Match · 6 Zimmer aufräumen · Tägliche Challenge · Funktioniert offline",
+    "reel.messzero.tag": "Sammle 3 gleiche und räum Omas Haus auf.",
+    "img.messzero": "Mess Zero: Tidy Triple Match, entspannendes Aufräumspiel für Android",
+    "gp.messzero.title": "Mess Zero: Entspannendes Aufräum- und Triple-Match-Spiel für Android | AraStudioTech"
   },
 
   ru: {
@@ -404,7 +439,14 @@ window.I18N = {
     "gp.about": "Об игре",
     "gp.more": "Другие игры",
     "gp.top": "Наверх",
-    "games.view": "Об игре"
+    "games.view": "Об игре",
+    "game.messzero.name": "Mess Zero",
+    "game.messzero.full": "Mess Zero: Tidy Triple Match",
+    "games.messzero": "В доме бабушки Сиды полный беспорядок, и наводить порядок будете вы со щенком Карамело. Нажимайте на предметы, собирайте по 3 одинаковых, и каждая комната засияет. Без таймера и без спешки.",
+    "games.messzero.tags": "Три одинаковых · 6 комнат для уборки · Ежедневное испытание · Работает офлайн",
+    "reel.messzero.tag": "Собирайте по 3 и наведите порядок у бабушки.",
+    "img.messzero": "Mess Zero: Tidy Triple Match — расслабляющая игра-уборка для Android",
+    "gp.messzero.title": "Mess Zero: расслабляющая игра «три одинаковых» про уборку для Android | AraStudioTech"
   },
 
   ja: {
@@ -471,7 +513,14 @@ window.I18N = {
     "gp.about": "ゲームについて",
     "gp.more": "ほかのゲーム",
     "gp.top": "トップへ戻る",
-    "games.view": "ゲームを見る"
+    "games.view": "ゲームを見る",
+    "game.messzero.name": "Mess Zero",
+    "game.messzero.full": "Mess Zero: Tidy Triple Match",
+    "games.messzero": "シダおばあちゃんの家はぐちゃぐちゃ。子犬のカラメロと一緒に片付けよう。アイテムをタップして同じものを3つそろえ、部屋をピカピカに。タイマーなしで、あせらず遊べます。",
+    "games.messzero.tags": "3つそろえ · 6つの部屋を片付け · デイリーチャレンジ · オフライン対応",
+    "reel.messzero.tag": "3つそろえて、おばあちゃんの家を片付けよう。",
+    "img.messzero": "Mess Zero: Tidy Triple Match、Android 向けのリラックスできる片付けパズル",
+    "gp.messzero.title": "Mess Zero：Android 向け片付け＆3つそろえパズル | AraStudioTech"
   },
 
   zh: {
@@ -538,6 +587,13 @@ window.I18N = {
     "gp.about": "关于游戏",
     "gp.more": "更多游戏",
     "gp.top": "回到顶部",
-    "games.view": "查看游戏"
+    "games.view": "查看游戏",
+    "game.messzero.name": "Mess Zero",
+    "game.messzero.full": "Mess Zero: Tidy Triple Match",
+    "games.messzero": "希达奶奶家乱成一团，快和小狗焦糖一起来收拾吧！点击物品，凑齐 3 个相同的，让每个房间焕然一新。没有倒计时，不慌不忙。",
+    "games.messzero.tags": "三消配对 · 收拾 6 个房间 · 每日挑战 · 支持离线",
+    "reel.messzero.tag": "凑齐 3 个相同物品，收拾奶奶的家。",
+    "img.messzero": "Mess Zero: Tidy Triple Match，一款适用于 Android 的休闲收纳三消游戏",
+    "gp.messzero.title": "Mess Zero：Android 休闲收纳三消游戏 | AraStudioTech"
   }
 };

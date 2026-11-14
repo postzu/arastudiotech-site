@@ -49,7 +49,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,600;0,700;0,800;1,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../styles.css?v=c34716c8">
 
   <script type="application/ld+json">
   {
@@ -170,6 +170,34 @@
         ],
         "image": "https://arastudiotech.com/assets/games/faisca.jpg",
         "url": "https://play.google.com/store/search?q=Fa%C3%ADsca&c=apps",
+        "inLanguage": "fr",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "author": {
+          "@id": "https://arastudiotech.com/#org"
+        },
+        "publisher": {
+          "@id": "https://arastudiotech.com/#org"
+        }
+      },
+      {
+        "@type": "MobileApplication",
+        "@id": "https://arastudiotech.com/#messzero",
+        "name": "Mess Zero: Tidy Triple Match",
+        "alternateName": "Mess Zero",
+        "description": "La maison de Mamie Cida est un vrai bazar, et c'est à vous de la ranger avec Caramelo le chiot. Touchez les objets, associez-en 3 identiques et faites briller chaque pièce. Sans chrono, sans pression.",
+        "operatingSystem": "Android",
+        "applicationCategory": "GameApplication",
+        "genre": [
+          "Puzzle",
+          "Triple match",
+          "Casual"
+        ],
+        "image": "https://arastudiotech.com/assets/games/messzero.jpg",
+        "url": "https://play.google.com/store/search?q=Mess%20Zero%20Tidy%20Triple%20Match&c=apps",
         "inLanguage": "fr",
         "offers": {
           "@type": "Offer",
@@ -457,14 +485,22 @@
             </div>
           </article>
 
-          <article class="game-card game-card-soon">
-            <div class="game-cover cover-soon">
-              <span class="game-logo">?</span>
-            </div>
+          <article class="game-card" id="messzero">
+            <a class="game-cover cover-messzero" href="messzero/" aria-label="Mess Zero: Tidy Triple Match: Voir le jeu">
+              <img src="../assets/games/messzero.jpg" alt="Mess Zero: Tidy Triple Match, jeu de rangement relaxant pour Android" width="1280" height="800" loading="lazy" decoding="async">
+            </a>
             <div class="game-body">
-              <div class="game-meta"><span class="chip chip-soon">En développement</span></div>
-              <h3>Du nouveau</h3>
-              <p>On travaille déjà sur le prochain. La suite bientôt.</p>
+              <div class="game-meta"><span class="chip">Réflexion</span><span class="platform">Android</span></div>
+              <h3><a href="messzero/">Mess Zero</a></h3>
+              <p>La maison de Mamie Cida est un vrai bazar, et c'est à vous de la ranger avec Caramelo le chiot. Touchez les objets, associez-en 3 identiques et faites briller chaque pièce. Sans chrono, sans pression.</p>
+              <p class="game-tags">Triple association · 6 pièces à ranger · Défi du jour · Fonctionne hors ligne</p>
+              <div class="game-actions">
+                <a class="btn btn-play" href="https://play.google.com/store/search?q=Mess%20Zero%20Tidy%20Triple%20Match&amp;c=apps" target="_blank" rel="noopener" aria-label="Mess Zero: Bientôt sur Google Play">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 2.8v18.4c0 .5.5.8.9.6L21 12.6c.5-.3.5-.9 0-1.2L4.9 2.2c-.4-.2-.9.1-.9.6Z" fill="currentColor"/></svg>
+                  <span><small>Bientôt sur</small>Google Play</span>
+                </a>
+                <a class="btn btn-outline" href="messzero/">Voir le jeu</a>
+              </div>
             </div>
           </article>
         </div>
@@ -593,6 +629,6 @@
     </div>
   </footer>
 
-  <script src="../script.js" defer></script>
+  <script src="../script.js?v=b3edd0ff" defer></script>
 </body>
 </html>
