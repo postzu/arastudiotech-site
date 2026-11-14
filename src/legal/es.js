@@ -43,8 +43,7 @@ window.LEGAL_I18N.es = {
   <li><strong>Estadísticas de uso e informes de fallos (Google Firebase).</strong> Nuestros juegos usan Google Analytics para Firebase y Firebase Crashlytics. Registran un identificador aleatorio de la instalación de la app, eventos de juego (nivel iniciado, ganado o perdido, tiempo en el nivel, pistas y vídeos con recompensa usados, pantallas abiertas, resultado del test de CI), la duración de las sesiones, el modelo del dispositivo, la versión del sistema, el idioma y el país aproximado (estimado por la dirección IP) y, si la app falla, un informe técnico del fallo. No incluyen tu nombre, tu correo ni el nombre artístico que escribes. Vemos estos datos como informes en la consola de Firebase. Google conserva los datos de Analytics hasta 14 meses y los informes de fallos 90 días. Consulta <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">privacidad y seguridad en Firebase</a>.</li>
   <li><strong>Notificaciones.</strong> Si las permites, nuestros juegos programan recordatorios locales (por ejemplo, un desafío diario). Se crean en tu dispositivo; no se nos envía nada.</li>
   <li><strong>Compartir y valorar.</strong> El botón “Compartir” abre el menú para compartir de Android con un texto corto, y lo envía la app que elijas. Cuando un juego te pide una valoración, la gestiona Google Play. No recibimos nada personal en ninguno de los dos casos.</li>
-  <li><strong>Compra dentro de la app (Google Play Billing).</strong> Desorden Cero ofrece una compra única y opcional, “Quitar anuncios”. El pago lo gestiona por completo Google Play: no recibimos ni guardamos datos de pago (tarjeta, cuenta, dirección de facturación). El juego solo recibe de Google Play la confirmación de que la compra se hizo con esta Cuenta de Google; se guarda en el dispositivo para mantener los anuncios desactivados y para restaurar la compra en otro teléfono. Firebase Analytics registra únicamente que la compra se realizó. FameUp y Faísca no tienen compras dentro de la app.</li>
-  <li><strong>Sin chat ni cuentas.</strong> Nuestros juegos actuales no tienen chat ni cuentas de usuario.</li>
+  <li><strong>Sin compras ni chat.</strong> Nuestros juegos actuales no tienen compras dentro de la app, chat ni cuentas de usuario.</li>
 </ul>
 
 <h3>Cuando nos contactas</h3>
@@ -73,7 +72,7 @@ window.LEGAL_I18N.es = {
 <h2 id="share">4. Con quién compartimos información</h2>
 <p>Trabajamos con pocos proveedores de servicios, cada uno con sus propias condiciones de privacidad:</p>
 <ul>
-  <li><strong>Google</strong>: AdMob (anuncios en nuestros juegos), Google Play (distribución de apps, valoraciones, copia de seguridad de Android y pago de la compra dentro de la app, mediante Google Play Billing) y Google Fonts (fuentes del sitio).</li>
+  <li><strong>Google</strong>: AdMob (anuncios en nuestros juegos), Google Play (distribución de apps, valoraciones, copia de seguridad de Android) y Google Fonts (fuentes del sitio).</li>
   <li><strong>Google Firebase</strong>: Analytics y Crashlytics (estadísticas de uso e informes de fallos de los juegos).</li>
   <li><strong>GitHub</strong>: alojamiento del sitio.</li>
   <li><strong>Nuestro proveedor de correo</strong>: para recibir y responder tus mensajes.</li>

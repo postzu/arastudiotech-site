@@ -43,8 +43,7 @@ window.LEGAL_I18N.ja = {
   <li><strong>利用統計とクラッシュレポート（Google Firebase）。</strong>ゲームは Google Analytics for Firebase と Firebase Crashlytics を使用します。記録されるのは、アプリのインストールごとのランダムな識別子、ゲーム内イベント（ステージの開始・クリア・失敗、ステージの所要時間、使用したヒントやリワード動画、開いた画面、IQテストの結果）、セッションの長さ、端末の機種、OSのバージョン、言語、おおよその国（IPアドレスから推定）、そしてアプリが停止した場合の技術的なクラッシュレポートです。お名前、メールアドレス、入力した芸名は含まれません。私たちはこれらのデータを Firebase コンソールのレポートとして閲覧します。Google は Analytics のデータを最長14か月、クラッシュレポートを90日間保持します。詳しくは <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase のプライバシーとセキュリティ</a> をご覧ください。</li>
   <li><strong>通知。</strong>許可した場合、ゲームはローカルのリマインダー（デイリーチャレンジなど）を予約します。通知は端末内で作成され、当スタジオには何も送信されません。</li>
   <li><strong>共有とレビュー。</strong>「共有」ボタンを押すと、短いテキストを含む Android の共有メニューが開き、あなたが選んだアプリから送信されます。ゲーム内で評価をお願いする場合、評価は Google Play を通じて行われます。いずれの場合も、当スタジオが個人的な情報を受け取ることはありません。</li>
-  <li><strong>アプリ内購入（Google Play 請求サービス）。</strong>Mess Zero には、任意の買い切り購入「広告を削除」が 1 つあります。お支払いはすべて Google Play が処理します。当スタジオが支払い情報（カード、口座、請求先住所）を受け取ったり保存したりすることはありません。ゲームが Google Play から受け取るのは、この Google アカウントで購入が行われたという確認のみで、広告を非表示に保ち、別の端末で購入を復元するために端末内に保存されます。Firebase Analytics は購入が行われた事実のみを記録します。FameUp と Faísca にアプリ内購入はありません。</li>
-  <li><strong>チャット・アカウントなし。</strong>現在のゲームには、チャットやユーザーアカウントはありません。</li>
+  <li><strong>課金・チャットなし。</strong>現在のゲームには、アプリ内課金、チャット、ユーザーアカウントはありません。</li>
 </ul>
 
 <h3>当スタジオに連絡したとき</h3>
@@ -73,7 +72,7 @@ window.LEGAL_I18N.ja = {
 <h2 id="share">4. 情報の共有先</h2>
 <p>当スタジオは少数のサービス提供者と協力しており、各社にはそれぞれのプライバシー規約が適用されます。</p>
 <ul>
-  <li><strong>Google</strong>：AdMob（ゲーム内広告）、Google Play（アプリ配信、評価、Android バックアップ、Google Play 請求サービスによるアプリ内購入の決済）、Google Fonts（サイトのフォント）。</li>
+  <li><strong>Google</strong>：AdMob（ゲーム内広告）、Google Play（アプリ配信、評価、Android バックアップ）、Google Fonts（サイトのフォント）。</li>
   <li><strong>Google Firebase</strong>：Analytics と Crashlytics（ゲームの利用統計とクラッシュレポート）。</li>
   <li><strong>GitHub</strong>：サイトのホスティング。</li>
   <li><strong>当スタジオのメールサービス提供者</strong>：メッセージの受信と返信のため。</li>

@@ -44,8 +44,7 @@ window.LEGAL_I18N.pt = {
   <li><strong>Estatísticas de uso e falhas (Google Firebase).</strong> Os jogos usam o Google Analytics para Firebase e o Firebase Crashlytics. Eles registram um identificador aleatório da instalação do app, eventos de jogo (fase iniciada, vencida ou perdida, tempo na fase, dicas e vídeos premiados usados, telas abertas, resultado do teste de QI), duração das sessões, modelo do aparelho, versão do sistema, idioma e país aproximado (estimado pelo endereço IP), e, se o app travar, um relatório técnico da falha. Não incluem seu nome, e-mail nem o nome artístico que você digita. Nós vemos esses dados em relatórios no console do Firebase. O Google guarda os dados do Analytics por até 14 meses e os relatórios de falha por 90 dias. Veja <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">privacidade e segurança no Firebase</a>.</li>
   <li><strong>Notificações.</strong> Se você permitir, os jogos agendam lembretes locais (por exemplo, um desafio diário). Eles são criados no seu aparelho; nada é enviado para nós.</li>
   <li><strong>Compartilhar e avaliar.</strong> O botão “Compartilhar” abre o menu de compartilhamento do Android com um texto curto, e quem envia é o app que você escolher. Quando o jogo pede uma avaliação, ela é feita pelo Google Play. Não recebemos nada pessoal em nenhum dos casos.</li>
-  <li><strong>Compra no app (Google Play Billing).</strong> O Bagunça Zero oferece uma compra única e opcional, “Remover anúncios”. O pagamento é feito inteiramente pelo Google Play: nós não recebemos nem guardamos dados de pagamento (cartão, conta, endereço de cobrança). O jogo só recebe do Google Play a confirmação de que a compra foi feita nesta Conta Google, guardada no aparelho para manter os anúncios desligados e para restaurar a compra em outro celular. O Firebase Analytics registra apenas que a compra aconteceu. O FameUp e o Faísca não têm compras no app.</li>
-  <li><strong>Sem chat, sem contas.</strong> Nossos jogos atuais não têm chat nem contas de usuário.</li>
+  <li><strong>Sem compras, sem chat.</strong> Nossos jogos atuais não têm compras no app, chat nem contas de usuário.</li>
 </ul>
 
 <h3>Quando você fala com a gente</h3>
@@ -74,7 +73,7 @@ window.LEGAL_I18N.pt = {
 <h2 id="compartilhamento">4. Com quem compartilhamos</h2>
 <p>Trabalhamos com poucos prestadores de serviço, cada um com seus próprios termos de privacidade:</p>
 <ul>
-  <li><strong>Google</strong>: AdMob (anúncios nos jogos), Google Play (distribuição dos apps, avaliações, backup do Android e pagamento da compra no app, pelo Google Play Billing) e Google Fonts (fontes do site).</li>
+  <li><strong>Google</strong>: AdMob (anúncios nos jogos), Google Play (distribuição dos apps, avaliações, backup do Android) e Google Fonts (fontes do site).</li>
   <li><strong>Google Firebase</strong>: Analytics e Crashlytics (estatísticas de uso e relatórios de falhas dos jogos).</li>
   <li><strong>GitHub</strong>: hospedagem do site.</li>
   <li><strong>Nosso provedor de e-mail</strong>: para receber e responder suas mensagens.</li>

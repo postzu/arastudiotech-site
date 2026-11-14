@@ -157,7 +157,7 @@ function render(l) {
     : "";
 
   const vars = {
-    html: t._html, code: t._code, root, home: root || "./",
+    html: t._html, code: t._code, lang: l, root, home: root || "./",
     reel: root + "assets/reel/" + l + "/",
     site: CONFIG.site, canonical: urlFor(l), email: CONFIG.email,
     hreflang, langmenu, faq, socials,
@@ -271,7 +271,7 @@ function renderGame(g, l) {
       ).join("\n") + "\n        </div>"
     : "";
   const vars = {
-    html: t._html, code: t._code, root, home: "../", site: CONFIG.site,
+    html: t._html, code: t._code, lang: l, root, home: "../", site: CONFIG.site,
     id: g.id, name: esc(gameFull(g, t)), others,
     metatitle: esc(t["gp." + g.id + ".title"]),
     desc: esc(t["games." + g.id]), tags: esc(t["games." + g.id + ".tags"]), tagline: esc(t["reel." + g.id + ".tag"]),
