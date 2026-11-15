@@ -52,8 +52,10 @@ const tpl = fs.readFileSync(path.join(ROOT, "src/template.html"), "utf8");
 
 /* Políticas (privacidade e conteúdo): um arquivo por idioma em src/legal/<idioma>.js. */
 for (const l of LANGS) eval(fs.readFileSync(path.join(ROOT, "src/legal", l + ".js"), "utf8"));
+/* Termos de Uso: um arquivo por idioma em src/legal/terms/<idioma>.js (acrescenta slug.terms e terms). */
+for (const l of LANGS) { const f = path.join(ROOT, "src/legal/terms", l + ".js"); if (fs.existsSync(f)) eval(fs.readFileSync(f, "utf8")); }
 const LEGAL = window.LEGAL_I18N;
-const LEGAL_KINDS = ["privacy", "content"];
+const LEGAL_KINDS = ["privacy", "content", "terms"];
 const LEGAL_LANGS = LANGS.filter((l) => LEGAL[l]);
 const legalLang = (l) => (LEGAL_LANGS.includes(l) ? l : DEFAULT);
 const legalSlug = (kind, l) => LEGAL[legalLang(l)].slug[kind];
@@ -165,7 +167,7 @@ function render(l) {
     oglocalealt: LANGS.filter((x) => x !== l).map((x) => `  <meta property="og:locale:alternate" content="${OG_LOCALE[x]}">`).join("\n"),
     jsonld: jsonld(l, t),
     year: String(new Date().getFullYear()),
-    privacyurl: root + legalSlug("privacy", l), contenturl: root + legalSlug("content", l),
+    privacyurl: root + legalSlug("privacy", l), contenturl: root + legalSlug("content", l), termsurl: root + legalSlug("terms", l),
     "play.fameup": esc(CONFIG.play.fameup), "play.faisca": esc(CONFIG.play.faisca), "play.messzero": esc(CONFIG.play.messzero),
     "video.youtube": esc(CONFIG.video.youtube), "video.mp4": esc(CONFIG.video.mp4 ? root + CONFIG.video.mp4 : "")
   };
@@ -280,7 +282,7 @@ function renderGame(g, l) {
     media: gameMedia(g, l, t, root),
     qr: "          " + QR[g.id],
     play: esc(CONFIG.play[g.id]),
-    privacyurl: root + legalSlug("privacy", l), contenturl: root + legalSlug("content", l),
+    privacyurl: root + legalSlug("privacy", l), contenturl: root + legalSlug("content", l), termsurl: root + legalSlug("terms", l),
     year: String(new Date().getFullYear())
   };
   const missing = [];
@@ -320,14 +322,15 @@ function renderLegal(kind, l) {
   ).join("\n");
   const raw = {
     hreflang, langmenu, switch: sw,
-    body: doc.body.trim().replace(/\{\{email\}\}/g, esc(CONFIG.email)).split("\n").map((s) => "      " + s).join("\n")
+    body: doc.body.trim().replace(/\{\{email\}\}/g, esc(CONFIG.email))
+      .replace(/\{\{privacyurl\}\}/g, rel(slugOf("privacy", l))).replace(/\{\{contenturl\}\}/g, rel(slugOf("content", l))).split("\n").map((s) => "      " + s).join("\n")
   };
   const text = {
     html: t._html, code: t._code, pagelang: l, title: doc.title, description: doc.description, updated: doc.updated,
     updatedlabel: ui.updated, back: ui.back, langnote: ui.langnote,
     canonical: CONFIG.site + "/" + slug, site: CONFIG.site, root,
     home: rel(l === DEFAULT ? "" : l + "/") || "./",
-    privacyurl: rel(slugOf("privacy", l)), contenturl: rel(slugOf("content", l)),
+    privacyurl: rel(slugOf("privacy", l)), contenturl: rel(slugOf("content", l)), termsurl: rel(slugOf("terms", l)),
     year: String(new Date().getFullYear())
   };
   const missing = [];

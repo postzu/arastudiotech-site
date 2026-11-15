@@ -25,6 +25,7 @@ styles.css          visual (cores da marca em :root)
 script.js           menu, idioma, vídeo
 assets/             logo, ícones, capas dos jogos, imagem de compartilhamento
 src/legal/<idioma>.js  Política de Privacidade e de Conteúdo, um arquivo por idioma (8)
+src/legal/terms/<idioma>.js  Termos de Uso, um arquivo por idioma (8): terms/, pt/termos/, es/terminos/...
 src/legal.html      layout das páginas de política
 faisca/jogar/       link de compartilhamento do Faísca → Google Play (arquivo fixo, não é gerado)
 
