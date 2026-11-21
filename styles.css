@@ -321,6 +321,9 @@ h1, h2, h3, h4 { font-family: "Exo 2", sans-serif; line-height: 1.2; margin: 0; 
 .partner-card svg { width: 46px; height: 46px; padding: 10px; border-radius: 12px; background: var(--grad); color: #fff; }
 .partner-card h3 { font-size: 20px; margin: 16px 0 8px; }
 .partner-card p { margin: 0; color: var(--muted); }
+.partners-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.partners-note { margin: 18px 0 0; color: var(--muted); font-size: 15px; }
+.partners-note a { color: var(--cyan); }
 .btn-grad { background: var(--grad); color: #fff; box-shadow: 0 8px 30px rgba(91,124,255,.3); }
 .btn-grad:hover { box-shadow: 0 10px 36px rgba(217,70,239,.4); }
 

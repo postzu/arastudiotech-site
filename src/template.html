@@ -318,22 +318,26 @@
         <p class="section-sub">{{partners.intro}}</p>
         <div class="partners-grid">
           <article class="partner-card">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 6h10a5 5 0 0 1 4.9 6l-1 5a2.5 2.5 0 0 1-4.3 1.2L14 15.5h-4l-2.6 2.7A2.5 2.5 0 0 1 3.1 17l-1-5A5 5 0 0 1 7 6Zm1 3v1.5H6.5V12H8v1.5h1.5V12H11v-1.5H9.5V9H8Zm7.5 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2Zm2.5-1.5a1 1 0 1 0 0 2 1 1 0 0 0 0-2Z"/></svg>
-            <h3>{{partners.dev.title}}</h3>
-            <p>{{partners.dev.text}}</p>
-          </article>
-          <article class="partner-card">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 17.5 9 11.5l4 4 6.6-6.6L22 11.3V5h-6.3l2.4 2.4L13 12.5l-4-4-7.4 7.4L3 17.5ZM2 20h20v2H2v-2Z"/></svg>
-            <h3>{{partners.inv.title}}</h3>
-            <p>{{partners.inv.text}}</p>
-          </article>
-          <article class="partner-card">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 5h11a2 2 0 0 1 2 2v2.5l4-2.5v10l-4-2.5V17a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm4 3.5v7l5.5-3.5L8 8.5Z"/></svg>
-            <h3>{{partners.cr.title}}</h3>
-            <p>{{partners.cr.text}}</p>
+            <h3>{{partners.post.title}}</h3>
+            <p>{{partners.post.text}}</p>
+          </article>
+          <article class="partner-card">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 6h10a5 5 0 0 1 4.9 6l-1 5a2.5 2.5 0 0 1-4.3 1.2L14 15.5h-4l-2.6 2.7A2.5 2.5 0 0 1 3.1 17l-1-5A5 5 0 0 1 7 6Zm1 3v1.5H6.5V12H8v1.5h1.5V12H11v-1.5H9.5V9H8Zm7.5 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2Zm2.5-1.5a1 1 0 1 0 0 2 1 1 0 0 0 0-2Z"/></svg>
+            <h3>{{partners.early.title}}</h3>
+            <p>{{partners.early.text}}</p>
+          </article>
+          <article class="partner-card">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm0 13.6V19h14v-3.4l-4-4-3.5 3.5-2-2L5 16.6ZM8.5 6.5a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"/></svg>
+            <h3>{{partners.assets.title}}</h3>
+            <p>{{partners.assets.text}}</p>
           </article>
         </div>
-        <a class="btn btn-grad" href="mailto:{{@email}}">{{partners.cta}}</a>
+        <div class="partners-actions">
+          <a class="btn btn-grad" href="mailto:{{@email}}">{{partners.cta}}</a>
+          <a class="btn btn-outline" href="{{@contenturl}}">{{partners.policy}}</a>
+        </div>
+        <p class="partners-note">{{partners.inv}} <a href="mailto:{{@email}}">{{@email}}</a></p>
       </section>
 
       <!-- ============ NEWS ============ -->
