@@ -55,6 +55,9 @@ for (const l of LANGS) eval(fs.readFileSync(path.join(ROOT, "src/legal", l + ".j
 /* Termos de Uso: um arquivo por idioma em src/legal/terms/<idioma>.js (acrescenta slug.terms e terms). */
 for (const l of LANGS) { const f = path.join(ROOT, "src/legal/terms", l + ".js"); if (fs.existsSync(f)) eval(fs.readFileSync(f, "utf8")); }
 const LEGAL = window.LEGAL_I18N;
+/* Guias dos jogos (como jogar, o que tem, dicas, perguntas): um arquivo por idioma em src/guides/<idioma>.js */
+for (const l of LANGS) { const f = path.join(ROOT, "src/guides", l + ".js"); if (fs.existsSync(f)) eval(fs.readFileSync(f, "utf8")); }
+const GUIDES = window.GUIDES || {};
 const LEGAL_KINDS = ["privacy", "content", "terms"];
 const LEGAL_LANGS = LANGS.filter((l) => LEGAL[l]);
 const legalLang = (l) => (LEGAL_LANGS.includes(l) ? l : DEFAULT);
@@ -238,6 +241,10 @@ function gameJsonld(g, l, t) {
         offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
         author: { "@type": "Organization", "@id": CONFIG.site + "/#org", name: "AraStudioTech", url: CONFIG.site + "/" }
       },
+      ...(guideOf(g, l)[g.id] ? [{
+        "@type": "FAQPage", "@id": url + "#faq", inLanguage: t._html,
+        mainEntity: guideOf(g, l)[g.id].faq.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } }))
+      }] : []),
       { "@type": "WebPage", "@id": url + "#page", url, name: t["gp." + g.id + ".title"], description: t["games." + g.id], inLanguage: t._html, about: { "@id": CONFIG.site + "/#" + g.id } },
       {
         "@type": "BreadcrumbList",
@@ -249,6 +256,28 @@ function gameJsonld(g, l, t) {
       }
     ]
   }, null, 2).replace(/</g, "\\u003c").split("\n").map((s) => "  " + s).join("\n");
+}
+
+/* Texto do guia de um jogo (para o Google entender a página e para quem chega pela busca) */
+const guideOf = (g, l) => (GUIDES[l] && GUIDES[l][g.id] ? GUIDES[l] : GUIDES[DEFAULT]);
+function gameGuide(g, l, t) {
+  const G = guideOf(g, l), d = G[g.id];
+  if (!d) return "";
+  const n = esc(gameName(g, t));
+  const h = (k) => esc(G.h[k]).replace("{n}", n);
+  const list = (tag, cls, arr) =>
+    `      <${tag} class="${cls}">\n` + arr.map((x) => `        <li>${esc(x)}</li>`).join("\n") + `\n      </${tag}>`;
+  const faq = d.faq.map(([q, a]) =>
+    `        <details>\n          <summary>${esc(q)}</summary>\n          <p>${esc(a)}</p>\n        </details>`).join("\n");
+  return [
+    `    <section class="gp-guide">`,
+    `      <h2 class="section-title">${h("howto")}</h2>`, list("ol", "gp-steps", d.howto),
+    `      <h2 class="section-title">${h("features")}</h2>`, list("ul", "gp-list", d.features),
+    `      <h2 class="section-title">${h("tips")}</h2>`, list("ul", "gp-list gp-tips", d.tips),
+    `      <h2 class="section-title">${h("faq")}</h2>`,
+    `      <div class="gp-faq">\n${faq}\n      </div>`,
+    `    </section>`
+  ].join("\n");
 }
 
 function renderGame(g, l) {
@@ -280,6 +309,7 @@ function renderGame(g, l) {
     canonical: gameUrl(g.id, l), hreflang, langmenu, socials,
     oglocale: OG_LOCALE[l], jsonld: gameJsonld(g, l, t),
     media: gameMedia(g, l, t, root),
+    guide: gameGuide(g, l, t),
     qr: "          " + QR[g.id],
     play: esc(CONFIG.play[g.id]),
     privacyurl: root + legalSlug("privacy", l), contenturl: root + legalSlug("content", l), termsurl: root + legalSlug("terms", l),

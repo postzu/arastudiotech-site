@@ -516,6 +516,32 @@ a.game-cover:hover img { transform: scale(1.04); }
 .gp-about, .gp-more { max-width: 860px; margin: 56px auto 0; }
 .gp-about > p { margin: 18px 0 0; color: var(--muted); font-size: 18px; }
 .gp-about .game-tags { margin-top: 12px; color: var(--cyan); font-weight: 600; font-size: 14px; }
+/* Guia do jogo: como jogar, o que tem, dicas e perguntas */
+.gp-guide { max-width: 860px; margin: 56px auto 0; }
+.gp-guide .section-title { margin-top: 48px; }
+.gp-guide .section-title:first-child { margin-top: 0; }
+.gp-steps, .gp-list { margin: 18px 0 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+.gp-steps { counter-reset: step; }
+.gp-steps li, .gp-list li {
+  position: relative; padding: 14px 18px 14px 56px; color: var(--muted); font-size: 16px; line-height: 1.55;
+  background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius);
+}
+.gp-steps li::before {
+  counter-increment: step; content: counter(step);
+  position: absolute; left: 16px; top: 13px; width: 26px; height: 26px; border-radius: 8px;
+  display: grid; place-items: center; background: var(--grad); color: #05060a; font: 800 14px "Exo 2", sans-serif;
+}
+.gp-list li::before { content: "★"; position: absolute; left: 22px; top: 14px; color: var(--cyan); }
+.gp-tips li::before { content: "💡"; left: 19px; }
+.gp-faq { display: grid; gap: 10px; margin-top: 18px; }
+.gp-faq details { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); }
+.gp-faq details[open] { border-color: rgba(25,227,227,.35); }
+.gp-faq summary { cursor: pointer; padding: 14px 18px; font: 700 17px "Exo 2", sans-serif; color: var(--text); list-style: none; }
+.gp-faq summary::-webkit-details-marker { display: none; }
+.gp-faq summary::after { content: "+"; float: right; color: var(--cyan); font-weight: 800; }
+.gp-faq details[open] summary::after { content: "−"; }
+.gp-faq p { margin: 0; padding: 0 18px 16px; color: var(--muted); line-height: 1.6; }
+
 .gp-other {
   display: flex; align-items: center; gap: 18px; margin-top: 22px; padding: 16px 20px;
   background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); transition: border-color .2s, box-shadow .2s;
